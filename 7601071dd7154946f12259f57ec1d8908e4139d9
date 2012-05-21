@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH///s0\u003d",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2012-05-21T20:27:52Z",
+      "side": 1,
+      "message": "\"Fazer desta música uma favorita\" it\u0027s better than \"favoritar\".",
+      "revId": "7601071dd7154946f12259f57ec1d8908e4139d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///s4\u003d",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2012-05-21T20:27:52Z",
+      "side": 1,
+      "message": "\"Buscar nas suas músicas\" it\u0027s better.",
+      "revId": "7601071dd7154946f12259f57ec1d8908e4139d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///sw\u003d",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2012-05-21T20:27:52Z",
+      "side": 1,
+      "message": "typo",
+      "revId": "7601071dd7154946f12259f57ec1d8908e4139d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///ss\u003d",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2012-05-21T20:27:52Z",
+      "side": 1,
+      "message": "\"Reproduzindo agora\" it\u0027s better.",
+      "revId": "7601071dd7154946f12259f57ec1d8908e4139d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///so\u003d",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2012-05-21T20:27:52Z",
+      "side": 1,
+      "message": "\"Todas aleatoriamente\" it\u0027s better.",
+      "revId": "7601071dd7154946f12259f57ec1d8908e4139d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///sg\u003d",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2759
+      },
+      "writtenOn": "2012-05-21T20:27:52Z",
+      "side": 1,
+      "message": "\"Repetição desligada\" it\u0027s better.",
+      "revId": "7601071dd7154946f12259f57ec1d8908e4139d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
