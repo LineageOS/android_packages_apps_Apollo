@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Content descriptions for the Bottom Action Bar -->
+    <string name="cd_favorite">Hiervan een favoriete nummer maken</string>
+    <string name="cd_search">Door uw muziek zoeken</string>
+    <string name="cd_overflow">Meer opties tonen</string>
+    <string name="cd_bottom_action_bar_album_art">Albumillustratie voor dit nummer</string>
+    <string name="cd_repeat">Eén/alles herhalen</string>
+    <string name="cd_previous">Vorig nummer afspelen</string>
+    <string name="cd_play">Afspelen en pauzeren</string>
+    <string name="cd_next">Volgend nummer afspelen</string>
+    <string name="cd_shuffle">Nummers willekeurig afspelen</string>
+
+    <!-- AudioPlayer title -->
+    <string name="nowplaying">Nu aan het afspelen</string>
+
+    <!-- Used to indicate the number of songs for an album -->
+    <plurals name="Nsongs">
+        <!-- Number of songs is one -->
+        <item quantity="one">1 nummer</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> nummers</item>
+    </plurals>
+
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 nummer toegevoegd aan afspeellijst</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> nummers toegevoegd aan afspeellijst.</item>
+    </plurals>
+
+    <!-- Headers -->
+    <string name="album_header">ALBUMLIJST</string>
+    <string name="track_header">NUMMERLIJST</string>
+
+    <!-- Options MenuItems -->
+    <string name="settings">Instellingen</string>
+    <string name="shuffle_all">Alles willekeurig afspelen</string>
+    <string name="share">Delen</string>
+
+    <!-- Set track as ringtone -->
+    <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" instellen als beltoon</string>
+
+    <!-- Transient popup message shown after renaming a playlist -->
+    <string name="rename_playlist">Naam afspeellijst wijzigen</string>
+
+    <!-- Shuffle and repeat messages -->
+    <string name="repeat_one">Eén herhalen</string>
+    <string name="repeat_all">Alles herhalen</string>
+    <string name="repeat_off">Niets herhalen</string>
+    <string name="shuffle_off">In volgorde afspelen</string>
+    <string name="shuffle_on">Willekeurig afspelen</string>
+
+    <!-- Share Intent -->
+    <string name="now_listening_to">Nu aan het luisteren naar:</string>
+    <string name="by">door</string>
+    <string name="share_track_using">Nummer delen m.b.v.</string>
+
+    <!-- ContextMenu items -->
+    <string name="play_all">Alles afspelen</string>
+    <string name="add_to_playlist">Aan afspeellijst toevoegen</string>
+    <string name="use_as_ringtone">Als beltoon gebruiken</string>
+    <string name="delete_playlist">Afspeellijst verwijderen</string>
+    <string name="search">Zoeken</string>
+    <string name="remove">Van afspeellijst verwijderen</string>
+
+    <!-- Unknown genre name -->
+    <string name="unknown">Onbekend</string>
+
+    <!-- Settings -->
+    <string name="about">Over Apollo</string>
+    <string name="eqalizer">Equalizer</string>
+    <string name="header_interface">Uiterlijk</string>
+    <string name="themes">Thema\'s</string>
+    <string name="apollo_themes">Thema voor Apollo selecteren</string>
+    <string name="select_theme">Selecteer uw thema</string>
+    <string name="version">Apollo-versie</string>
+
+    <!-- Theme layout Buttons -->
+    <string name="apply_theme">Thema toepassen</string>
+    <string name="get_more_themes">Meer thema\'s verkrijgen</string>
+
+    <!-- Playlists menu -->
+    <string name="favorite">Favorieten</string>
+    <string name="queue">Wachtrij</string>
+    <string name="new_playlist">Nieuw</string>
+    <string name="new_playlist_name_template">Afspeellijst nr. <xliff:g id="number">%d</xliff:g></string>
+    <string name="save">Opslaan</string>
+    <string name="overwrite">Overschrijven</string>
+
+    <!-- Something went wrong -->
+    <string name="error">Fout</string>
+
+</resources>
