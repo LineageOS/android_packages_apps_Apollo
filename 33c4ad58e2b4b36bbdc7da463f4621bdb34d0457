@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///VQ\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Gerade hier habe ich mich an den anderen Übersetzungen orientiert - diese haben auch jeweils \"1 ...\".\n\nMüsste dies dann nicht auch bei \"1 Titel\" so sein?",
+      "parentUuid": "AAAATH///VY\u003d",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Vc\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2012-05-22T21:10:33Z",
       "side": 1,
       "message": "ohne Punkt am Ende",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///VI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Vc\u003d",
       "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///VE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Vs\u003d",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Vo\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2012-05-22T21:10:33Z",
       "side": 1,
       "message": "\"Wiederhole alle Titel\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///VA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Vo\u003d",
       "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///U8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Vk\u003d",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Vg\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -98,6 +188,24 @@
       "writtenOn": "2012-05-22T21:10:33Z",
       "side": 1,
       "message": "\"Aktuelle Wiedergabe\" oder \"Sie hören\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Uo\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Vg\u003d",
       "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///VM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Ich habe das nur im Menü der aktuellen Wiedergabe gefunden, dafür ist der Text mit \"hinzufügen\" zu lang und wird abgeschnitten.",
+      "parentUuid": "AAAATH///V0\u003d",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Vw\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -138,6 +264,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///Uw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Vw\u003d",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///V4\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -149,6 +293,24 @@
       "writtenOn": "2012-05-22T21:10:33Z",
       "side": 1,
       "message": "\"Zu Warteschlange hinzufügen\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Us\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T21:34:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///V4\u003d",
       "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
