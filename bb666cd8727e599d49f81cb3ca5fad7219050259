@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH///RA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-05-22T22:51:45Z",
+      "side": 1,
+      "message": "translatable\u003dfalse stuff shouldn\u0027t be in values-xx (in that case, values-de).",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Q8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-05-22T22:51:45Z",
+      "side": 1,
+      "message": "This looks like it doesn\u0027t need to be translated. In fact, it should be translatable\u003dfalse.",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Q4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-05-22T22:51:45Z",
+      "side": 1,
+      "message": "\u0027Design\u0027 instead of \u0027Theme\u0027 to match theme changer translation?",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
