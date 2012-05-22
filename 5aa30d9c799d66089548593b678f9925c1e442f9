@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH///j4\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-05-22T03:31:55Z",
+      "side": 1,
+      "message": "don\u0027t translate this",
+      "revId": "5aa30d9c799d66089548593b678f9925c1e442f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///j0\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-05-22T03:31:55Z",
+      "side": 1,
+      "message": "don\u0027t translate this",
+      "revId": "5aa30d9c799d66089548593b678f9925c1e442f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///jw\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-05-22T03:31:55Z",
+      "side": 1,
+      "message": "don\u0027t translate this 4 strings. They looks internal keys",
+      "revId": "5aa30d9c799d66089548593b678f9925c1e442f9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
