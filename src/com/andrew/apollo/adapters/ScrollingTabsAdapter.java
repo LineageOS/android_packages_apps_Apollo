@@ -10,9 +10,10 @@ import com.andrew.apollo.Constants;
 import com.andrew.apollo.R;
 import com.andrew.apollo.utils.ThemeUtils;
 
-public class ScrollingTabsAdapter implements TabAdapter, Constants {
+public class ScrollingTabsAdapter implements TabAdapter {
 
     private final FragmentActivity activity;
+    private static String[] mTitles;
 
     public ScrollingTabsAdapter(FragmentActivity act) {
         activity = act;
@@ -20,9 +21,9 @@ public class ScrollingTabsAdapter implements TabAdapter, Constants {
 
     @Override
     public View getView(int position) {
-
         LayoutInflater inflater = activity.getLayoutInflater();
         final Button tab = (Button)inflater.inflate(R.layout.tabs, null);
+	mTitles = activity.getResources().getStringArray(R.array.tab_titles);
 
         if (position < mTitles.length)
             tab.setText(mTitles[position]);
