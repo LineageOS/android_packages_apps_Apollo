@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///QI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T23:39:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Qk\u003d",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Qs\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2012-05-22T23:22:48Z",
       "side": 1,
       "message": "\"Aktueller Titel\" (nur ein Vorschlag, etwas kompakter)",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///QA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T23:39:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Qs\u003d",
       "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///QE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T23:39:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///RA\u003d",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Qg\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///P8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T23:39:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Qg\u003d",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Q8\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
@@ -81,6 +153,24 @@
       "writtenOn": "2012-05-22T22:51:45Z",
       "side": 1,
       "message": "This looks like it doesn\u0027t need to be translated. In fact, it should be translatable\u003dfalse.",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Ps\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T23:39:15Z",
+      "side": 1,
+      "message": "added that to the default values.",
+      "parentUuid": "AAAATH///Q8\u003d",
       "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -116,6 +206,24 @@
       "side": 1,
       "message": "Yes, please, everwhere there\u0027s now \"Theme\".",
       "parentUuid": "AAAATH///Q4\u003d",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///P0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-22T23:39:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///QQ\u003d",
       "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
