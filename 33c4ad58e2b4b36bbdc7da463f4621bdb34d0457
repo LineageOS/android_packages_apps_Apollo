@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH///VY\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"ein Album\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Vc\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "ohne Punkt am Ende",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Vs\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"Wiederhole aktuellen Titel\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Vo\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"Wiederhole alle Titel\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Vk\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"Wiederholung ausschalten",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Vg\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"Aktuelle Wiedergabe\" oder \"Sie hören\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///V0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"Zu Wiedergabenliste hinzufügen\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Vw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"Löschen\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///V4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 118,
+      "author": {
+        "id": 3296
+      },
+      "writtenOn": "2012-05-22T21:10:33Z",
+      "side": 1,
+      "message": "\"Zu Warteschlange hinzufügen\"",
+      "revId": "33c4ad58e2b4b36bbdc7da463f4621bdb34d0457",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
