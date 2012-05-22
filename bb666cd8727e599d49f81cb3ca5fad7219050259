@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAATH///Qk\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-05-22T23:22:48Z",
+      "side": 1,
+      "message": "\"Zufällige Wiedergabe\" (analog zu Wortwahl weiter unten bei an/aus)",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Qs\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-05-22T23:22:48Z",
+      "side": 1,
+      "message": "\"Aktueller Titel\" (nur ein Vorschlag, etwas kompakter)",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///RA\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
@@ -13,6 +47,23 @@
       "writtenOn": "2012-05-22T22:51:45Z",
       "side": 1,
       "message": "translatable\u003dfalse stuff shouldn\u0027t be in values-xx (in that case, values-de).",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Qg\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-05-22T23:22:48Z",
+      "side": 1,
+      "message": "\"Aktueller Titel:\" (falls vorheriger Vorschlag akzeptiert)",
       "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -47,6 +98,24 @@
       "writtenOn": "2012-05-22T22:51:45Z",
       "side": 1,
       "message": "\u0027Design\u0027 instead of \u0027Theme\u0027 to match theme changer translation?",
+      "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///QQ\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 2783
+      },
+      "writtenOn": "2012-05-22T23:22:48Z",
+      "side": 1,
+      "message": "Yes, please, everwhere there\u0027s now \"Theme\".",
+      "parentUuid": "AAAATH///Q4\u003d",
       "revId": "bb666cd8727e599d49f81cb3ca5fad7219050259",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
