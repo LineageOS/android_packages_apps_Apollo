@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH///Nw\u003d",
+        "filename": "src/com/andrew/apollo/adapters/ScrollingTabsAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-05-23T02:38:32Z",
+      "side": 1,
+      "message": "There is not need to make this static (move to the method), unless a singleton approach will be used",
+      "revId": "43b258be69da951879b1b08423272ade7c6203c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Ns\u003d",
+        "filename": "src/com/andrew/apollo/adapters/ScrollingTabsAdapter.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-05-23T02:38:32Z",
+      "side": 1,
+      "message": "Remove tabs by spaces",
+      "revId": "43b258be69da951879b1b08423272ade7c6203c2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
