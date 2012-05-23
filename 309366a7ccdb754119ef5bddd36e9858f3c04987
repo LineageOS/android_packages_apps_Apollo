@@ -159,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///Fg\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T15:47:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///GM\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Is\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -483,6 +501,24 @@
       "writtenOn": "2012-05-23T15:26:06Z",
       "side": 1,
       "message": "weitere Designs (herunter)laden",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Fc\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T15:47:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///GQ\u003d",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
