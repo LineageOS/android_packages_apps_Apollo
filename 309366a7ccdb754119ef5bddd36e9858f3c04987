@@ -142,6 +142,23 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///GM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-05-23T15:26:06Z",
+      "side": 1,
+      "message": "Danke für den Hinweis. Dann Abspielen und Pausieren",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Is\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -352,6 +369,23 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///F4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-05-23T15:26:06Z",
+      "side": 1,
+      "message": "ok",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///JA\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -421,6 +455,40 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///F8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-05-23T15:26:06Z",
+      "side": 1,
+      "message": "ok.",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///GQ\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-05-23T15:26:06Z",
+      "side": 1,
+      "message": "weitere Designs (herunter)laden",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///H4\u003d",
         "filename": "res/values/strings.xml",
         "patchSetId": 3
@@ -450,6 +518,23 @@
       "side": 1,
       "message": "Diese werden nie dargestellt, sondern finden sich nur in android:key\u003d... in der res/xml/settings.xml",
       "parentUuid": "AAAATH///H4\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///GI\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 1683
+      },
+      "writtenOn": "2012-05-23T15:26:06Z",
+      "side": 1,
+      "message": "ok.",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
