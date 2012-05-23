@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///G4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///IU\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///IQ\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2012-05-23T12:20:35Z",
       "side": 1,
       "message": "ist eine Aktion gemeint?",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///G8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Hm, es scheint, als ob dieser String nicht verwendet wird - Albumcover werden jetzt automatisch und ohne Interaktion heruntergeladen.\n\nDas englische Original ist \"Album art for this song\"",
+      "parentUuid": "AAAATH///IQ\u003d",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///HA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Ic\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Ik\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -64,6 +118,24 @@
       "writtenOn": "2012-05-23T12:20:35Z",
       "side": 1,
       "message": "Abspielen - woher stammt Pause?",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Hc\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Aus der englischen Datei: \"Play and pause\"",
+      "parentUuid": "AAAATH///Ik\u003d",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///HM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Is\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///Io\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -98,6 +188,24 @@
       "writtenOn": "2012-05-23T12:20:35Z",
       "side": 1,
       "message": "alle Titel wiederholen",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///HI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Io\u003d",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///HE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///Iw\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///JI\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -132,6 +258,24 @@
       "writtenOn": "2012-05-23T12:20:35Z",
       "side": 1,
       "message": "Titel teilen",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///Gw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///JI\u003d",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -155,6 +299,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///G0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAATH///JE\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///I0\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -166,6 +328,24 @@
       "writtenOn": "2012-05-23T12:20:35Z",
       "side": 1,
       "message": "Skins/Themes/Designs",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///HU\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Ergebnis der vorherigen Diskussion war, das zu Designs umzubenennen; siehe dazu Patchset 2.",
+      "parentUuid": "AAAATH///I0\u003d",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -223,6 +403,24 @@
     },
     {
       "key": {
+        "uuid": "AAAATH///HQ\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Entspricht der englischen Übersetzung: \"Apollo Version\"",
+      "parentUuid": "AAAATH///I4\u003d",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAATH///H4\u003d",
         "filename": "res/values/strings.xml",
         "patchSetId": 3
@@ -234,6 +432,24 @@
       "writtenOn": "2012-05-23T12:20:35Z",
       "side": 1,
       "message": "warum nicht übersetzen?\nPreview -\u003e Vorschau\nPackageName -\u003e Name\nPreferences -\u003e Einstellungen\nBuild_Version -\u003e Version",
+      "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH///HY\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 3514
+      },
+      "writtenOn": "2012-05-23T13:29:31Z",
+      "side": 1,
+      "message": "Diese werden nie dargestellt, sondern finden sich nur in android:key\u003d... in der res/xml/settings.xml",
+      "parentUuid": "AAAATH///H4\u003d",
       "revId": "309366a7ccdb754119ef5bddd36e9858f3c04987",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
