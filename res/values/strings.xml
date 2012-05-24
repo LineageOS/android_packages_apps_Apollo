@@ -104,10 +104,10 @@
     <string name="version">Apollo Version</string>
 
     <!-- Settings keys -->
-    <string name="key_themes" translatable="false">themepreview</string>
-    <string name="key_themes_package" translatable="false">themePackageName</string>
-    <string name="key_themes_preferences" translatable="false">themePrefences</string>
-    <string name="key_build_version" translatable="false">build_version</string>
+    <string name="key_themes">themepreview</string>
+    <string name="key_themes_package">themePackageName</string>
+    <string name="key_themes_preferences">themePrefences</string>
+    <string name="key_build_version">build_version</string>
 
     <!-- Theme layout Buttons -->
     <string name="apply_theme">Apply theme</string>
@@ -120,6 +120,14 @@
     <string name="new_playlist_name_template">Playlist <xliff:g id="number">%d</xliff:g></string>
     <string name="save">Save</string>
     <string name="overwrite">Overwrite</string>
+
+    <!-- Tabs -->
+    <string name="tab_recent">RECENT</string>
+    <string name="tab_artists">ARTISTS</string>
+    <string name="tab_albums">ALBUMS</string>
+    <string name="tab_songs">SONGS</string>
+    <string name="tab_playlists">PLAYLISTS</string>
+    <string name="tab_genres">GENRES</string>
 
     <!-- Something went wrong -->
     <string name="error">Error</string>
