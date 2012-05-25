@@ -105,6 +105,14 @@
     <string name="save">Сохранить</string>
     <string name="overwrite">Переписать</string>
 
+    <!-- Tabs -->
+    <string name="tab_recent">НЕДАВНИЕ</string>
+    <string name="tab_artists">ИСПОЛНИТЕЛИ</string>
+    <string name="tab_albums">АЛЬБОМЫ</string>
+    <string name="tab_songs">ТРЕКИ</string>
+    <string name="tab_playlists">ПЛЕЙЛИСТЫ</string>
+    <string name="tab_genres">ЖАНРЫ</string>
+
     <!-- Something went wrong -->
     <string name="error">Ошибка</string>
 
