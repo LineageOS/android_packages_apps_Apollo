@@ -50,7 +50,7 @@
     <string name="search">Buscar</string>
     <string name="remove">Remover da lista de reprodução</string>
     <string name="unknown">Desconhecido</string>
-    <string name="about">Sobre Apollo</string>
+    <string name="about">Sobre</string>
     <string name="eqalizer">Equalizador</string>
     <string name="header_interface">Interface</string>
     <string name="themes">Temas</string>
@@ -65,4 +65,12 @@
     <string name="save">Salvar</string>
     <string name="overwrite">Sobrescrever</string>
     <string name="error">Erro</string>
+
+    <!-- Tabs -->
+    <string name="tab_recent">RECENTE</string>
+    <string name="tab_artists">ARTISTAS</string>
+    <string name="tab_albums">ALBUNS</string>
+    <string name="tab_songs">MÚSICAS</string>
+    <string name="tab_playlists">LISTAS</string>
+    <string name="tab_genres">GENEROS</string>
 </resources>
