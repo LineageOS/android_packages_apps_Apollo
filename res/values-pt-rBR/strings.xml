@@ -65,4 +65,10 @@
     <string name="save">Salvar</string>
     <string name="overwrite">Sobrescrever</string>
     <string name="error">Erro</string>
+    <string name="tab_recent">RECENTE</string>
+    <string name="tab_artists">ARTISTAS</string>
+    <string name="tab_albums">ÁLBUMS</string>
+    <string name="tab_songs">MÚSICAS</string>
+    <string name="tab_playlists">LISTAS DE REPRODUÇÃO</string>
+    <string name="tab_genres">GÊNEROS</string>
 </resources>
