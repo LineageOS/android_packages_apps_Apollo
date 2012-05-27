@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH//+dk\u003d",
+        "filename": "res/values-fi/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 2904
+      },
+      "writtenOn": "2012-05-27T02:21:05Z",
+      "side": 1,
+      "message": "typo",
+      "revId": "92d046f1d74c5e41b23422c333522bfbb4a4da34",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
