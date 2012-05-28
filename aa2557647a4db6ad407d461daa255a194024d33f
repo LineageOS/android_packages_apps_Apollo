@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH//9wk\u003d",
+        "filename": "src/com/andrew/apollo/Constants.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 336
+      },
+      "writtenOn": "2012-05-28T19:04:48Z",
+      "side": 1,
+      "message": "tab instead of spaces",
+      "revId": "aa2557647a4db6ad407d461daa255a194024d33f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
