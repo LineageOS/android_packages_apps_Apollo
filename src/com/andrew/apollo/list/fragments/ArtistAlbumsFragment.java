@@ -186,7 +186,6 @@ public class ArtistAlbumsFragment extends Fragment implements LoaderCallbacks<Cu
      * @param id
      */
     private void tracksBrowser(long id) {
-
         String artistName = mCursor.getString(mArtistNameIndex);
         String albumName = mCursor.getString(mAlbumNameIndex);
 
@@ -200,7 +199,6 @@ public class ArtistAlbumsFragment extends Fragment implements LoaderCallbacks<Cu
         intent.setClass(getActivity(), TracksBrowser.class);
         intent.putExtras(bundle);
         getActivity().startActivity(intent);
-        getActivity().finish();
     }
 
     @Override
