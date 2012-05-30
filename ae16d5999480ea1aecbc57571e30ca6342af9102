@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAATH//9Q8\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 3178
+      },
+      "writtenOn": "2012-05-30T16:05:34Z",
+      "side": 1,
+      "message": "nem inkább: \"véletlen lejátszás\"?",
+      "revId": "ae16d5999480ea1aecbc57571e30ca6342af9102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH//9Q4\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 3178
+      },
+      "writtenOn": "2012-05-30T16:05:34Z",
+      "side": 1,
+      "message": "Szerintem inkább így: \"Egy dal ismétlése\"",
+      "revId": "ae16d5999480ea1aecbc57571e30ca6342af9102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH//9Q0\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 3178
+      },
+      "writtenOn": "2012-05-30T16:05:34Z",
+      "side": 1,
+      "message": "\"Névjegy\" ?",
+      "revId": "ae16d5999480ea1aecbc57571e30ca6342af9102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH//9Qw\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 3178
+      },
+      "writtenOn": "2012-05-30T16:05:34Z",
+      "side": 1,
+      "message": "\"Új témák beszerzése\" ?",
+      "revId": "ae16d5999480ea1aecbc57571e30ca6342af9102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAATH//9Qs\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 3178
+      },
+      "writtenOn": "2012-05-30T16:05:34Z",
+      "side": 1,
+      "message": "\"Felülírás\" ha a mentéssel konzisztensen szeretnénk",
+      "revId": "ae16d5999480ea1aecbc57571e30ca6342af9102",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
