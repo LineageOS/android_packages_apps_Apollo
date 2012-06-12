@@ -584,12 +584,12 @@ public class AudioPlayerFragment extends Fragment {
         mDuration = MusicUtils.getDuration();
         mTotalTime.setText(MusicUtils.makeTimeString(getActivity(), mDuration / 1000));
 
-        if (ApolloUtils.getImageURL(albumName, ALBUM_IMAGE, getActivity()) == null)
+        if (ApolloUtils.getImageURL(artistName + "|" + albumName, ALBUM_IMAGE, getActivity()) == null)
             new LastfmGetAlbumImages(getActivity(), mAlbumArt, 1).executeOnExecutor(
                     AsyncTask.THREAD_POOL_EXECUTOR, artistName, albumName);
 
         new GetCachedImages(getActivity(), 1, mAlbumArt).executeOnExecutor(
-                AsyncTask.THREAD_POOL_EXECUTOR, albumName);
+                AsyncTask.THREAD_POOL_EXECUTOR, artistName, albumName);
 
         // Theme chooser
         ThemeUtils.setTextColor(getActivity(), mTrackName, "audio_player_text_color");

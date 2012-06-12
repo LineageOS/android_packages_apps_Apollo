@@ -916,7 +916,7 @@ public class ApolloService extends Service {
             ed.putLong(MediaMetadataRetriever.METADATA_KEY_DURATION, duration());
             AQuery aq = new AQuery(this);
             Bitmap b = aq
-                    .getCachedImage(ApolloUtils.getImageURL(getAlbumName(), ALBUM_IMAGE, this));
+                    .getCachedImage(ApolloUtils.getImageURL(getArtistName() + "|" + getAlbumName(), ALBUM_IMAGE, this));
             if (b != null) {
                 ed.putBitmap(MetadataEditor.BITMAP_KEY_ARTWORK, b);
             }
@@ -1187,7 +1187,7 @@ public class ApolloService extends Service {
                 MediaButtonIntentReceiver.class.getName()));
 
         AQuery aq = new AQuery(this);
-        Bitmap b = aq.getCachedImage(ApolloUtils.getImageURL(getAlbumName(), ALBUM_IMAGE, this));
+        Bitmap b = aq.getCachedImage(ApolloUtils.getImageURL(getArtistName() + "|" + getAlbumName(), ALBUM_IMAGE, this));
 
         if (mPlayer.isInitialized()) {
             // if we are at the end of the song, go to the next song first

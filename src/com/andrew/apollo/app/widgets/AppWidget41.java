@@ -126,7 +126,7 @@ public class AppWidget41 extends AppWidgetProvider {
         views.setTextViewText(R.id.four_by_one_artist, artistName);
         // Set album art
         AQuery aq = new AQuery(service);
-        Bitmap bitmap = aq.getCachedImage(ApolloUtils.getImageURL(service.getAlbumName(),
+        Bitmap bitmap = aq.getCachedImage(ApolloUtils.getImageURL(service.getArtistName() + "|" + service.getAlbumName(),
                 ALBUM_IMAGE, service));
         if (bitmap != null) {
             views.setViewVisibility(R.id.four_by_one_albumart, View.VISIBLE);

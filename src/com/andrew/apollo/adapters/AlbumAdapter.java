@@ -69,13 +69,13 @@ public class AlbumAdapter extends SimpleCursorAdapter {
             holderReference.get().mViewHolderImage.setImageDrawable(null);
         } else {
             // Check for missing album images and cache them
-            if (ApolloUtils.getImageURL(albumName, ALBUM_IMAGE, mContext) == null) {
+            if (ApolloUtils.getImageURL(artistName + "|" + albumName, ALBUM_IMAGE, mContext) == null) {
                 new LastfmGetAlbumImages(mContext, null, 0).executeOnExecutor(
                         AsyncTask.THREAD_POOL_EXECUTOR, artistName, albumName);
             } else {
                 new ViewHolderTask(null, holderReference.get(), position, mContext, 1, 1,
                         holderReference.get().mViewHolderImage).executeOnExecutor(
-                        AsyncTask.THREAD_POOL_EXECUTOR, albumName);
+                        AsyncTask.THREAD_POOL_EXECUTOR, artistName, albumName);
             }
         }
         // Now playing indicator

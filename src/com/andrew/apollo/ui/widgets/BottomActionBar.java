@@ -73,7 +73,7 @@ public class BottomActionBar extends LinearLayout implements OnClickListener, On
                     .findViewById(R.id.bottom_action_bar_album_art);
 
             new GetCachedImages(activity, 1, mAlbumArt).executeOnExecutor(
-                    AsyncTask.THREAD_POOL_EXECUTOR, MusicUtils.getAlbumName());
+                    AsyncTask.THREAD_POOL_EXECUTOR, MusicUtils.getArtistName(), MusicUtils.getAlbumName());
 
             // Favorite image
             ImageButton mFavorite = (ImageButton)bottomActionBar

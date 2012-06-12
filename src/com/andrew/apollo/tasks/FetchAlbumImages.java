@@ -100,7 +100,7 @@ public class FetchAlbumImages {
             for (int i = 0; i < result.length; i++) {
                 // Only download images we don't already have
                 if (choice == 0 && result != null) {
-                    if (ApolloUtils.getImageURL(result[i], ALBUM_IMAGE, mContext) == null) {
+                    if (ApolloUtils.getImageURL(getAlbumArtists()[i] + "|" + result[i], ALBUM_IMAGE, mContext) == null) {
                         new LastfmGetAlbumImages(mContext, null, 0).executeOnExecutor(
                                 AsyncTask.THREAD_POOL_EXECUTOR, getAlbumArtists()[i], result[i]);
                     }

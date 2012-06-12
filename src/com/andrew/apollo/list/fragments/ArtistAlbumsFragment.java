@@ -264,13 +264,13 @@ public class ArtistAlbumsFragment extends Fragment implements LoaderCallbacks<Cu
         ImageView headerImage = (ImageView)header.findViewById(R.id.header_image);
 
         // Only download images we don't already have
-        if (ApolloUtils.getImageURL(albumName, ALBUM_IMAGE, getActivity()) == null)
+        if (ApolloUtils.getImageURL(artistName + "|" + albumName, ALBUM_IMAGE, getActivity()) == null)
             new LastfmGetAlbumImages(getActivity(), null, 0).executeOnExecutor(
                     AsyncTask.THREAD_POOL_EXECUTOR, artistName, albumName);
 
         // Get and set cached image
         new GetCachedImages(getActivity(), 1, headerImage).executeOnExecutor(
-                AsyncTask.THREAD_POOL_EXECUTOR, albumName);
+                AsyncTask.THREAD_POOL_EXECUTOR, artistName, albumName);
 
         // Set artist name
         TextView headerText = (TextView)header.findViewById(R.id.header_text);

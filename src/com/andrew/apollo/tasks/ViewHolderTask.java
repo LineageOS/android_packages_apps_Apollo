@@ -72,7 +72,7 @@ public class ViewHolderTask extends AsyncTask<String, Integer, Bitmap> {
         if (choice == 0)
             url = ApolloUtils.getImageURL(args[0], ARTIST_IMAGE, mContext);
         if (choice == 1)
-            url = ApolloUtils.getImageURL(args[0], ALBUM_IMAGE, mContext);
+            url = ApolloUtils.getImageURL(args[0] + "|" + args[1], ALBUM_IMAGE, mContext);
         bitmapReference = new WeakReference<Bitmap>(aquery.getCachedImage(url));
         if (holderChoice == 0) {
             return ApolloUtils.getResizedBitmap(bitmapReference.get(), albumart, albumart);

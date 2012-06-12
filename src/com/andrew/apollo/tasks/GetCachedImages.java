@@ -55,7 +55,7 @@ public class GetCachedImages extends AsyncTask<String, Integer, Bitmap> {
         if (choice == 0)
             url = ApolloUtils.getImageURL(args[0], ARTIST_IMAGE_ORIGINAL, mContext);
         if (choice == 1)
-            url = ApolloUtils.getImageURL(args[0], ALBUM_IMAGE, mContext);
+            url = ApolloUtils.getImageURL(args[0] + "|" + args[1], ALBUM_IMAGE, mContext);
         bitmapReference = new WeakReference<Bitmap>(aquery.getCachedImage(url, 300));
         return bitmapReference.get();
     }

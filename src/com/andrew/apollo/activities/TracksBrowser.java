@@ -393,13 +393,13 @@ public class TracksBrowser extends FragmentActivity implements ServiceConnection
             @Override
             public void run() {
                 // Only download images we don't already have
-                if (ApolloUtils.getImageURL(getAlbum(), ALBUM_IMAGE, TracksBrowser.this) == null)
+                if (ApolloUtils.getImageURL(getArtist() + "|" + getAlbum(), ALBUM_IMAGE, TracksBrowser.this) == null)
                     new LastfmGetAlbumImages(TracksBrowser.this, mSecondHalfImage, 1)
                             .executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, getArtist(),
                                     getAlbum());
                 // Get and set cached image
                 new GetCachedImages(TracksBrowser.this, 1, mSecondHalfImage).executeOnExecutor(
-                        AsyncTask.THREAD_POOL_EXECUTOR, getAlbum());
+                        AsyncTask.THREAD_POOL_EXECUTOR, getArtist(), getAlbum());
             }
         });
     }

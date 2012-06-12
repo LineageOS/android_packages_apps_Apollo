@@ -58,13 +58,13 @@ public class LastfmGetAlbumImages extends AsyncTask<String, Integer, String> {
                 album = Album.getInfo(name[0], name[1], LASTFM_API_KEY);
                 url = album.getImageURL(ImageSize.LARGE);
                 aq.cache(url, 0);
-                ApolloUtils.setImageURL(name[1], url, ALBUM_IMAGE, contextReference.get());
+                ApolloUtils.setImageURL(name[0] + "|" + name[1], url, ALBUM_IMAGE, contextReference.get());
                 return url;
             } catch (Exception e) {
                 return null;
             }
         } else {
-            url = ApolloUtils.getImageURL(name[1], ALBUM_IMAGE, contextReference.get());
+            url = ApolloUtils.getImageURL(name[0] + "|" + name[1], ALBUM_IMAGE, contextReference.get());
         }
         return url;
     }

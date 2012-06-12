@@ -143,7 +143,8 @@ public class SettingsHolder extends PreferenceActivity implements ServiceConnect
         TextView mTrackName = (TextView)view.findViewById(R.id.action_bar_track_name);
         TextView mAlbumName = (TextView)view.findViewById(R.id.action_bar_album_name);
 
-        String url = ApolloUtils.getImageURL(MusicUtils.getAlbumName(), ALBUM_IMAGE, this);
+        String url = ApolloUtils.getImageURL(MusicUtils.getArtistName() + "|" + MusicUtils.getAlbumName(),
+                ALBUM_IMAGE, this);
         AQuery aq = new AQuery(this);
         mAlbumArt.setImageBitmap(aq.getCachedImage(url));
 
