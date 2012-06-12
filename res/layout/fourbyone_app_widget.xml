@@ -29,8 +29,10 @@
             android:id="@+id/four_by_one_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ellipsize="end"
+            android:ellipsize="marquee"
             android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
             android:textColor="@color/transparent_black"
             android:textSize="@dimen/text_size_small"
             android:textStyle="bold" />
@@ -40,7 +42,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:singleLine="true"
             android:textColor="@color/transparent_black"
             android:textSize="@dimen/text_size_small" />
     </LinearLayout>
