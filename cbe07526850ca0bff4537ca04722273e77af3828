@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAUH//6gM\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "a nie albumu?",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//6f8\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "Brakuje mi podmiotu. Wydaje mi sie ze lepsze by bylo\"Powtarzaj bierzacy album/plyte lub wszystkie\" tylko ze jest dluzsze",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//6gE\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "A moze \"Powtarzanie utworu\"? w \"Powtorz jedna\" brakuje mi podmiotu - powtorz jedna piosenke albo powtorz jeden kawalek  chyba byly by lepsze ale sa dluzsze",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//6gA\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "Moe Powtarzanie wszystkiego? Albo \"Powtorz wszystkie utwory\" czy cos w ten desen?",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//6f0\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "\"Aktualnie sluchane:\"?",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//6gU\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "by?\nPowinno byc \"wykonywane przez\" tylko ze dlugie. Moze \"-\" wstawic?",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//6f4\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "Apollo chyba mozna pominac",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAUH//6gQ\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2012-07-04T00:42:58Z",
+      "side": 1,
+      "message": "Zastosuj motyw?",
+      "revId": "cbe07526850ca0bff4537ca04722273e77af3828",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
