@@ -28,6 +28,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewConfiguration;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -167,15 +168,22 @@ public class TracksBrowser extends FragmentActivity implements ServiceConnection
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // First check for Bottom Actionbar response.
+        boolean bottomResponse = BottomActionBarItem.respondToMenuItemClick(item, this);
+        if (bottomResponse) {
+            return true;
+        }
+
         switch (item.getItemId()) {
             case android.R.id.home:
                 super.onBackPressed();
-                if(bundle.getBoolean(UP_STARTS_ALBUM_ACTIVITY))
-                {
+                if (bundle.getBoolean(UP_STARTS_ALBUM_ACTIVITY)) {
                     // Artist ID
                     long artistID = ApolloUtils.getArtistId(getArtist(), ARTIST_ID, this);
-                    if (ApolloUtils.isAlbum(mimeType) && artistID != 0)
+                    if (ApolloUtils.isAlbum(mimeType) && artistID != 0) {
                         tracksBrowser(artistID);
+                    }
+
                 }
                 return true;
             default:
@@ -458,18 +466,17 @@ public class TracksBrowser extends FragmentActivity implements ServiceConnection
         }
         setTitle(name);
     }
-    
-	/**
-	 * Respond to a menu press (on devices with a physical menu key)
-	 */
-	@Override
-	public boolean onMenuItemSelected(int featureId, MenuItem item) {
-		return BottomActionBarItem.respondToMenuItemClick(item, this);
-	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		BottomActionBarItem.inflateMenu(getMenuInflater(), menu);
-		return super.onCreateOptionsMenu(menu);
-	}
+    /**
+     * Add a menu (on devices with a physical menu key)
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Only use the options menu for devices WITHOUT a hardware menu key.
+        boolean hasHardwareMenu = ViewConfiguration.get(this).hasPermanentMenuKey();
+        if (hasHardwareMenu) {
+            BottomActionBarItem.inflateMenu(getMenuInflater(), menu);
+        }
+        return super.onCreateOptionsMenu(menu);
+    }
 }
