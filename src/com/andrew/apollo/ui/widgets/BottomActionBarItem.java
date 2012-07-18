@@ -14,6 +14,8 @@ import android.provider.BaseColumns;
 import android.provider.MediaStore.Audio;
 import android.provider.MediaStore.Audio.AudioColumns;
 import android.util.AttributeSet;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -86,12 +88,19 @@ public class BottomActionBarItem extends ImageButton implements OnLongClickListe
     private void showPopup(View v) {
         PopupMenu popup = new PopupMenu(getContext(), v);
         popup.setOnMenuItemClickListener(this);
-        popup.inflate(R.menu.overflow_library);
+        BottomActionBarItem.inflateMenu(popup.getMenuInflater(), popup.getMenu());
         popup.show();
     }
 
-    @Override
+    public static void inflateMenu(MenuInflater menuInflater, Menu menu) {
+        menuInflater.inflate(R.menu.overflow_library, menu);
+    }
+
     public boolean onMenuItemClick(MenuItem item) {
+        return BottomActionBarItem.respondToMenuItemClick(item, mContext);
+    }
+
+    public static boolean respondToMenuItemClick(MenuItem item, Context mContext) {
         switch (item.getItemId()) {
             case R.id.settings:
                 mContext.startActivity(new Intent(mContext, SettingsHolder.class));
@@ -103,7 +112,7 @@ public class BottomActionBarItem extends ImageButton implements OnLongClickListe
                 break;
             case R.id.shuffle_all:
                 // TODO Only shuffle the tracks that are shown
-                shuffleAll();
+                BottomActionBarItem.shuffleAll(mContext);
                 break;
             // case R.id.fetch_artwork:
             // initAlbumImages();
@@ -137,7 +146,7 @@ public class BottomActionBarItem extends ImageButton implements OnLongClickListe
     /**
      * Shuffle all the tracks
      */
-    public void shuffleAll() {
+    public static void shuffleAll(Context mContext) {
         Uri uri = Audio.Media.EXTERNAL_CONTENT_URI;
         String[] projection = new String[] {
             BaseColumns._ID

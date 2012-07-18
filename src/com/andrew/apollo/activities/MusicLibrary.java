@@ -15,6 +15,8 @@ import android.provider.BaseColumns;
 import android.provider.MediaStore.Audio;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.Window;
 
 import com.andrew.apollo.BottomActionBarControlsFragment;
@@ -31,6 +33,7 @@ import com.andrew.apollo.list.fragments.RecentlyAddedFragment;
 import com.andrew.apollo.list.fragments.TracksFragment;
 import com.andrew.apollo.service.ApolloService;
 import com.andrew.apollo.service.ServiceToken;
+import com.andrew.apollo.ui.widgets.BottomActionBarItem;
 import com.andrew.apollo.ui.widgets.ScrollableTabView;
 import com.andrew.apollo.utils.ApolloUtils;
 import com.andrew.apollo.utils.MusicUtils;
@@ -164,5 +167,19 @@ public class MusicLibrary extends FragmentActivity implements ServiceConnection 
         pagerAdatper.addFragment(new BottomActionBarControlsFragment());
         ViewPager viewPager = (ViewPager)findViewById(R.id.bottomActionBarPager);
         viewPager.setAdapter(pagerAdatper);
+    }
+
+    /**
+     * Respond to a menu press (on devices with a physical menu key)
+     */
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+        return BottomActionBarItem.respondToMenuItemClick(item, this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        BottomActionBarItem.inflateMenu(getMenuInflater(), menu);
+        return super.onCreateOptionsMenu(menu);
     }
 }

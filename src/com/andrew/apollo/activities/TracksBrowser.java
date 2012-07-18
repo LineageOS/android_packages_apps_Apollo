@@ -24,6 +24,7 @@ import android.provider.BaseColumns;
 import android.provider.MediaStore.Audio;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -44,6 +45,7 @@ import com.andrew.apollo.service.ServiceToken;
 import com.andrew.apollo.tasks.GetCachedImages;
 import com.andrew.apollo.tasks.LastfmGetAlbumImages;
 import com.andrew.apollo.tasks.LastfmGetArtistImagesOriginal;
+import com.andrew.apollo.ui.widgets.BottomActionBarItem;
 import com.andrew.apollo.utils.ApolloUtils;
 import com.andrew.apollo.utils.MusicUtils;
 import com.andrew.apollo.utils.ThemeUtils;
@@ -456,4 +458,18 @@ public class TracksBrowser extends FragmentActivity implements ServiceConnection
         }
         setTitle(name);
     }
+    
+	/**
+	 * Respond to a menu press (on devices with a physical menu key)
+	 */
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		return BottomActionBarItem.respondToMenuItemClick(item, this);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		BottomActionBarItem.inflateMenu(getMenuInflater(), menu);
+		return super.onCreateOptionsMenu(menu);
+	}
 }

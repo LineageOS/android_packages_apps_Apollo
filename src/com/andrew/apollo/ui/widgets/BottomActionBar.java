@@ -13,6 +13,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
+import android.view.ViewConfiguration;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -97,6 +98,12 @@ public class BottomActionBar extends LinearLayout implements OnClickListener, On
             ThemeUtils.setBackgroundColor(activity, mDivider, "bottom_action_bar_info_divider");
             ThemeUtils.setImageButton(activity, mSearch, "apollo_search");
             ThemeUtils.setImageButton(activity, mOverflow, "apollo_overflow");
+
+            // For devices with a physical menu button, hide the overflow icon
+            boolean hasHardwareMenu = ViewConfiguration.get(getContext()).hasPermanentMenuKey();
+            if (hasHardwareMenu) {
+                mOverflow.setVisibility(GONE);
+            }
         }
     }
 
