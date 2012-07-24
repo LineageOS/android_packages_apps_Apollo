@@ -209,7 +209,7 @@ public class ApolloService extends Service {
             MediaStore.Audio.Media.TITLE, MediaStore.Audio.Media.DATA,
             MediaStore.Audio.Media.MIME_TYPE, MediaStore.Audio.Media.ALBUM_ID,
             MediaStore.Audio.Media.ARTIST_ID, MediaStore.Audio.Media.IS_PODCAST,
-            MediaStore.Audio.Media.BOOKMARK
+            MediaStore.Audio.Media.BOOKMARK, MediaStore.Audio.Media.DATA
     };
 
     private final static int IDCOLIDX = 0;
@@ -1764,6 +1764,15 @@ public class ApolloService extends Service {
         return mFileToPlay;
     }
 
+    public String getFilePath() {
+    	synchronized (this) {
+            if (mCursor == null) {
+                return null;
+            }
+            return mCursor.getString(mCursor.getColumnIndexOrThrow(AudioColumns.DATA));
+        }
+	}
+
     /**
      * Returns the rowid of the currently playing file, or -1 if no file is
      * currently playing.
@@ -2172,6 +2181,11 @@ public class ApolloService extends Service {
         @Override
         public String getAlbumName() {
             return mService.get().getAlbumName();
+        }
+
+        @Override
+        public String getFilePath(){
+        	return mService.get().getFilePath();
         }
 
         @Override
