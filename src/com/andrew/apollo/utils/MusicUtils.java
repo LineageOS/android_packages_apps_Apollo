@@ -890,6 +890,20 @@ public class MusicUtils {
     }
 
     /**
+     * @return current track file's path
+     */
+    public static String getFilePath() {
+
+        if (mService != null) {
+            try {
+                return mService.getFilePath();
+            } catch (RemoteException ex) {
+            }
+        }
+        return null;
+    }
+
+    /**
      * @return duration of a track
      */
     public static long getDuration() {

@@ -17,6 +17,11 @@
 
     <!-- AudioPlayer title -->
     <string name="nowplaying">Now Playing</string>
+    
+    <!-- Lyrics -->
+    <string name="press_to_save">Press here to save lyrics</string>
+    <string name="searching_lyrics">Searching for lyrics...</string>
+    <string name="lyrics_not_found">No lyrics found for this song</string>
 
     <!-- Used to indicate the number of albums for an artist -->
     <plurals name="Nalbums">

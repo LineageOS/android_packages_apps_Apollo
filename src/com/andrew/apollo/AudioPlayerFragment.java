@@ -4,6 +4,14 @@
 
 package com.andrew.apollo;
 
+import static com.andrew.apollo.Constants.ALBUM_IMAGE;
+import static com.andrew.apollo.Constants.ALBUM_KEY;
+import static com.andrew.apollo.Constants.ARTIST_ID;
+import static com.andrew.apollo.Constants.ARTIST_KEY;
+import static com.andrew.apollo.Constants.MIME_TYPE;
+import android.animation.Animator;
+import android.animation.Animator.AnimatorListener;
+import android.animation.ObjectAnimator;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +29,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -29,6 +38,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.andrew.apollo.activities.TracksBrowser;
+import com.andrew.apollo.lyrics.LyricsProvider;
+import com.andrew.apollo.lyrics.LyricsProviderFactory;
+import com.andrew.apollo.lyrics.OfflineLyricsProvider;
 import com.andrew.apollo.service.ApolloService;
 import com.andrew.apollo.tasks.GetCachedImages;
 import com.andrew.apollo.tasks.LastfmGetAlbumImages;
@@ -36,12 +48,6 @@ import com.andrew.apollo.ui.widgets.RepeatingImageButton;
 import com.andrew.apollo.utils.ApolloUtils;
 import com.andrew.apollo.utils.MusicUtils;
 import com.andrew.apollo.utils.ThemeUtils;
-
-import static com.andrew.apollo.Constants.ALBUM_KEY;
-import static com.andrew.apollo.Constants.ALBUM_IMAGE;
-import static com.andrew.apollo.Constants.ARTIST_ID;
-import static com.andrew.apollo.Constants.ARTIST_KEY;
-import static com.andrew.apollo.Constants.MIME_TYPE;
 
 /**
  * @author Andrew Neal
@@ -75,6 +81,14 @@ public class AudioPlayerFragment extends Fragment {
 
     // Notify if repeat or shuffle changes
     private Toast mToast;
+
+    // Lyrics frame, text and save button
+    private TextView mLyrics;
+    private View mLyricsFrame;
+    private Button mLyricsSave;
+    
+    // Fade-in / Face-out animations for lyrics
+ 	private ObjectAnimator mAnimFadein, mAnimFadeout;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -174,6 +188,36 @@ public class AudioPlayerFragment extends Fragment {
         }
         mProgress.setMax(1000);
 
+        mLyrics = (TextView) root.findViewById(R.id.audio_player_lyrics);
+        mLyricsFrame = root.findViewById(R.id.audio_player_lyrics_frame);
+        mLyricsSave = (Button) root.findViewById(R.id.audio_player_lyrics_save);
+        // When pressed on the cover, display lyrics
+        root.findViewById(R.id.audio_player_lyrics_trigger).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showLyrics();
+            }
+        });
+        // And when pressed on the lyrics themselves, hide them
+        mLyrics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hideLyrics();
+            }
+        });
+        mLyricsSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Save current lyrics in file metadata for offline use
+                String lyrics = mLyrics.getText().toString();
+                String file = MusicUtils.getFilePath();
+                OfflineLyricsProvider.saveLyrics(lyrics, file);
+                // Hide the button, please.
+                mLyricsSave.setVisibility(View.GONE);
+                mLyricsSave.setEnabled(false);
+            }
+        });
+
         // Theme chooser
         ThemeUtils.setImageButton(getActivity(), mPrev, "apollo_previous");
         ThemeUtils.setImageButton(getActivity(), mNext, "apollo_next");
@@ -213,6 +257,61 @@ public class AudioPlayerFragment extends Fragment {
         paused = true;
         mHandler.removeMessages(REFRESH);
         getActivity().unregisterReceiver(mStatusListener);
+    }
+
+
+    /**
+     * Shows lyrics with a nice fade-in effect
+     */
+    private void showLyrics() {
+        if (mAnimFadein == null) {
+            mAnimFadein = ObjectAnimator.ofFloat(mLyricsFrame, View.ALPHA, 0f, 1f);
+            mAnimFadein.addListener(new AnimatorListener() {
+                @Override
+                public void onAnimationStart(Animator animation) {
+                    mLyricsFrame.setVisibility(View.VISIBLE);
+                }
+
+                @Override
+                public void onAnimationEnd(Animator animation) {
+
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                }
+            });
+        }
+        mAnimFadein.start();
+    }
+
+    private void hideLyrics() {
+        if (mAnimFadeout == null) {
+            mAnimFadeout = ObjectAnimator.ofFloat(mLyricsFrame, View.ALPHA, 0f);
+            mAnimFadeout.addListener(new AnimatorListener() {
+                @Override
+                public void onAnimationEnd(Animator animation) {
+                    mLyricsFrame.setVisibility(View.GONE);
+                }
+
+                @Override
+                public void onAnimationStart(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationRepeat(Animator animation) {
+                }
+
+                @Override
+                public void onAnimationCancel(Animator animation) {
+                }
+            });
+        }
+        mAnimFadeout.start();
     }
 
     /**
@@ -596,6 +695,66 @@ public class AudioPlayerFragment extends Fragment {
         ThemeUtils.setTextColor(getActivity(), mAlbumArtistName, "audio_player_text_color");
         ThemeUtils.setTextColor(getActivity(), mTotalTime, "audio_player_text_color");
 
+        updateLyrics();
+    }
+
+    private void updateLyrics() {
+
+        new AsyncTask<String, Void, String>() {
+
+            private long searchedSong;
+            private boolean isOffline = true;
+
+            @Override
+            protected String doInBackground(String... params) {
+                String res = null;
+                LyricsProvider provider;
+                // Try offline
+                provider = LyricsProviderFactory.getOfflineProvider(MusicUtils.getFilePath());
+                res = provider.getLyrics(null, null); // In offline mode
+                                                        // parameters aren't
+                                                        // used
+
+                // Not found? Search for it
+                if (res == null) {
+                    isOffline = false; // We set the flag so we will show the
+                                        // 'save' button later
+                    provider = LyricsProviderFactory.getMainOnlineProvider();
+                    res = provider.getLyrics(params[0], params[1]); // First one artist, second one song
+                }
+                return res;
+            }
+
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+                // Clean the lyrics space
+                mLyrics.setText(R.string.searching_lyrics);
+                // Save the current song ID
+                searchedSong = MusicUtils.getCurrentAudioId();
+                // Hide the save button
+                mLyricsSave.setVisibility(View.GONE);
+                mLyricsSave.setEnabled(false);
+            }
+
+            @Override
+            protected void onPostExecute(String result) {
+                super.onPostExecute(result);
+                // Are these the lyrics I'm looking for?
+                if (MusicUtils.getCurrentAudioId() == searchedSong) {
+                    if (result != null) {
+                        mLyrics.setText(result);
+                        if (!isOffline) {
+                            mLyricsSave.setVisibility(View.VISIBLE);
+                            mLyricsSave.setEnabled(true);
+                        }
+                    } else {
+                        mLyrics.setText(R.string.lyrics_not_found);
+                    }
+                }
+            }
+
+        }.execute(new String[] { MusicUtils.getArtistName(), MusicUtils.getTrackName() }); 
     }
 
     /**

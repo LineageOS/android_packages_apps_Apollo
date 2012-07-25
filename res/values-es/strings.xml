@@ -10,7 +10,13 @@
     <string name="cd_play">Reproducir y pausar</string>
     <string name="cd_next">Saltar hacia delante</string>
     <string name="cd_shuffle">Pistas aleatorias</string>
+    
     <string name="nowplaying">Reproduciendo</string>
+    
+   	<!-- Lyrics -->
+    <string name="press_to_save">Pulsa para guardar la letra</string>
+    <string name="searching_lyrics">Buscando letra...</string>
+    <string name="lyrics_not_found">Letra no encontrada para esta canción</string>
 
     <plurals name="Nalbums">
         <item quantity="one">1 álbum</item>

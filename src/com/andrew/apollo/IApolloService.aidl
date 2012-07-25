@@ -38,5 +38,6 @@ interface IApolloService
 	void removeFromFavorites(long id);
 	boolean isFavorite(long id);
     void toggleFavorite();
+    String getFilePath();
 }
 
