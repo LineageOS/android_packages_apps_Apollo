@@ -73,7 +73,7 @@
     <string name="shuffle_on">Náhodné prehrávanie zapnuté</string>
 
     <!-- Share Intent -->
-    <string name="now_listening_to">Práve počúvaš:</string>
+    <string name="now_listening_to">Práve počúvate:</string>
     <string name="by">od</string>
     <string name="share_track_using">Zdieľať skladbu pomocou</string>
 
@@ -98,8 +98,8 @@
     <string name="eqalizer">Equalizer</string>
     <string name="header_interface">Rozhranie</string>
     <string name="themes">Vzhľad</string>
-    <string name="apollo_themes">Vyber tému pre Apollo</string>
-    <string name="select_theme">Vyber tvoju tému</string>
+    <string name="apollo_themes">Vyberte tému pre Apollo</string>
+    <string name="select_theme">Vyberte Vašu tému</string>
     <string name="version">Verzia Apolla</string>
 
     <!-- Settings keys -->
