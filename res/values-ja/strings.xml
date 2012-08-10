@@ -110,6 +110,14 @@
     <string name="save">保存</string>
     <string name="overwrite">上書き</string>
 
+    <!-- Tabs -->
+    <string name="tab_recent">新着</string>
+    <string name="tab_artists">アーティスト</string>
+    <string name="tab_albums">アルバム</string>
+    <string name="tab_songs">曲</string>
+    <string name="tab_playlists">プレイリスト</string>
+    <string name="tab_genres">ジャンル</string>
+
     <!-- Something went wrong -->
     <string name="error">エラー</string>
 
