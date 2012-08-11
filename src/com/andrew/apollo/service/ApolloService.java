@@ -15,12 +15,8 @@
 
 package com.andrew.apollo.service;
 
-import java.io.IOException;
-import java.lang.ref.WeakReference;
-import java.util.Random;
-import java.util.Vector;
-
 import android.app.Notification;
+import android.app.Notification.Builder;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -75,8 +71,14 @@ import com.andrew.apollo.utils.SharedPreferencesCompat;
 import com.androidquery.AQuery;
 
 import static com.andrew.apollo.Constants.ALBUM_IMAGE;
+import static com.andrew.apollo.Constants.ARTIST_IMAGE;
 import static com.andrew.apollo.Constants.APOLLO_PREFERENCES;
 import static com.andrew.apollo.Constants.DATA_SCHEME;
+
+import java.io.IOException;
+import java.lang.ref.WeakReference;
+import java.util.Random;
+import java.util.Vector;
 
 public class ApolloService extends Service {
     /**
@@ -103,6 +105,10 @@ public class ApolloService extends Service {
     public static final int REPEAT_CURRENT = 1;
 
     public static final int REPEAT_ALL = 2;
+
+    public static final String APOLLO_PACKAGE_NAME = "com.andrew.apollo";
+
+    public static final String MUSIC_PACKAGE_NAME = "com.android.music";
 
     public static final String PLAYSTATE_CHANGED = "com.andrew.apollo.playstatechanged";
 
@@ -904,6 +910,10 @@ public class ApolloService extends Service {
         i.putExtra("isfavorite", isFavorite());
         sendStickyBroadcast(i);
 
+        i = new Intent(i);
+        i.setAction(what.replace(APOLLO_PACKAGE_NAME, MUSIC_PACKAGE_NAME));
+        sendStickyBroadcast(i);
+
         if (what.equals(PLAYSTATE_CHANGED)) {
             mRemoteControlClient
                     .setPlaybackState(mIsSupposedToBePlaying ? RemoteControlClient.PLAYSTATE_PLAYING
@@ -1188,6 +1198,7 @@ public class ApolloService extends Service {
 
         AQuery aq = new AQuery(this);
         Bitmap b = aq.getCachedImage(ApolloUtils.getImageURL(getAlbumName(), ALBUM_IMAGE, this));
+        Bitmap a = aq.getCachedImage(ApolloUtils.getImageURL(getArtistName(), ARTIST_IMAGE, this));
 
         if (mPlayer.isInitialized()) {
             // if we are at the end of the song, go to the next song first
@@ -1200,14 +1211,8 @@ public class ApolloService extends Service {
             mMediaplayerHandler.sendEmptyMessage(FADEUP);
 
             RemoteViews views = new RemoteViews(getPackageName(), R.layout.status_bar);
-            if (b != null) {
-                views.setViewVisibility(R.id.status_bar_icon, View.GONE);
-                views.setViewVisibility(R.id.status_bar_album_art, View.VISIBLE);
-                views.setImageViewBitmap(R.id.status_bar_album_art, b);
-            } else {
-                views.setViewVisibility(R.id.status_bar_icon, View.VISIBLE);
-                views.setViewVisibility(R.id.status_bar_album_art, View.GONE);
-            }
+            PendingIntent[] expandedIntents = new PendingIntent[3];
+
             ComponentName rec = new ComponentName(getPackageName(),
                     MediaButtonIntentReceiver.class.getName());
             Intent mediaButtonIntent = new Intent(Intent.ACTION_MEDIA_BUTTON);
@@ -1218,25 +1223,58 @@ public class ApolloService extends Service {
             mediaButtonIntent.putExtra(Intent.EXTRA_KEY_EVENT, mediaKey);
             PendingIntent mediaPendingIntent = PendingIntent.getBroadcast(getApplicationContext(),
                     1, mediaButtonIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            views.setOnClickPendingIntent(R.id.status_bar_play, mediaPendingIntent);
+            expandedIntents[0] = mediaPendingIntent;
+            views.setOnClickPendingIntent(R.id.status_bar_play, expandedIntents[0]);
             mediaButtonIntent.putExtra(CMDNOTIF, 2);
             mediaKey = new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_NEXT);
             mediaButtonIntent.putExtra(Intent.EXTRA_KEY_EVENT, mediaKey);
             mediaPendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 2,
                     mediaButtonIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            views.setOnClickPendingIntent(R.id.status_bar_next, mediaPendingIntent);
+            expandedIntents[1] = mediaPendingIntent;
+            views.setOnClickPendingIntent(R.id.status_bar_next, expandedIntents[1]);
             mediaButtonIntent.putExtra(CMDNOTIF, 3);
             mediaKey = new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_STOP);
             mediaButtonIntent.putExtra(Intent.EXTRA_KEY_EVENT, mediaKey);
             mediaPendingIntent = PendingIntent.getBroadcast(getApplicationContext(), 3,
                     mediaButtonIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-            views.setOnClickPendingIntent(R.id.status_bar_collapse, mediaPendingIntent);
+            expandedIntents[2] = mediaPendingIntent;
+            views.setOnClickPendingIntent(R.id.status_bar_collapse, expandedIntents[2]);
             views.setImageViewResource(R.id.status_bar_play, R.drawable.apollo_holo_dark_pause);
 
             views.setTextViewText(R.id.status_bar_track_name, getTrackName());
             views.setTextViewText(R.id.status_bar_artist_name, getArtistName());
 
+            if (!mIsSupposedToBePlaying) {
+                mIsSupposedToBePlaying = true;
+                notifyChange(PLAYSTATE_CHANGED);
+            }
+
             status = new Notification();
+            if (b != null) {
+                views.setViewVisibility(R.id.status_bar_icon, View.GONE);
+                views.setViewVisibility(R.id.status_bar_album_art, View.VISIBLE);
+                views.setImageViewBitmap(R.id.status_bar_album_art, b);
+                if(a != null){
+                    status = new Notification.BigPictureStyle(
+                        new Notification.Builder(this)
+                            .setTicker(getTrackName())
+                            .setContentTitle(getTrackName())
+                            .setContentText(getArtistName())
+                            .setLargeIcon(b)
+                            .addAction(mIsSupposedToBePlaying ? R.drawable.apollo_holo_dark_pause : R.drawable.apollo_holo_dark_play, null, expandedIntents[0])
+                            .addAction(R.drawable.apollo_holo_dark_next, null, expandedIntents[1])
+                            .addAction(R.drawable.apollo_holo_dark_notifiation_bar_collapse_big, null, expandedIntents[2]))
+                        .setBigContentTitle(getTrackName())
+                        .setSummaryText(getArtistName())
+                        .bigPicture(a)
+                        .build();
+                }
+            } else {
+                views.setViewVisibility(R.id.status_bar_icon, View.VISIBLE);
+                views.setViewVisibility(R.id.status_bar_album_art, View.GONE);
+            }
+
+
             status.contentView = views;
             status.flags = Notification.FLAG_ONGOING_EVENT;
             status.icon = R.drawable.stat_notify_music;
@@ -1244,10 +1282,6 @@ public class ApolloService extends Service {
                     .getActivity(this, 0, new Intent("com.andrew.apollo.PLAYBACK_VIEWER")
                             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK), 0);
             startForeground(PLAYBACKSERVICE_STATUS, status);
-            if (!mIsSupposedToBePlaying) {
-                mIsSupposedToBePlaying = true;
-                notifyChange(PLAYSTATE_CHANGED);
-            }
         } else if (mPlayListLen <= 0) {
             // This is mostly so that if you press 'play' on a bluetooth headset
             // without every having played anything before, it will still play
@@ -1476,9 +1510,9 @@ public class ApolloService extends Service {
         mDelayedStopHandler.sendMessageDelayed(msg, IDLE_DELAY);
         stopForeground(false);
         if (status != null) {
-            status.contentView.setImageViewResource(R.id.status_bar_play,
+            /*status.contentView.setImageViewResource(R.id.status_bar_play,
                     mIsSupposedToBePlaying ? R.drawable.apollo_holo_dark_play
-                            : R.drawable.apollo_holo_dark_pause);
+                            : R.drawable.apollo_holo_dark_pause);*/
             NotificationManager mManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
             mManager.notify(PLAYBACKSERVICE_STATUS, status);
         }
