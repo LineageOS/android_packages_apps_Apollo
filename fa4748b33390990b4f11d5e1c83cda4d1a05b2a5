@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAWH///NI\u003d",
+        "filename": "res/values-hr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2012-08-17T01:33:26Z",
+      "side": 1,
+      "message": "Those strings shouldn\u0027t be here!\n\ntranslatable\u003d\"false is here for a reason. :-)",
+      "revId": "fa4748b33390990b4f11d5e1c83cda4d1a05b2a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
