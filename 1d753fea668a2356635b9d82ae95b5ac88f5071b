@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAWn///2E\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 4297
+      },
+      "writtenOn": "2012-08-23T15:36:23Z",
+      "side": 1,
+      "message": "Kan mogelijk naar plurals.xml",
+      "revId": "1d753fea668a2356635b9d82ae95b5ac88f5071b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAWn///2A\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 4297
+      },
+      "writtenOn": "2012-08-23T15:36:23Z",
+      "side": 1,
+      "message": "Is dit voluit te lang?",
+      "revId": "1d753fea668a2356635b9d82ae95b5ac88f5071b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
