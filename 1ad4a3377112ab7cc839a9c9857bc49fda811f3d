@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAWn///hE\u003d",
+        "filename": "res/values-nl/plurals.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2012-08-23T23:09:41Z",
+      "side": 1,
+      "message": "Waarom hier een punt en hierboven niet?",
+      "revId": "1ad4a3377112ab7cc839a9c9857bc49fda811f3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
