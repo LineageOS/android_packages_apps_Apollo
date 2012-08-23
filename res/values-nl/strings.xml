@@ -15,6 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- App name -->
+    <string name="app_name">Apollo</string>
+
     <!-- Content descriptions for the Bottom Action Bar -->
     <string name="cd_favorite">Hiervan een favoriet nummer maken</string>
     <string name="cd_search">Zoeken door muziek</string>
@@ -52,6 +55,7 @@
     <string name="settings">Instellingen</string>
     <string name="shuffle_all">Alles willekeurig afspelen</string>
     <string name="share">Delen</string>
+    <string name="play_store">Play Store</string>
 
     <!-- Set track as ringtone -->
     <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" instellen als beltoon</string>
@@ -79,6 +83,11 @@
     <string name="search">Zoeken</string>
     <string name="remove">Verwijderen uit afspeellijst</string>
 
+    <!-- App Widgets -->
+    <string name="apollo_1x1">Apollo (1x1)</string>
+    <string name="apollo_4x1">Apollo (4x1)</string>
+    <string name="apollo_4x2">Apollo (4x2)</string>
+
     <!-- Unknown genre name -->
     <string name="unknown">Onbekend</string>
 
@@ -86,14 +95,14 @@
     <string name="about">Over Apollo</string>
     <string name="eqalizer">Equalizer</string>
     <string name="header_interface">Uiterlijk</string>
-    <string name="themes">Thema\'s</string>
+    <string name="themes">Thema&#8216;s</string>
     <string name="apollo_themes">Thema voor Apollo selecteren</string>
     <string name="select_theme">Selecteer uw thema</string>
     <string name="version">Apollo-versie</string>
 
     <!-- Theme layout Buttons -->
     <string name="apply_theme">Thema toepassen</string>
-    <string name="get_more_themes">Meer thema\'s verkrijgen</string>
+    <string name="get_more_themes">Meer thema&#8216;s verkrijgen</string>
 
     <!-- Playlists menu -->
     <string name="favorite">Favorieten</string>
@@ -111,7 +120,13 @@
     <string name="tab_playlists">AFSPEELLIJSTEN</string>
     <string name="tab_genres">GENRES</string>
 
+    <!-- External file dialog -->
+    <string name="play_external_question_msg">Kies de toe te passen actie op: \n\n<b><xliff:g id="name">%s</xliff:g></b></string>
+    <string name="play_external_question_button_play">Afspelen</string>
+    <string name="play_external_question_button_queue">In wachtrij plaatsen</string>
+    <string name="play_external_question_button_cancel">Annuleren</string>
+    <string name="play_external_error">Kan bestand niet afspelen</string>
+
     <!-- Something went wrong -->
     <string name="error">Fout</string>
-
 </resources>
