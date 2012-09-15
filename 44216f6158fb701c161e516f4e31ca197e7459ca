@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAYX///VE\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2012-09-15T08:20:33Z",
+      "side": 1,
+      "message": "Remove trainling whitespace",
+      "revId": "44216f6158fb701c161e516f4e31ca197e7459ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
