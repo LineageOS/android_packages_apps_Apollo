@@ -62,23 +62,21 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.RemoteViews;
-import android.widget.Toast;
 
 import com.andrew.apollo.IApolloService;
 import com.andrew.apollo.R;
 import com.andrew.apollo.app.widgets.AppWidget11;
 import com.andrew.apollo.app.widgets.AppWidget41;
 import com.andrew.apollo.app.widgets.AppWidget42;
-import com.andrew.apollo.utils.ApolloUtils;
+import com.andrew.apollo.tasks.GetAlbumImageTask;
+import com.andrew.apollo.tasks.GetBitmapTask;
 import com.andrew.apollo.utils.MusicUtils;
 import com.andrew.apollo.utils.SharedPreferencesCompat;
-import com.androidquery.AQuery;
 
-import static com.andrew.apollo.Constants.ALBUM_IMAGE;
 import static com.andrew.apollo.Constants.APOLLO_PREFERENCES;
 import static com.andrew.apollo.Constants.DATA_SCHEME;
 
-public class ApolloService extends Service {
+public class ApolloService extends Service implements GetBitmapTask.OnBitmapReadyListener {
     /**
      * used to specify whether enqueue() should start playing the new list of
      * files right away, next or once all the currently queued files have been
@@ -255,6 +253,10 @@ public class ApolloService extends Service {
 
     private final AppWidget41 mAppWidgetProvider4x1 = AppWidget41.getInstance();
 
+    private String mAlbumBitmapTag;
+
+    private Bitmap mAlbumBitmap;
+
     // interval after which we stop the service when idle
     private static final int IDLE_DELAY = 60000;
 
@@ -302,6 +304,7 @@ public class ApolloService extends Service {
                         mCursor = null;
                     }
                     mCursor = getCursorForId(mPlayList[mPlayPos]);
+                    updateAlbumBitmap();
                     notifyChange(META_CHANGED);
                     updateNotification();
                     setNextTrack();
@@ -507,6 +510,7 @@ public class ApolloService extends Service {
             mCursor.close();
             mCursor = null;
         }
+        updateAlbumBitmap();
 
         unregisterReceiver(mIntentReceiver);
         if (mUnmountReceiver != null) {
@@ -937,9 +941,7 @@ public class ApolloService extends Service {
             ed.putString(MediaMetadataRetriever.METADATA_KEY_ALBUM, getAlbumName());
             ed.putString(MediaMetadataRetriever.METADATA_KEY_ARTIST, getArtistName());
             ed.putLong(MediaMetadataRetriever.METADATA_KEY_DURATION, duration());
-            AQuery aq = new AQuery(this);
-            Bitmap b = aq
-                    .getCachedImage(ApolloUtils.getImageURL(getAlbumName(), ALBUM_IMAGE, this));
+            Bitmap b = getAlbumBitmap();
             if (b != null) {
                 ed.putBitmap(MetadataEditor.BITMAP_KEY_ARTWORK, b);
             }
@@ -1000,6 +1002,7 @@ public class ApolloService extends Service {
         if (mPlayListLen == 0) {
             mCursor.close();
             mCursor = null;
+            updateAlbumBitmap();
             notifyChange(META_CHANGED);
         }
     }
@@ -1144,6 +1147,8 @@ public class ApolloService extends Service {
                 }
             }
 
+            updateAlbumBitmap();
+
             // go to bookmark if needed
             if (isPodcast()) {
                 long bookmark = getBookmark();
@@ -1216,6 +1221,8 @@ public class ApolloService extends Service {
                     }
                 } catch (UnsupportedOperationException ex) {
                 }
+
+                updateAlbumBitmap();
             }
             mFileToPlay = path;
             mPlayer.setDataSource(mFileToPlay);
@@ -1279,6 +1286,8 @@ public class ApolloService extends Service {
         mAudioManager.registerMediaButtonEventReceiver(new ComponentName(getPackageName(),
                 MediaButtonIntentReceiver.class.getName()));
 
+        Bitmap b = getAlbumBitmap();
+
         if (mPlayer.isInitialized()) {
             // if we are at the end of the song, go to the next song first
 
@@ -1303,9 +1312,7 @@ public class ApolloService extends Service {
     }
 
     private void updateNotification() {
-        AQuery aq = new AQuery(this);
-        Bitmap b = aq.getCachedImage(ApolloUtils.getImageURL(getAlbumName(), ALBUM_IMAGE, this));
-
+        Bitmap b = getAlbumBitmap();
         RemoteViews views = new RemoteViews(getPackageName(), R.layout.status_bar);
         if (b != null) {
             views.setViewVisibility(R.id.status_bar_icon, View.GONE);
@@ -1360,6 +1367,7 @@ public class ApolloService extends Service {
         if (mCursor != null) {
             mCursor.close();
             mCursor = null;
+            updateAlbumBitmap();
         }
         if (remove_status_icon) {
             gotoIdleState();
@@ -1791,10 +1799,36 @@ public class ApolloService extends Service {
                         play();
                     }
                 }
+                updateAlbumBitmap();
                 notifyChange(META_CHANGED);
             }
             return last - first + 1;
         }
+    }
+
+    private synchronized void updateAlbumBitmap()
+    {
+        if (mCursor == null)
+            return;
+
+        String tag = getArtistName() + " - " + getAlbumName();
+        if (tag == mAlbumBitmapTag)
+            return;
+
+        mAlbumBitmapTag = tag;
+        mAlbumBitmap = null;
+        new GetAlbumImageTask(getArtistName(), getAlbumName(), this, tag, this).execute();
+    }
+
+    @Override
+    public void bitmapReady(Bitmap bitmap, String tag) {
+        synchronized (this) {
+            if (tag.equals(mAlbumBitmapTag)) {
+                mAlbumBitmap = bitmap;
+            }
+        }
+        notifyChange(META_CHANGED);
+        updateNotification();
     }
 
     /**
@@ -1949,6 +1983,10 @@ public class ApolloService extends Service {
             }
             return mCursor.getLong(mCursor.getColumnIndexOrThrow(AudioColumns.ALBUM_ID));
         }
+    }
+
+    public Bitmap getAlbumBitmap() {
+        return mAlbumBitmap;
     }
 
     public String getTrackName() {
@@ -2323,6 +2361,11 @@ public class ApolloService extends Service {
         @Override
         public String getAlbumName() {
             return mService.get().getAlbumName();
+        }
+
+        @Override
+        public Bitmap getAlbumBitmap() {
+            return mService.get().getAlbumBitmap();
         }
 
         @Override
