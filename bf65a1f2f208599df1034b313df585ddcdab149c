@@ -1,0 +1,10 @@
+Change-Id: Ibf65a1f2f208599df1034b313df585ddcdab149c
+Code-Review+2: Steve Kondik <shade@chemlab.org>
+Verified+1: Steve Kondik <shade@chemlab.org>
+Code-Review+1: Dmitriy Chermenev <chdiman86@gmail.com>
+Code-Review+1: Anatoly Nechaev <mr.prayer@gmail.com>
+Submitted-by: Steve Kondik <shade@chemlab.org>
+Submitted-at: Tue, 18 Sep 2012 02:51:21 -0400
+Reviewed-on: http://review.cyanogenmod.com/23529
+Project: CyanogenMod/android_packages_apps_Apollo
+Branch: refs/heads/jellybean
