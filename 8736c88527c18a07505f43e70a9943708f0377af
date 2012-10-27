@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//9WE\u003d",
+        "filename": "src/com/andrew/apollo/service/ApolloService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 299,
+      "author": {
+        "id": 4785
+      },
+      "writtenOn": "2012-10-27T20:57:28Z",
+      "side": 1,
+      "message": "If mNextPlayPos is -1, is there any point in still setting mPlayPos ?\nWithout looking at the rest of the code, should it not be;\nif (mNextPlayPos \u003e\u003d 0 \u0026\u0026 mPlayList !\u003d null) {\n    mPlayPos \u003d mNextPlayPos\n    ....\n}",
+      "revId": "8736c88527c18a07505f43e70a9943708f0377af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
