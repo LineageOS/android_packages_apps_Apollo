@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAaH//9XA\u003d",
+        "filename": "src/com/andrew/apollo/service/ApolloService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1161,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2012-10-27T19:28:44Z",
+      "side": 1,
+      "message": "Please add spaces before and after the !\u003d",
+      "revId": "d3c38a98641ed6c2df04a1fe1ad35d2076dc28ec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
