@@ -297,14 +297,16 @@ public class ApolloService extends Service {
                     break;
                 case TRACK_WENT_TO_NEXT:
                     mPlayPos = mNextPlayPos;
-                    if (mCursor != null) {
-                        mCursor.close();
-                        mCursor = null;
+                    if (mPlayPos >= 0 && mPlayList != null) {
+                        if (mCursor != null) {
+                            mCursor.close();
+                            mCursor = null;
+                        }
+                        mCursor = getCursorForId(mPlayList[mPlayPos]);
+                        notifyChange(META_CHANGED);
+                        updateNotification();
+                        setNextTrack();
                     }
-                    mCursor = getCursorForId(mPlayList[mPlayPos]);
-                    notifyChange(META_CHANGED);
-                    updateNotification();
-                    setNextTrack();
                     break;
                 case TRACK_ENDED:
                     if (mRepeatMode == REPEAT_CURRENT) {
