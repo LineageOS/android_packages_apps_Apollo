@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAa3///kg\u003d",
+        "filename": "res/values-cs/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1558
+      },
+      "writtenOn": "2012-11-05T21:07:36Z",
+      "side": 1,
+      "message": "skladby",
+      "revId": "9cd393bf397e2f36d93a45ccf8009614c0de13ae",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
