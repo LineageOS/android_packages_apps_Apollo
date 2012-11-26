@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.os.RemoteException;
 import android.os.SystemClock;
 import android.support.v4.view.ViewPager;
 import android.view.View;
@@ -61,6 +62,7 @@ import com.andrew.apollo.widgets.PlayPauseButton;
 import com.andrew.apollo.widgets.RepeatButton;
 import com.andrew.apollo.widgets.RepeatingImageButton;
 import com.andrew.apollo.widgets.ShuffleButton;
+import com.musixmatch.lyrics.musiXmatchLyricsConnector;
 import com.nineoldandroids.animation.ObjectAnimator;
 
 import java.lang.ref.WeakReference;
@@ -151,7 +153,9 @@ public class AudioPlayerActivity extends SherlockFragmentActivity implements Ser
     private boolean mIsPaused = false;
 
     private boolean mFromTouch = false;
-
+    
+    private musiXmatchLyricsConnector lyricsPlugin= null;
+    
     /**
      * {@inheritDoc}
      */
@@ -196,6 +200,11 @@ public class AudioPlayerActivity extends SherlockFragmentActivity implements Ser
 
         // Cache all the items
         initPlaybackControls();
+        
+        // create the lyrics binding
+        lyricsPlugin = new musiXmatchLyricsConnector(this);
+        lyricsPlugin.setTestMode(false);
+        
     }
 
     /**
@@ -345,8 +354,19 @@ public class AudioPlayerActivity extends SherlockFragmentActivity implements Ser
                 NavUtils.openEffectsPanel(this);
                 return true;
             case R.id.menu_download_lyrics:
-                updateLyrics(true);
-                hideAlbumArt();
+                //updateLyrics(true);
+                //hideAlbumArt();
+        		if (lyricsPlugin.getIsBound())
+        			try {
+        				String mArtist = MusicUtils.getArtistName();
+        				String mSong = MusicUtils.getTrackName();
+
+        				lyricsPlugin.startLyricsActivity(mArtist,mSong);
+        			} catch (RemoteException e) {
+        				lyricsPlugin.downloadLyricsPlugin();
+        			}
+        		else
+        			lyricsPlugin.downloadLyricsPlugin();
                 return true;
             case R.id.menu_settings:
                 // Settings
@@ -381,6 +401,8 @@ public class AudioPlayerActivity extends SherlockFragmentActivity implements Ser
         updateNowPlayingInfo();
         // Refresh the queue
         ((QueueFragment)mPagerAdapter.getFragment(0)).refreshQueue();
+    	if (!lyricsPlugin.getIsBound())
+    		lyricsPlugin.doBindService();
     }
 
     /**
@@ -438,6 +460,8 @@ public class AudioPlayerActivity extends SherlockFragmentActivity implements Ser
         } catch (final Throwable e) {
             //$FALL-THROUGH$
         }
+    	if (lyricsPlugin.getIsBound())
+    		lyricsPlugin.doUnbindService();
     }
 
     /**
@@ -545,10 +569,10 @@ public class AudioPlayerActivity extends SherlockFragmentActivity implements Ser
      * Refreshes the lyrics and moves the view pager to the lyrics fragment.
      */
     public void updateLyrics(final boolean force) {
-        ((LyricsFragment)mPagerAdapter.getFragment(1)).fetchLyrics(force);
-        if (force && mViewPager.getCurrentItem() != 1) {
-            mViewPager.setCurrentItem(1, true);
-        }
+        //((LyricsFragment)mPagerAdapter.getFragment(1)).fetchLyrics(force);
+        //if (force && mViewPager.getCurrentItem() != 1) {
+        //    mViewPager.setCurrentItem(1, true);
+        //}
     }
 
     /**
