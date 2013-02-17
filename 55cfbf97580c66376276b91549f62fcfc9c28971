@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAdX//+L0\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Wys meer opsies",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Lk\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Herhaal een of almal",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Ls\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Speel tans",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Lo\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Skommel almal",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Lg\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Herhaal almal",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+Lc\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Herhaling af",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+LY\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Speel almal",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+LU\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Soek",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+LM\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Kies tema",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+LI\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Apollo weergawe",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+LE\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Pas tema toe",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+L4\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Kanselleer",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//+LA\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-02-17T01:22:35Z",
+      "side": 1,
+      "message": "Lêer kan nie gespeel word nie",
+      "revId": "55cfbf97580c66376276b91549f62fcfc9c28971",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
