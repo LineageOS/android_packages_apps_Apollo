@@ -67,19 +67,21 @@ public class ArtistAlbumAdapter extends SimpleCursorAdapter {
         // Artist name
         String artistName = mCursor.getString(ArtistAlbumsFragment.mArtistNameIndex);
 
+        // Album ID
+        long albumId = mCursor.getLong(ArtistAlbumsFragment.mAlbumIdIndex);
+
         // Number of songs
         int songs_plural = mCursor.getInt(ArtistAlbumsFragment.mSongCountIndex);
         String numSongs = MusicUtils.makeAlbumsLabel(mContext, 0, songs_plural, true);
         holderReference.get().mViewHolderLineTwo.setText(numSongs);
 
-        ImageUtils.setAlbumImage(viewholder.mViewHolderImage, artistName, albumName);
+        ImageUtils.setAlbumImage(viewholder.mViewHolderImage, albumId, artistName, albumName);
 
         holderReference.get().mQuickContext.setOnClickListener(showContextMenu);
 
         // Now playing indicator
         long currentalbumid = MusicUtils.getCurrentAlbumId();
-        long albumid = mCursor.getLong(ArtistAlbumsFragment.mAlbumIdIndex);
-        if (currentalbumid == albumid) {
+        if (currentalbumid == albumId) {
             holderReference.get().mPeakOne.setImageResource(R.anim.peak_meter_1);
             holderReference.get().mPeakTwo.setImageResource(R.anim.peak_meter_2);
             mPeakOneAnimation = (AnimationDrawable)holderReference.get().mPeakOne.getDrawable();

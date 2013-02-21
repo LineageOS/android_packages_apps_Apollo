@@ -57,12 +57,14 @@ public class AlbumAdapter extends SimpleCursorAdapter {
         String artistName = mCursor.getString(AlbumsFragment.mArtistNameIndex);
         holderReference.get().mViewHolderLineTwo.setText(artistName);
 
-        ImageUtils.setAlbumImage(viewholder.mViewHolderImage, artistName, albumName);
+        // Album ID
+        long albumId = mCursor.getLong(AlbumsFragment.mAlbumIdIndex);
+
+        ImageUtils.setAlbumImage(viewholder.mViewHolderImage, albumId, artistName, albumName);
 
         // Now playing indicator
         long currentalbumid = MusicUtils.getCurrentAlbumId();
-        long albumid = mCursor.getLong(AlbumsFragment.mAlbumIdIndex);
-        if (currentalbumid == albumid) {
+        if (currentalbumid == albumId) {
             holderReference.get().mPeakOne.setImageResource(R.anim.peak_meter_1);
             holderReference.get().mPeakTwo.setImageResource(R.anim.peak_meter_2);
             mPeakOneAnimation = (AnimationDrawable)holderReference.get().mPeakOne.getDrawable();

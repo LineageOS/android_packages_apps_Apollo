@@ -70,7 +70,8 @@ public class BottomActionBar extends LinearLayout implements OnClickListener, On
             // Album art
             ImageView mAlbumArt = (ImageView)bottomActionBar
                     .findViewById(R.id.bottom_action_bar_album_art);
-            ImageUtils.setAlbumImage(mAlbumArt, MusicUtils.getArtistName(), MusicUtils.getAlbumName());
+            ImageUtils.setAlbumImage(mAlbumArt, MusicUtils.getCurrentAlbumId(),
+                    MusicUtils.getArtistName(), MusicUtils.getAlbumName());
 
             // Favorite image
             ImageButton mFavorite = (ImageButton)bottomActionBar

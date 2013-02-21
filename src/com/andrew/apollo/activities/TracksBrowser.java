@@ -352,10 +352,11 @@ public class TracksBrowser extends FragmentActivity implements ServiceConnection
      * Cache and set album image
      */
     public void setAlbumImage() {
+        long id = bundle.getLong(BaseColumns._ID);
 
         // Album image
         final ImageView mSecondHalfImage = (ImageView)findViewById(R.id.half_album_image);
-        ImageUtils.setAlbumImage(mSecondHalfImage, getArtist(), getAlbum());
+        ImageUtils.setAlbumImage(mSecondHalfImage, id, getArtist(), getAlbum());
     }
 
     /**

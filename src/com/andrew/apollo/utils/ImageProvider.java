@@ -33,10 +33,10 @@ public class ImageProvider implements GetBitmapTask.OnBitmapReadyListener {
         }
     }
 
-    public void setAlbumImage(ImageView imageView, String artist, String album) {
+    public void setAlbumImage(ImageView imageView, long id, String artist, String album) {
         String tag = getAlbumTag(artist, album);
         if (!setCachedBitmap(imageView, tag)) {
-            asyncLoad(tag, imageView, new GetAlbumImageTask(artist, album, this, tag, imageView.getContext()));
+            asyncLoad(tag, imageView, new GetAlbumImageTask(id, artist, album, this, tag, imageView.getContext()));
         }
     }
 

@@ -61,7 +61,7 @@ public class QuickQueueFragment extends Fragment implements LoaderCallbacks<Curs
     private final int REMOVE = 1;
 
     // Audio columns
-    public static int mTitleIndex, mAlbumIndex, mArtistIndex, mMediaIdIndex;
+    public static int mTitleIndex, mAlbumIndex, mAlbumIdIndex, mArtistIndex, mMediaIdIndex;
 
     // Bundle
     public QuickQueueFragment() {
@@ -99,7 +99,8 @@ public class QuickQueueFragment extends Fragment implements LoaderCallbacks<Curs
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         String[] projection = new String[] {
-                BaseColumns._ID, MediaColumns.TITLE, AudioColumns.ALBUM, AudioColumns.ARTIST,
+                BaseColumns._ID, MediaColumns.TITLE, AudioColumns.ARTIST,
+                AudioColumns.ALBUM, AudioColumns.ALBUM_ID
         };
         StringBuilder selection = new StringBuilder();
         Uri uri = Audio.Media.EXTERNAL_CONTENT_URI;
@@ -133,6 +134,7 @@ public class QuickQueueFragment extends Fragment implements LoaderCallbacks<Curs
         mTitleIndex = data.getColumnIndexOrThrow(MediaColumns.TITLE);
         mArtistIndex = data.getColumnIndexOrThrow(AudioColumns.ARTIST);
         mAlbumIndex = data.getColumnIndexOrThrow(AudioColumns.ALBUM);
+        mAlbumIdIndex = data.getColumnIndexOrThrow(AudioColumns.ALBUM_ID);
         mQuickQueueAdapter.changeCursor(data);
         mCursor = data;
     }

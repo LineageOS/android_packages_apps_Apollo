@@ -561,6 +561,7 @@ public class AudioPlayerFragment extends Fragment {
             return;
         }
 
+        long albumId = MusicUtils.getCurrentAlbumId();
         String artistName = MusicUtils.getArtistName();
         String albumName = MusicUtils.getAlbumName();
         String trackName = MusicUtils.getTrackName();
@@ -569,7 +570,7 @@ public class AudioPlayerFragment extends Fragment {
         mDuration = MusicUtils.getDuration();
         mTotalTime.setText(MusicUtils.makeTimeString(getActivity(), mDuration / 1000));
 
-        ImageUtils.setAlbumImage(mAlbumArt, artistName, albumName);
+        ImageUtils.setAlbumImage(mAlbumArt, albumId, artistName, albumName);
 
         // Theme chooser
         ThemeUtils.setTextColor(getActivity(), mTrackName, "audio_player_text_color");

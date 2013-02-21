@@ -50,7 +50,7 @@ public class RecentlyAddedFragment extends Fragment implements LoaderCallbacks<C
     private Cursor mCursor;
 
     // Audio columns
-    public static int mTitleIndex, mAlbumIndex, mArtistIndex, mMediaIdIndex;
+    public static int mTitleIndex, mAlbumIndex, mAlbumIdIndex, mArtistIndex, mMediaIdIndex;
 
     // Bundle
     public RecentlyAddedFragment() {
@@ -84,7 +84,8 @@ public class RecentlyAddedFragment extends Fragment implements LoaderCallbacks<C
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         String[] projection = new String[] {
-                BaseColumns._ID, MediaColumns.TITLE, AudioColumns.ALBUM, AudioColumns.ARTIST
+                BaseColumns._ID, MediaColumns.TITLE, AudioColumns.ARTIST,
+                AudioColumns.ALBUM, AudioColumns.ALBUM_ID
         };
         StringBuilder where = new StringBuilder();
         String sortOrder = MediaColumns.DATE_ADDED + " DESC";
@@ -109,6 +110,7 @@ public class RecentlyAddedFragment extends Fragment implements LoaderCallbacks<C
         mTitleIndex = data.getColumnIndexOrThrow(MediaColumns.TITLE);
         mArtistIndex = data.getColumnIndexOrThrow(AudioColumns.ARTIST);
         mAlbumIndex = data.getColumnIndexOrThrow(AudioColumns.ALBUM);
+        mAlbumIdIndex = data.getColumnIndexOrThrow(AudioColumns.ALBUM_ID);
         mRecentlyAddedAdapter.changeCursor(data);
         mCursor = data;
     }

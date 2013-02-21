@@ -141,7 +141,8 @@ public class SettingsHolder extends PreferenceActivity implements ServiceConnect
         TextView mTrackName = (TextView)view.findViewById(R.id.action_bar_track_name);
         TextView mAlbumName = (TextView)view.findViewById(R.id.action_bar_album_name);
 
-        ImageUtils.setAlbumImage(mAlbumArt, MusicUtils.getArtistName(), MusicUtils.getAlbumName());
+        ImageUtils.setAlbumImage(mAlbumArt, MusicUtils.getCurrentAlbumId(),
+                MusicUtils.getArtistName(), MusicUtils.getAlbumName());
 
         mTrackName.setText(MusicUtils.getTrackName());
         mAlbumName.setText(MusicUtils.getAlbumName());

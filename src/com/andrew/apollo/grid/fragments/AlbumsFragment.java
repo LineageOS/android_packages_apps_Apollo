@@ -227,6 +227,8 @@ public class AlbumsFragment extends Fragment implements LoaderCallbacks<Cursor>,
      * @return A custom ContextMenu header
      */
     public View setHeaderLayout() {
+        // Get album id
+        long albumId = mCursor.getLong(mAlbumIdIndex);
         // Get album name
         String albumName = mCursor.getString(mAlbumNameIndex);
         // Get artist name
@@ -239,7 +241,7 @@ public class AlbumsFragment extends Fragment implements LoaderCallbacks<Cursor>,
         // Artist image
         ImageView headerImage = (ImageView)header.findViewById(R.id.header_image);
 
-        ImageUtils.setAlbumImage(headerImage, artistName, albumName);
+        ImageUtils.setAlbumImage(headerImage, albumId, artistName, albumName);
 
         // Set artist name
         TextView headerText = (TextView)header.findViewById(R.id.header_text);

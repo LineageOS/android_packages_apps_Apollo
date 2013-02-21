@@ -12,8 +12,8 @@ public class ImageUtils {
         getImageProvider().setArtistImage(imageView, artist);
     }
 
-    public static void setAlbumImage(ImageView imageView, String artist, String album) {
-        getImageProvider().setAlbumImage(imageView, artist, album);
+    public static void setAlbumImage(ImageView imageView, long id, String artist, String album) {
+        getImageProvider().setAlbumImage(imageView, id, artist, album);
     }
 
     private static ImageProvider getImageProvider() {

@@ -46,8 +46,6 @@ public class RecentlyAddedAdapter extends SimpleCursorAdapter {
         } else {
             viewholder = (ViewHolderList)convertView.getTag();
         }
-        // AQuery
-        final AQuery aq = new AQuery(convertView);
 
         // Track name
         String trackName = mCursor.getString(RecentlyAddedFragment.mTitleIndex);
@@ -60,7 +58,10 @@ public class RecentlyAddedAdapter extends SimpleCursorAdapter {
         // Album name
         String albumName = mCursor.getString(RecentlyAddedFragment.mAlbumIndex);
 
-        ImageUtils.setAlbumImage(viewholder.mViewHolderImage, artistName, albumName);
+        // Album ID
+        long albumId = mCursor.getLong(RecentlyAddedFragment.mAlbumIdIndex);
+
+        ImageUtils.setAlbumImage(viewholder.mViewHolderImage, albumId, artistName, albumName);
 
         holderReference.get().mQuickContext.setVisibility(View.GONE);
 

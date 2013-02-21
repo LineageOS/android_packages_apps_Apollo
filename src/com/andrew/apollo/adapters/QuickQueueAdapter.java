@@ -54,8 +54,11 @@ public class QuickQueueAdapter extends SimpleCursorAdapter {
         String trackName = mCursor.getString(QuickQueueFragment.mTitleIndex);
         holderReference.get().mTrackName.setText(trackName);
 
+        // Album id
+        long albumId = mCursor.getLong(QuickQueueFragment.mAlbumIdIndex);
+
         ImageUtils.setArtistImage(viewholder.mArtistImage, artistName);
-        ImageUtils.setAlbumImage(viewholder.mAlbumArt, artistName, albumName);
+        ImageUtils.setAlbumImage(viewholder.mAlbumArt, -1, artistName, albumName);
 
         return view;
     }

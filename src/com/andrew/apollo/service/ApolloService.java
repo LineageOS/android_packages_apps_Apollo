@@ -1831,7 +1831,8 @@ public class ApolloService extends Service implements GetBitmapTask.OnBitmapRead
 
         mAlbumBitmapTag = tag;
         mAlbumBitmap = null;
-        mAlbumBitmapTask = new GetAlbumImageTask(getArtistName(), getAlbumName(), this, tag, this);
+        mAlbumBitmapTask = new GetAlbumImageTask(getAlbumId(),
+                getArtistName(), getAlbumName(), this, tag, this);
         mAlbumBitmapTask.execute();
     }
 

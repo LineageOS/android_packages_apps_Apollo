@@ -42,6 +42,11 @@ public abstract class GetBitmapTask extends AsyncTask<String, Integer, Bitmap> {
 
         if (ImageUtils.DEBUG) Log.v(TAG, "Get image for: " + mTag);
 
+        Bitmap bitmap = getBitmap(context);
+        if (bitmap != null && !isCancelled()) {
+            return bitmap;
+        }
+
         File file = findCachedFile(context);
 
         if (file == null && !isCancelled()) {
@@ -52,7 +57,7 @@ public abstract class GetBitmapTask extends AsyncTask<String, Integer, Bitmap> {
             return null;
         }
 
-        Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
+        bitmap = BitmapFactory.decodeFile(file.getAbsolutePath());
 
         if (bitmap == null) {
             if (ImageUtils.DEBUG) Log.w(TAG, "Error decoding bitmap: " + file.getAbsolutePath());
@@ -61,6 +66,10 @@ public abstract class GetBitmapTask extends AsyncTask<String, Integer, Bitmap> {
 
         if (ImageUtils.DEBUG) Log.d(TAG, "Bitmap decoded: " + mTag + " size:" + bitmap.getWidth() + "x" + bitmap.getHeight());
         return bitmap;
+    }
+
+    protected Bitmap getBitmap(Context context) {
+        return null;
     }
 
     protected abstract String getImageUrl();
