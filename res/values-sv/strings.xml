@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App name -->
+    <string name="app_name">Apollo</string>
+
+    <!-- Content descriptions for the Bottom Action Bar -->
+    <string name="cd_favorite">Markera låt som favorit</string>
+    <string name="cd_search">Sök igenom din musik</string>
+    <string name="cd_overflow">Fler alternativ</string>
+    <string name="cd_bottom_action_bar_album_art">Skivkonvolut för denna låt</string>
+    <string name="cd_repeat">Upprepa en eller flera</string>
+    <string name="cd_previous">Hoppa bakåt</string>
+    <string name="cd_play">Spela upp och pausa</string>
+    <string name="cd_next">Hoppa framåt</string>
+    <string name="cd_shuffle">Slumpa låtar</string>
+
+    <!-- AudioPlayer title -->
+    <string name="nowplaying">Nu spelas</string>
+
+    <!-- Used to indicate the number of albums for an artist -->
+    <plurals name="Nalbums">
+
+        <!-- Number of albums is one -->
+        <item quantity="one">1 album</item>
+        <!-- Number of albums is more than one -->
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> album</item>
+    </plurals>
+
+    <!-- Used to indicate the number of songs for an album -->
+
+    <plurals name="Nsongs">
+
+        <!-- Number of songs is one -->
+        <item quantity="one">1 låt</item>
+        <item quantity="other"><xliff:g id="count">%d</xliff:g> låtar</item>
+    </plurals>
+
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 låt tillagd i spellista</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> låtar tillagda i spellista</item>
+    </plurals>
+
+    <!-- Headers -->
+    <string name="album_header">ALBUMLISTA</string>
+    <string name="track_header">LÅTLISTA</string>
+
+    <!-- Options MenuItems -->
+    <string name="settings">Inställningar</string>
+    <string name="shuffle_all">Slumpa alla</string>
+    <string name="share">Dela</string>
+    <string name="play_store">Play Butik</string>
+
+    <!-- Set track as ringtone -->
+    <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" använd som ringsignal</string>
+
+    <!-- Do not translate. Duration format for duration < 1 hour -->
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+    <!-- Do not translate. Duration format for duration >= 1 hour -->
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g></string>
+
+    <!-- Transient popup message shown after renaming a playlist -->
+    <string name="rename_playlist">Byt spellistans namn</string>
+
+    <!-- Shuffle and repeat messages -->
+    <string name="repeat_one">Upprepa en</string>
+    <string name="repeat_all">Upprepa alla</string>
+    <string name="repeat_off">Upprepning av</string>
+    <string name="shuffle_off">Slumpa av</string>
+    <string name="shuffle_on">Slumpa på</string>
+
+    <!-- Share Intent -->
+    <string name="now_listening_to">Lyssnar på:</string>
+    <string name="by">av</string>
+    <string name="share_track_using">Dela via</string>
+
+    <!-- ContextMenu items -->
+    <string name="play_all">Spela alla</string>
+    <string name="add_to_playlist">Lägg till i spellista</string>
+    <string name="use_as_ringtone">Använd som ringsignal</string>
+    <string name="delete_playlist">Ta bort spellista</string>
+    <string name="search">Sök</string>
+    <string name="remove">Ta bort från spellista</string>
+
+    <!-- App Widgets -->
+    <string name="apollo_1x1">Apollo (1x1)</string>
+    <string name="apollo_4x1">Apollo (4x1)</string>
+    <string name="apollo_4x2">Apollo (4x2)</string>
+
+    <!-- Unknown genre name -->
+    <string name="unknown">Okänd</string>
+
+    <!-- Settings -->
+    <string name="about">Om Apollo</string>
+    <string name="eqalizer">Equalizer</string>
+    <string name="header_interface">Gränssnitt</string>
+    <string name="themes">Teman</string>
+    <string name="apollo_themes">Välj tema för Apollo</string>
+    <string name="select_theme">Välj tema</string>
+    <string name="version">Apollo Version</string>
+
+    <!-- Settings keys -->
+    <string name="key_themes" translatable="false">themepreview</string>
+    <string name="key_themes_package" translatable="false">themePackageName</string>
+    <string name="key_themes_preferences" translatable="false">themePrefences</string>
+    <string name="key_build_version" translatable="false">build_version</string>
+
+    <!-- Theme layout Buttons -->
+    <string name="apply_theme">Tillämpa</string>
+    <string name="get_more_themes">Skaffa fler teman</string>
+
+    <!-- Playlists menu -->
+    <string name="favorite">Favoriter</string>
+    <string name="queue">Spelkö</string>
+    <string name="new_playlist">Ny</string>
+    <string name="new_playlist_name_template">Spellista <xliff:g id="number">%d</xliff:g></string>
+    <string name="save">Spara</string>
+    <string name="overwrite">Skriv över</string>
+
+    <!-- Tabs -->
+    <string name="tab_recent">SENASTE</string>
+    <string name="tab_artists">ARTISTER</string>
+    <string name="tab_albums">ALBUM</string>
+    <string name="tab_songs">LÅTAR</string>
+    <string name="tab_playlists">SPELLISTOR</string>
+    <string name="tab_genres">GENRER</string>
+
+    <!-- Something went wrong -->
+    <string name="error">Fel</string>
+
+</resources>
