@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//5Cg\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-03T03:24:48Z",
+      "side": 1,
+      "message": "Yes",
+      "parentUuid": "AAAAdX//5Dc\u003d",
+      "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//5DY\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-03-03T03:12:44Z",
       "side": 1,
       "message": "- ALBUMLYS",
+      "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//5Co\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-03T03:24:48Z",
+      "side": 1,
+      "message": "Yes",
+      "parentUuid": "AAAAdX//5DY\u003d",
       "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//5Ck\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-03T03:24:48Z",
+      "side": 1,
+      "message": "Yes",
+      "parentUuid": "AAAAdX//5DU\u003d",
+      "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//5DM\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2013-03-03T03:12:44Z",
       "side": 1,
       "message": "- Play Store (or is this localized?)",
+      "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//5Cs\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-03T03:24:48Z",
+      "side": 1,
+      "message": "Dont know where this is used.",
+      "parentUuid": "AAAAdX//5DM\u003d",
       "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//5C4\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-03T03:24:48Z",
+      "side": 1,
+      "message": "No. Should be \u0027deur\u0027",
+      "parentUuid": "AAAAdX//5DI\u003d",
+      "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//5DE\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 1
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAdX//5Cw\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-03T03:24:48Z",
+      "side": 1,
+      "message": "Yes",
+      "parentUuid": "AAAAdX//5DE\u003d",
+      "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAdX//5DA\u003d",
         "filename": "res/values-af/strings.xml",
         "patchSetId": 1
@@ -115,6 +223,24 @@
       "writtenOn": "2013-03-03T03:12:44Z",
       "side": 1,
       "message": "- Apollo-weergawe (?)",
+      "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAdX//5C0\u003d",
+        "filename": "res/values-af/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1576
+      },
+      "writtenOn": "2013-03-03T03:24:48Z",
+      "side": 1,
+      "message": "Apollo inligting",
+      "parentUuid": "AAAAdX//5DA\u003d",
       "revId": "1dba0a65018585f1ab0016aff586ef0d6908c56b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
