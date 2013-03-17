@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAeX//6xk\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "Elözmények, meg a többi helyen is",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//60g\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -13,6 +30,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Véletlenszerü lejátszás",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6xo\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "AAAAeX//60g\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -36,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6xs\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "nem lejátszási, max Dalok listája\nA lejátszási lista a Playlist",
+      "parentUuid": "AAAAeX//60c\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//60k\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -47,6 +100,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Ezzel végleg törli...",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6xg\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "AAAAeX//60k\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -70,6 +141,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6yg\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "Tévedsz, ezek a magyarra linkelnek. Nem akartam duplikálni a sorokat.",
+      "parentUuid": "AAAAeX//60Y\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//60U\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -81,6 +170,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Ezt nem kéne áthozni, elég, ha a values/strings.xml-ben ott van.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6x4\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "lsd feljebb",
+      "parentUuid": "AAAAeX//60U\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -104,6 +211,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6x0\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "lsd feljebb",
+      "parentUuid": "AAAAeX//60Q\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//60M\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -115,6 +240,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Ezt nem kéne áthozni, elég, ha a values/strings.xml-ben ott van.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6xw\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "lsd feljebb",
+      "parentUuid": "AAAAeX//60M\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -138,6 +281,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6xc\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "AAAAeX//60E\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6z4\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -149,6 +310,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "c\u003dv",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6yc\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "Upsz :)",
+      "parentUuid": "AAAAeX//6z4\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -172,6 +351,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6xY\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "nincs",
+      "parentUuid": "AAAAeX//6zw\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6zs\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -183,6 +380,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Ezeket kell fordítani? Van értelme?",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6xU\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "nincs",
+      "parentUuid": "AAAAeX//6zs\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -206,6 +421,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6yU\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "Ez úgy néz ki, hogy:\n\nA.J. Lopez\nAz ikonokat és Play Áruházbeli képet tervezte. (erre kellene majd javítani a szöveget, aláírom, a mostani hülyeség)",
+      "parentUuid": "AAAAeX//6zk\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6zc\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -217,6 +450,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Máshol asszem \u0027Wi-Fi-n\u0027-nek lett írva.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6yQ\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "uhh, 2 köt?jel sok a szememnek :) WiFi-n?",
+      "parentUuid": "AAAAeX//6zc\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -240,6 +491,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6yM\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "vesszö nem kell :) az R ok",
+      "parentUuid": "AAAAeX//6zU\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6zI\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -251,6 +520,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Ez még nem tudom mi, csak most fut a build. De ez mi? Kettöskereszt, egybeírás?",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6yI\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "Twitter hashtag",
+      "parentUuid": "AAAAeX//6zI\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -274,6 +561,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6yA\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "Szintén, Twitter hashtag",
+      "parentUuid": "AAAAeX//6zE\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6zA\u003d",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 1
@@ -285,6 +590,24 @@
       "writtenOn": "2013-03-17T23:41:38Z",
       "side": 1,
       "message": "Használjon USB kábelt a számítógépröl történö zenék másolásához.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6xQ\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 1573
+      },
+      "writtenOn": "2013-03-17T23:58:59Z",
+      "side": 1,
+      "message": "öööö\nalszok rá egyet",
+      "parentUuid": "AAAAeX//6zA\u003d",
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
