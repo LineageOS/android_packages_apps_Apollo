@@ -1,0 +1,191 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//69A\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "\"Vosproizvesti vse\". Nenavizhu slovo \"igrat\u0027\" primenitelno k muzike.",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//688\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "Dumayu, ne nuzhno pisat\u0027 vtoroe slovo s bolshoy bukvi...",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//68s\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "tak zhe i zdes\u0027, vtoroe slovo nuzhno pisat\u0027 s malenkoy bukvi.",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//68w\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "i zdes\u0027.",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//68o\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "nu i v etih chetireh.",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//68k\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "typo",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//69E\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "Sudya po tomu, chto eto Toast-uvedomlenie, dolzhno byt \"Tema ustanovlena\"",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//68g\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "typo",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//69I\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "\"Ochistit\u0027 kesh\" zhe.",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//69Q\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "Tire ne hvataet (USB-kabel\u0027)",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//69M\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T17:09:43Z",
+      "side": 1,
+      "message": "Mozhno uprostit\u0027 do \"Proslushannie albomy\"",
+      "revId": "24ec31683f5a6bd2b51fcf9c2eaf191e32da2316",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
