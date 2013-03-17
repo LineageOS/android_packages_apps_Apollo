@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//61U\u003d",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 3916
+      },
+      "writtenOn": "2013-03-17T22:43:19Z",
+      "side": 1,
+      "message": "Shouldn\u0027t we remove msgid, since this is not AOSP?",
+      "revId": "557ca53313670b530817eeee07fc9f68832879d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//61Q\u003d",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 3916
+      },
+      "writtenOn": "2013-03-17T22:43:19Z",
+      "side": 1,
+      "message": "Elimin*a*re",
+      "revId": "557ca53313670b530817eeee07fc9f68832879d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//61M\u003d",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 3916
+      },
+      "writtenOn": "2013-03-17T22:43:19Z",
+      "side": 1,
+      "message": "I\u0027d remove this empty line.",
+      "revId": "557ca53313670b530817eeee07fc9f68832879d3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
