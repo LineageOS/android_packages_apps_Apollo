@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//66c\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-17T19:11:05Z",
+      "side": 1,
+      "message": "\"Proslushannie al\u0027bomy budut pokazani zdes\u0027\". Ya vvel v zabluzhdenie, pohozhe :)",
+      "revId": "228e1d938b9ec3503dc6faeda641944d508f7121",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
