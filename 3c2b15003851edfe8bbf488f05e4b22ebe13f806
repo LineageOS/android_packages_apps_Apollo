@@ -1,0 +1,293 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//60g\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Véletlenszerü lejátszás",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//60c\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Lejátszási lista",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//60k\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezzel végleg törli...",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//60Y\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezt nem kéne áthozni, elég, ha a values/strings.xml-ben ott van.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//60U\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezt nem kéne áthozni, elég, ha a values/strings.xml-ben ott van.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//60Q\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezt nem kéne áthozni, elég, ha a values/strings.xml-ben ott van.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//60M\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezt nem kéne áthozni, elég, ha a values/strings.xml-ben ott van.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//60E\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "eltávolítva az elözményekböl",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6z4\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "c\u003dv",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zw\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezeket kell fordítani? Van értelme?",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zs\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezeket kell fordítani? Van értelme?",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zk\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ezt még nem tudom mi, csak most fut a build. De egyelöre nagyon furán hangzik.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zc\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Máshol asszem \u0027Wi-Fi-n\u0027-nek lett írva.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zU\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "érdekében, (vesszö) .... letöltésRe.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zI\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ez még nem tudom mi, csak most fut a build. De ez mi? Kettöskereszt, egybeírás?",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zE\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Ez még nem tudom mi, csak most fut a build. De ez mi? Kettöskereszt?",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6zA\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 3214
+      },
+      "writtenOn": "2013-03-17T23:41:38Z",
+      "side": 1,
+      "message": "Használjon USB kábelt a számítógépröl történö zenék másolásához.",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
