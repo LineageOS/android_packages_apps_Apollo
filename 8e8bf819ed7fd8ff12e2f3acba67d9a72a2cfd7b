@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6e8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2013-03-18T17:46:01Z",
+      "side": 1,
+      "message": "\u0027Zuletzt gehört\u0027, \"Kürzlich gehört\u0027?",
+      "parentUuid": "AAAAeX//6fo\u003d",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6f4\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
