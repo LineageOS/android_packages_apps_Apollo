@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6to\u003d",
+        "filename": "res/values-fr/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Sûrement désolé je pensais avoir bien relu",
+      "parentUuid": "AAAAeX//6us\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6uo\u003d",
         "filename": "res/values-fr/plurals.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-03-18T03:51:22Z",
       "side": 1,
       "message": "Oubli de trad ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6tk\u003d",
+        "filename": "res/values-fr/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Idem",
+      "parentUuid": "AAAAeX//6uo\u003d",
       "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6tg\u003d",
+        "filename": "res/values-fr/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//6uk\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6ug\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 1
@@ -64,6 +118,41 @@
       "writtenOn": "2013-03-18T03:51:22Z",
       "side": 1,
       "message": "\"Paramètres\", j\u0027ai toujours vu paramètres",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6tU\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "C\u0027est vrai. En fait j\u0027ai lu ce qu\u0027il y avait marqué dans l\u0027ancien Apollo. Mais c\u0027était peut-être en Anglais (Preferences).",
+      "parentUuid": "AAAAeX//6ug\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6tQ\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Une coquille ici il manque un \u0027c\u0027",
       "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +176,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6tM\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//6uc\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6uY\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 1
@@ -98,6 +205,24 @@
       "writtenOn": "2013-03-18T03:51:22Z",
       "side": 1,
       "message": "pour la galerie, non ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6tE\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Non c\u0027est pour mettre une photo contenue dans la Galerie. Si par exemple tu as des photos d\u0027albums dans ta Galerie, ou bien que tu veux mettre une photo qui n\u0027a rien a voir.",
+      "parentUuid": "AAAAeX//6uY\u003d",
       "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -121,6 +246,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6tA\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//6uU\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6uQ\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 1
@@ -132,6 +275,24 @@
       "writtenOn": "2013-03-18T03:51:22Z",
       "side": 1,
       "message": "Définir \\\"\u003cxliff:g id\u003d\"name\" example\u003d\"Alarm Bell\"\u003e%s\u003c/xliff:g\u003e\\\" \ncomme sonnerie",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6s8\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Nan en fait c\u0027est : \\\"\u003cxliff:g id\u003d\"name\" example\u003d\"Alarm Bell\"\u003e%s\u003c/xliff:g\u003e\\\" défini comme sonnerie\n\nTu sais s\u0027il y a un autre terme que \"défini\" utilisé dans les autres traductions ?",
+      "parentUuid": "AAAAeX//6uQ\u003d",
       "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -155,6 +316,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6s4\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Idem. MAis je pense que c\u0027est \"défini comme thème\"",
+      "parentUuid": "AAAAeX//6uM\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6uI\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 1
@@ -166,6 +345,24 @@
       "writtenOn": "2013-03-18T03:51:22Z",
       "side": 1,
       "message": "Pas traduit ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6ss\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Oubli désolé\n\nDesign de l\u0027icône et de la bannière du Play Store",
+      "parentUuid": "AAAAeX//6uI\u003d",
       "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -189,6 +386,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6so\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//6uE\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6uA\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 1
@@ -200,6 +415,24 @@
       "writtenOn": "2013-03-18T03:51:22Z",
       "side": 1,
       "message": "depuis votre ordinateur vers votre appareil. C\u0027est plus joli je trouve :)",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6sk\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 5596
+      },
+      "writtenOn": "2013-03-18T04:18:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//6uA\u003d",
       "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
