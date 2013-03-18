@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6ak\u003d",
+        "filename": "res/values-pl/plurals.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 3136
+      },
+      "writtenOn": "2013-03-18T18:52:01Z",
+      "side": 1,
+      "message": "utworóy/ów -\u003e utwory/ów",
+      "revId": "2cd66fc716c272539179fa9f01a8ef9078f676bd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
