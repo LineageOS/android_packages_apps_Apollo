@@ -647,6 +647,24 @@
       "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6vU\u003d",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-03-18T03:03:45Z",
+      "side": 1,
+      "message": "Eddig Lacié a legjobb, annyit módosítanék rajta, hogy \"Zenék...\"",
+      "parentUuid": "AAAAeX//6vk\u003d",
+      "revId": "3c2b15003851edfe8bbf488f05e4b22ebe13f806",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
