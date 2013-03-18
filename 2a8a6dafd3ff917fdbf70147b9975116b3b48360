@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6UA\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T23:20:54Z",
+      "side": 1,
+      "message": "Il faut supprimer cette ligne : \u003cstring name\u003d\"apollo_themes_shop_key\" translatable\u003d\"false\"\u003eApollo Themes\u003c/string\u003e",
+      "revId": "2a8a6dafd3ff917fdbf70147b9975116b3b48360",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
