@@ -16,6 +16,24 @@
       "revId": "f230577707d68230f297ce621dce7469ff4ed811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6aw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T18:46:33Z",
+      "side": 1,
+      "message": "Das stimmt. Allerdings passt \u0027Fehlende Alben-Cover herunterladen\u0027 nicht mal auf\u0027s Nexus 4 :-(",
+      "parentUuid": "AAAAeX//6bA\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
