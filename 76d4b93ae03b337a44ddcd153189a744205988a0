@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6w0\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-18T01:09:53Z",
+      "side": 1,
+      "message": "Vozmojno luchshe \"Sortirovat\u0027 po\". Kstati v perevode otsutstvuet blok po kakim kriteriyam sortirovat\u0027: artistu, date, albomu - svertes\u0027 s originalom.",
+      "revId": "76d4b93ae03b337a44ddcd153189a744205988a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6y4\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-18T01:09:53Z",
+      "side": 1,
+      "message": "Tut bolshe podhodit Prosmotr. Sobstvenno Prosmotr - Prostoy ili Podronij ili Setka.",
+      "revId": "76d4b93ae03b337a44ddcd153189a744205988a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6wg\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-18T01:09:53Z",
+      "side": 1,
+      "message": "Slishkom neopredeljonno. Sperva daje ne ponjatno chto budet esli vybrat\u0027 etot punkt.",
+      "revId": "76d4b93ae03b337a44ddcd153189a744205988a0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
