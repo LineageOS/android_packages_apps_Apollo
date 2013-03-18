@@ -2,6 +2,108 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAeX//6ZM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "Worauf bezieht sich \u0027dies\u0027?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6ZI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "Standardfoto?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6ZE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "Album-Cover sieht merkwürdig aus.",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6ZA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "Interpretenbild",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Y8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "heißt es nicht PlayStore?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Y4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "Play Store-Banner sieht merkwürdig aus.",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6bA\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -31,6 +133,92 @@
       "side": 1,
       "message": "Das stimmt. Allerdings passt \u0027Fehlende Alben-Cover herunterladen\u0027 nicht mal auf\u0027s Nexus 4 :-(",
       "parentUuid": "AAAAeX//6bA\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Y0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "\u0027Fehlende Cover (herunter)laden\u0027?",
+      "parentUuid": "AAAAeX//6aw\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Yw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "\u0027fehlende Interpretenbilder (herunter)laden\u0027?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Ys\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "Sperrbildschirmsteuerung?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Yo\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "#nowplaying ist eine Variable?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Yg\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 4977
+      },
+      "writtenOn": "2013-03-18T20:10:19Z",
+      "side": 1,
+      "message": "Sollte die Ansprache an den Endbentuzer nicht entfernt werden? Dann wäre vielleicht \"Bitte ein USB-Kabel anschließen, um Musik vom PC auf das Gerät zu übertragen.\" passend.",
       "revId": "f230577707d68230f297ce621dce7469ff4ed811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
