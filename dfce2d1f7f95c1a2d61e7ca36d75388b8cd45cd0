@@ -16,6 +16,24 @@
       "revId": "dfce2d1f7f95c1a2d61e7ca36d75388b8cd45cd0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6TU\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T23:52:15Z",
+      "side": 1,
+      "message": "It\u0027s the search key used in the Play Store query URL. I don\u0027t think it makes much sense to translate that - e.g. what if this strong is translated, but the themes in the market are not?",
+      "parentUuid": "AAAAeX//6UY\u003d",
+      "revId": "dfce2d1f7f95c1a2d61e7ca36d75388b8cd45cd0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
