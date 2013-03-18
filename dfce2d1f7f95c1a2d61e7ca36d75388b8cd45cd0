@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6UY\u003d",
+        "filename": "res/values/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T23:14:25Z",
+      "side": 1,
+      "message": "Why it\u0027s translatable\u003dfalse ? We can translate that.",
+      "revId": "dfce2d1f7f95c1a2d61e7ca36d75388b8cd45cd0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
