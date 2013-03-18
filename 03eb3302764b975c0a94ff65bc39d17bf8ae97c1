@@ -229,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6sQ\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T04:28:47Z",
+      "side": 1,
+      "message": "Ok, avec le contexte je comprend mieux.",
+      "parentUuid": "AAAAeX//6tE\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6uU\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 1
@@ -299,6 +317,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6sM\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T04:28:47Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "AAAAeX//6s8\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6uM\u003d",
         "filename": "res/values-fr/strings.xml",
         "patchSetId": 1
@@ -328,6 +364,24 @@
       "side": 1,
       "message": "Idem. MAis je pense que c\u0027est \"défini comme thème\"",
       "parentUuid": "AAAAeX//6uM\u003d",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6sI\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T04:28:47Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "AAAAeX//6s4\u003d",
       "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
