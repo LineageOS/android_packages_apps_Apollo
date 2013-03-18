@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6YQ\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "Auf z.B. \u0027Album löschen\u0027 (das steht dann im Titel).\n\nDabei fällt mir auf, dass ich die Strings an der Stelle noch fixen muss: Im Moment steht da z.B. \u0027Löschen Album\u0027 (und das \u0027Löschen\u0027 kann nicht an die 2. Stelle gebracht werden).",
+      "parentUuid": "AAAAeX//6ZM\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6ZI\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2013-03-18T20:10:19Z",
       "side": 1,
       "message": "Standardfoto?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6YM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "OK",
+      "parentUuid": "AAAAeX//6ZI\u003d",
       "revId": "f230577707d68230f297ce621dce7469ff4ed811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6YE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "Wie wäre es mit einem konstruktiven Vorschlag? :-P",
+      "parentUuid": "AAAAeX//6ZE\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6ZA\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -64,6 +118,24 @@
       "writtenOn": "2013-03-18T20:10:19Z",
       "side": 1,
       "message": "Interpretenbild",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6YA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "OK",
+      "parentUuid": "AAAAeX//6ZA\u003d",
       "revId": "f230577707d68230f297ce621dce7469ff4ed811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6X8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "Nö. Zumindest das Launcher-Icon hat das Leerzeichen.",
+      "parentUuid": "AAAAeX//6Y8\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6Y4\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -98,6 +188,24 @@
       "writtenOn": "2013-03-18T20:10:19Z",
       "side": 1,
       "message": "Play Store-Banner sieht merkwürdig aus.",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6X4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "siehe oben - bitte einen konstruktiven Vorschlag",
+      "parentUuid": "AAAAeX//6Y4\u003d",
       "revId": "f230577707d68230f297ce621dce7469ff4ed811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -157,6 +265,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6X0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "Das klingt gut, aber...",
+      "parentUuid": "AAAAeX//6Y0\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6Yw\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -168,6 +294,24 @@
       "writtenOn": "2013-03-18T20:10:19Z",
       "side": 1,
       "message": "\u0027fehlende Interpretenbilder (herunter)laden\u0027?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Xw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "...das ist bestimmt zu lang. Ich probier\u0027s mal.",
+      "parentUuid": "AAAAeX//6Yw\u003d",
       "revId": "f230577707d68230f297ce621dce7469ff4ed811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -208,6 +352,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6Xs\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "Nee, das steht dann im Text, den man \u0027teilen\u0027 kann:\n\n#NowPlaying Liedtitel von Interpret #Apollo",
+      "parentUuid": "AAAAeX//6Yo\u003d",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6Yg\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 3
@@ -219,6 +381,24 @@
       "writtenOn": "2013-03-18T20:10:19Z",
       "side": 1,
       "message": "Sollte die Ansprache an den Endbentuzer nicht entfernt werden? Dann wäre vielleicht \"Bitte ein USB-Kabel anschließen, um Musik vom PC auf das Gerät zu übertragen.\" passend.",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Xo\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T20:30:07Z",
+      "side": 1,
+      "message": "Da die englische Original-Strings den Benutzer auch ansprechen (und wir es ja hier nicht mit Checkboxen o.Ä. zu tun haben), fande ich es an der Stelle ok.",
+      "parentUuid": "AAAAeX//6Yg\u003d",
       "revId": "f230577707d68230f297ce621dce7469ff4ed811",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
