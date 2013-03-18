@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6f8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T17:14:12Z",
+      "side": 1,
+      "message": "AOSP benutzt Anführungszeichen. Ich denke wir sollten das genauso machen.",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6f4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T17:14:12Z",
+      "side": 1,
+      "message": "Siehe Zeile 35",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6f0\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T17:14:12Z",
+      "side": 1,
+      "message": "Auf was bezieht sich denn das \"wiedergeben\" ?",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6fw\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T17:14:12Z",
+      "side": 1,
+      "message": "Siehe Zeile 35",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6gM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T17:14:12Z",
+      "side": 1,
+      "message": "Wie wäre es mit:\r\nDesign des Symbols und Play Store-Banners?",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6gI\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T17:14:12Z",
+      "side": 1,
+      "message": "Vorschlag:\r\nFarbakzent auswählen",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
