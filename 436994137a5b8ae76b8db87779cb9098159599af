@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6Ww\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T21:09:44Z",
+      "side": 1,
+      "message": "Sorry ist vielleicht kleinlich, aber müsste es nicht \"innerhalb des letzten Monats\" heißen?\r\n\r\nVorschlag:\r\nTitel welche innerhalb des letzten Monats gehört wurden, weden hier angezeigt.",
+      "revId": "436994137a5b8ae76b8db87779cb9098159599af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
