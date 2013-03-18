@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6us\u003d",
+        "filename": "res/values-fr/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "Oubli de trad ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uo\u003d",
+        "filename": "res/values-fr/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "Oubli de trad ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uk\u003d",
+        "filename": "res/values-fr/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "aux favoris",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6ug\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "\"Paramètres\", j\u0027ai toujours vu paramètres",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uc\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "Ajouter",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uY\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "pour la galerie, non ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uU\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "aux favoris",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uQ\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "Définir \\\"\u003cxliff:g id\u003d\"name\" example\u003d\"Alarm Bell\"\u003e%s\u003c/xliff:g\u003e\\\" \ncomme sonnerie",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uM\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "définir avec une minuscule ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uI\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "Pas traduit ?",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uE\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "égliseur \u003d\u003e égaliseur",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6uA\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "depuis votre ordinateur vers votre appareil. C\u0027est plus joli je trouve :)",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6t8\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T03:51:22Z",
+      "side": 1,
+      "message": "seront",
+      "revId": "03eb3302764b975c0a94ff65bc39d17bf8ae97c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
