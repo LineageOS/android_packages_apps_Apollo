@@ -16,6 +16,24 @@
       "revId": "436994137a5b8ae76b8db87779cb9098159599af",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Wg\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T21:11:52Z",
+      "side": 1,
+      "message": "Ich hab noch eine bessere Idee ... kommt gleich ;)",
+      "parentUuid": "AAAAeX//6Ww\u003d",
+      "revId": "436994137a5b8ae76b8db87779cb9098159599af",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
