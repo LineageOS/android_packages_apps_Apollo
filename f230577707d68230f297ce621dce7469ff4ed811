@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6bA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1053
+      },
+      "writtenOn": "2013-03-18T18:45:21Z",
+      "side": 1,
+      "message": "Ich hatte das so verstanden, dass die Cover nur heruntergeladen werden, wenn keine vorhanden sind. Von daher denke ich, dass im \"Fehlende\" doch eine wichtige Information steht. Bestehende Cover werden ja nicht überschrieben oder?",
+      "revId": "f230577707d68230f297ce621dce7469ff4ed811",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
