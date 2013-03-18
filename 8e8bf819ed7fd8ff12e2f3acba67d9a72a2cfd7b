@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6fo\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T17:24:40Z",
+      "side": 1,
+      "message": "Das ist für Namen usw. ok (\u0027Möchten Sie mit \"RANDOM DEVICE\" verbinden?\u0027), für Referenzen auf andere UI-Elemente finde ich das aber ziemlich hässlich - und IMHO müssen diese beiden Fälle nicht zwangsläufig gleich behandelt werden.\n\nViel lieber wäre mir aber, wenn wir für \u0027Recents\u0027 eine prägnantere Übersetzung als \u0027Vor Kurzem gehört\u0027 finden würden.",
+      "parentUuid": "AAAAeX//6f8\u003d",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6f4\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
@@ -47,6 +65,24 @@
       "writtenOn": "2013-03-18T17:14:12Z",
       "side": 1,
       "message": "Auf was bezieht sich denn das \"wiedergeben\" ?",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6fk\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T17:24:40Z",
+      "side": 1,
+      "message": "Hmm, ich hab jetzt mal in den Code geschaut und glaube, das sollte \u0027Als nächstes wiedergeben\u0027 heißen.\nWird im nächsten PS gefixt.",
+      "parentUuid": "AAAAeX//6f0\u003d",
       "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +123,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6fg\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T17:24:40Z",
+      "side": 1,
+      "message": "Ich schau mal, ob es dann noch kurz genug ist ;)",
+      "parentUuid": "AAAAeX//6gM\u003d",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6gI\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 2
@@ -98,6 +152,24 @@
       "writtenOn": "2013-03-18T17:14:12Z",
       "side": 1,
       "message": "Vorschlag:\r\nFarbakzent auswählen",
+      "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6fc\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-18T17:24:40Z",
+      "side": 1,
+      "message": "OK.",
+      "parentUuid": "AAAAeX//6gI\u003d",
       "revId": "8e8bf819ed7fd8ff12e2f3acba67d9a72a2cfd7b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
