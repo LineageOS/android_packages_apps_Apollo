@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6Uw\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T23:12:56Z",
+      "side": 1,
+      "message": "#NowPlaying \u003cxliff:g id\u003d\"title\"\u003e%1$s\u003c/xliff:g\u003e par \u003cxliff:g id\u003d\"a\nrtist\"\u003e%2$s\u003c/xliff:g\u003e #Apollo\n\npetit oubli",
+      "revId": "0b5cb05109136a5a02753dd06d254ee5923dc217",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Ug\u003d",
+        "filename": "res/values-fr/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 4808
+      },
+      "writtenOn": "2013-03-18T23:12:56Z",
+      "side": 1,
+      "message": "Je ne vois pas pourquoi c\u0027est passé en translatable\u003dfalse dans le fichier source. A mon avis c\u0027est une erreur, mais dans tous les cas il faut l\u0027enlever du fichier de traduction.",
+      "revId": "0b5cb05109136a5a02753dd06d254ee5923dc217",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
