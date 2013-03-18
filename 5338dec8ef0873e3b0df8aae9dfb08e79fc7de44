@@ -1,0 +1,242 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6n8\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "\"Reproducción aleatoria\". It fit in the menu.",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6ns\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "There is no other sort by date option. Being the only one, i prefer to use \"Fecha\". It has more sense for me. Up to you.",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6ng\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Buscar en Google",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nc\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Usar imagen previa",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6m0\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Typo: carátula",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nY\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "There is no inconsistency with \"menu_shuffle\"?",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nU\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Same here",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nQ\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Acerca de Apollo",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nM\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Descargar solo vía Wi-Fi",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nI\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "\"faltantes\" doesn\u0027t sound good.\n\nIs neccesary? I think that \"Obtener carátulas\" is self explained",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nE\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Same here",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6nA\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Too long. No suggestion.",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6m8\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "It\u0027s related to an artist, so \"de\".",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6m4\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2013-03-18T07:51:15Z",
+      "side": 1,
+      "message": "Did you forget to translate the last phrase?",
+      "revId": "5338dec8ef0873e3b0df8aae9dfb08e79fc7de44",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
