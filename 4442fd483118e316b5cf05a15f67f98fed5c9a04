@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6KU\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-03-19T04:31:26Z",
+      "side": 1,
+      "message": "I\u0027m not sure that second phrase (from default translation) is necessary here. It\u0027s too obvious and reiterative.",
+      "revId": "4442fd483118e316b5cf05a15f67f98fed5c9a04",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
