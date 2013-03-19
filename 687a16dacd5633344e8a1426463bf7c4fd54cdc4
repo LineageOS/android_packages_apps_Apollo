@@ -141,6 +141,24 @@
       "revId": "687a16dacd5633344e8a1426463bf7c4fd54cdc4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//58k\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 5911
+      },
+      "writtenOn": "2013-03-19T21:08:12Z",
+      "side": 1,
+      "message": "uhm... muss das ui konsistent mit itunes sein?",
+      "parentUuid": "AAAAeX//58w\u003d",
+      "revId": "687a16dacd5633344e8a1426463bf7c4fd54cdc4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
