@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6SI\u003d",
+        "filename": "res/values-pl/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 3784
+      },
+      "writtenOn": "2013-03-19T01:03:02Z",
+      "side": 1,
+      "message": "I think that \u0027Ustawiono \u003cxliff:g id\u003d\"name\" example\u003d\"Alarm Bell\"\u003e%s\u003c/xliff:g\u003e jako dzwonek\u0027 looks better.\nAlso, that \\\" should break make, I suppose.",
+      "revId": "11dddf5446ec705b169f1fe83f51f44c364c9726",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
