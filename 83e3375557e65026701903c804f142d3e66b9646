@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6Sw\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-19T00:43:48Z",
+      "side": 1,
+      "message": "Mozhet Dlitel\u0027nosti? Slovo slishkom monstruoznoe ;)",
+      "revId": "83e3375557e65026701903c804f142d3e66b9646",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
