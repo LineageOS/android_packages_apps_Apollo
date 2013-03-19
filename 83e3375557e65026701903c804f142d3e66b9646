@@ -104,6 +104,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//6Ko\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-19T06:53:52Z",
+      "side": 1,
+      "message": "Poluchit\u0027 oblozhku al\u0027boma (avtomaticheski skachivaetsja)",
+      "revId": "83e3375557e65026701903c804f142d3e66b9646",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6RY\u003d",
         "filename": "res/values-ru/strings.xml",
         "patchSetId": 7
@@ -115,6 +132,23 @@
       "writtenOn": "2013-03-19T01:27:08Z",
       "side": 1,
       "message": "...ispolnitelya",
+      "revId": "83e3375557e65026701903c804f142d3e66b9646",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Kk\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-19T06:53:52Z",
+      "side": 1,
+      "message": "Poluchit\u0027 foto artista",
       "revId": "83e3375557e65026701903c804f142d3e66b9646",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -149,6 +183,40 @@
       "writtenOn": "2013-03-19T01:27:08Z",
       "side": 1,
       "message": "\"trek\" ustanovlen kak rington\nili menyat\u0027 v 95 str",
+      "revId": "83e3375557e65026701903c804f142d3e66b9646",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Js\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-19T06:53:52Z",
+      "side": 1,
+      "message": "Mojet luchshe Zagrujat\u0027 oblojki al\u0027bomov",
+      "revId": "83e3375557e65026701903c804f142d3e66b9646",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6Jo\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-03-19T06:53:52Z",
+      "side": 1,
+      "message": "Zagrujat\u0027 foto artistov",
       "revId": "83e3375557e65026701903c804f142d3e66b9646",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
