@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "AAAAeX//5+Q\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-03-19T20:19:16Z",
+      "side": 1,
+      "message": "Diesen String könnte man eigentlich entfernen, da man den App-Namen nicht verändert bzw. übersetzt.",
+      "revId": "687a16dacd5633344e8a1426463bf7c4fd54cdc4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//6GU\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 6
