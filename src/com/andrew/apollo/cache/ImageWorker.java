@@ -64,7 +64,7 @@ public abstract class ImageWorker {
     /**
      * Default album art
      */
-    private final Bitmap mDefault;
+    private Bitmap mDefault;
 
     /**
      * The Context to use
@@ -77,6 +77,11 @@ public abstract class ImageWorker {
     protected ImageCache mImageCache;
 
     /**
+     * Theme utils
+     */
+    private final ThemeUtils mTheme;
+
+    /**
      * Constructor of <code>ImageWorker</code>
      *
      * @param context The {@link Context} to use
@@ -85,8 +90,8 @@ public abstract class ImageWorker {
         mContext = context.getApplicationContext();
         mResources = mContext.getResources();
         // Create the default artwork
-        final ThemeUtils theme = new ThemeUtils(context);
-        mDefault = ((BitmapDrawable)theme.getDrawable("default_artwork")).getBitmap();
+        mTheme = new ThemeUtils(context);
+        mDefault = ((BitmapDrawable) mTheme.getDrawable("default_artwork")).getBitmap();
         mDefaultArtwork = new BitmapDrawable(mResources, mDefault);
         // No filter and no dither makes things much quicker
         mDefaultArtwork.setFilterBitmap(false);
@@ -145,6 +150,9 @@ public abstract class ImageWorker {
      * @return The deafult artwork
      */
     public Bitmap getDefaultArtwork() {
+        if (mDefault.isRecycled()) {
+            mDefault = ((BitmapDrawable) mTheme.getDrawable("default_artwork")).getBitmap();
+        }
         return mDefault;
     }
 
