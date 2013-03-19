@@ -16,6 +16,24 @@
       "revId": "687a16dacd5633344e8a1426463bf7c4fd54cdc4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//6GE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 6
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-19T13:57:04Z",
+      "side": 1,
+      "message": "\u0027Zuletzt\u0027 impliziert ja, dass, wenn neue Titel gehört werden, andere aus der Liste verschwinden. Das ist aber nicht der Fall: In der Liste sind die im letzten Monat gehörten Titel enthalten.\n\n\u0027Kürzlich gehört\u0027 trifft\u0027s besser, da bin ich mir aber nicht ganz sicher, ob das zu \u0027hochgestochen\u0027 klingt. Mich würde dazu mal die Meinung der anderen interessieren.",
+      "parentUuid": "AAAAeX//6GU\u003d",
+      "revId": "687a16dacd5633344e8a1426463bf7c4fd54cdc4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
