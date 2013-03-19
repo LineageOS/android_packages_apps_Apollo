@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//6Qw\u003d",
+        "filename": "res/values-es/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 2134
+      },
+      "writtenOn": "2013-03-19T01:28:47Z",
+      "side": 1,
+      "message": "\"Revolver\", \"Bajarar\", but \"Aleatorio\" don\u0027t look fine",
+      "revId": "288120cebabc36f6e3b1e61f80c9a2f10966e8ca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
