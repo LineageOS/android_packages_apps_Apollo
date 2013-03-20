@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//57E\u003d",
+        "filename": "res/values-ru/strings.xml",
+        "patchSetId": 8
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2013-03-20T00:31:47Z",
+      "side": 1,
+      "message": "\"Trek \\\"\u003cxliff:g blabla\u003e \u003c/xliff:g\u003e\\\" ustanovlen kak rington.\"*\nI eto, mozhet, kavichki vse zhe pomenyaem na tipografskie « / » ? Pravda, eto tozhe vezde delat\u0027 pridetsya :D",
+      "revId": "94a722b2c21c2ae9674e6a499aaba7ec91eed083",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
