@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//5vs\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 7
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 5550
+      },
+      "writtenOn": "2013-03-20T13:20:32Z",
+      "side": 1,
+      "message": "Sollte es hier heißen \"Zur Wiedergabeliste\"? Weiter unten steht beispielsweise auch \"Zur Warteschlange\".",
+      "revId": "8fc11afe9bd8c589ff6d14b21028e82144c7d477",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
