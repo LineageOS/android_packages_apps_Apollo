@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//5Wg\u003d",
+        "filename": "res/values-ja/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1579
+      },
+      "writtenOn": "2013-03-21T17:48:50Z",
+      "side": 1,
+      "message": "I\u0027ve got a suggestion.Please see https://github.com/TaichiN/android_packages_apps_Apollo/commit/d5fd9cd3bc3d1eb8baf2ef0e33cbce195d1fdce0",
+      "revId": "a5b2a00845c974355214399c9e628ea7ccfd1aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
