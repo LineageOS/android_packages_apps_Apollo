@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//3oo\u003d",
+        "filename": "src/com/andrew/apollo/appwidgets/AppWidgetBase.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-03-26T18:51:06Z",
+      "side": 1,
+      "message": "This overwrites the action you\u0027ve set in the intent constructor.",
+      "revId": "3a811551b363b1fed31ac5a46da6ff5b1dd48fa7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
