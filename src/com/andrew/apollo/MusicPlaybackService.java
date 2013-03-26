@@ -149,6 +149,8 @@ public class MusicPlaybackService extends Service {
 
     public static final String NOW_IN_FOREGROUND = "nowinforeground";
 
+    public static final String EXTRA_FROM_WIDGET = "extrafromwidget";
+
     /**
      * Used to easily notify a list that it should refresh. i.e. A playlist
      * changes
@@ -383,7 +385,7 @@ public class MusicPlaybackService extends Service {
     /**
      * Returns true if the Apollo is sent to the background, false otherwise
      */
-    private boolean mBuildNotification = false;
+    private Boolean mBuildNotification;
 
     /**
      * Lock screen controls ICS+
@@ -649,6 +651,10 @@ public class MusicPlaybackService extends Service {
         mDelayedStopHandler.removeCallbacksAndMessages(null);
         if (intent != null) {
             final String action = intent.getAction();
+
+            if (mBuildNotification == null) {
+                mBuildNotification = intent.getBooleanExtra(EXTRA_FROM_WIDGET, false);
+            }
 
             if (FOREGROUND_STATE_CHANGED.equals(action)) {
                 mBuildNotification = !intent.getBooleanExtra(NOW_IN_FOREGROUND, false);
