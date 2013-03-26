@@ -156,11 +156,6 @@ public class MusicPlaybackService extends Service {
     public static final String REFRESH = "com.andrew.apollo.refresh";
 
     /**
-     * Called to build the notification while Apollo is in the background
-     */
-    public static final String START_BACKGROUND = "com.andrew.apollo.startbackground";
-
-    /**
      * Called to update the remote control client
      */
     public static final String UPDATE_LOCKSCREEN = "com.andrew.apollo.updatelockscreen";
@@ -650,14 +645,16 @@ public class MusicPlaybackService extends Service {
         if (intent != null) {
             final String action = intent.getAction();
 
-            if (FOREGROUND_STATE_CHANGED.equals(action)) {
+            if (intent.hasExtra(NOW_IN_FOREGROUND) || FOREGROUND_STATE_CHANGED.equals(action)) {
                 mBuildNotification = !intent.getBooleanExtra(NOW_IN_FOREGROUND, false);
                 if (mBuildNotification && isPlaying()) {
                     buildNotification();
                 } else if (!mBuildNotification) {
                     killNotification();
                 }
-            } else if (UPDATE_LOCKSCREEN.equals(action)) {
+            }
+
+            if (UPDATE_LOCKSCREEN.equals(action)) {
                 mEnableLockscreenControls = intent.getBooleanExtra(UPDATE_LOCKSCREEN, true);
                 if (mEnableLockscreenControls) {
                     setUpRemoteControlClient();
@@ -670,7 +667,7 @@ public class MusicPlaybackService extends Service {
                             .setPlaybackState(RemoteControlClient.PLAYSTATE_STOPPED);
                     mAudioManager.unregisterRemoteControlClient(mRemoteControlClient);
                 }
-            } else {
+            } else if (!FOREGROUND_STATE_CHANGED.equals(action)) {
                 handleCommandIntent(intent);
             }
         }
