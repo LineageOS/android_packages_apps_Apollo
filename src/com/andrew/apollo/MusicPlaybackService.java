@@ -650,8 +650,11 @@ public class MusicPlaybackService extends Service {
         if (intent != null) {
             final String action = intent.getAction();
 
-            if (FOREGROUND_STATE_CHANGED.equals(action)) {
+            if (intent.hasExtra(NOW_IN_FOREGROUND)) {
                 mBuildNotification = !intent.getBooleanExtra(NOW_IN_FOREGROUND, false);
+            }
+
+            if (FOREGROUND_STATE_CHANGED.equals(action)) {
                 if (mBuildNotification && isPlaying()) {
                     buildNotification();
                 } else if (!mBuildNotification) {
