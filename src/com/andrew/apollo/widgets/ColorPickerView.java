@@ -944,4 +944,5 @@ public class ColorPickerView extends View {
     public String getAlphaSliderText() {
         return mAlphaSliderText;
     }
+
 }
