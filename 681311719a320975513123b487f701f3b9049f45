@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1bQ\u003d",
+        "filename": "res/values-nl/plurals.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T14:08:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//1cM\u003d",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1cI\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2013-03-31T13:41:46Z",
       "side": 1,
       "message": "Klinkt voor mij alsof er iets mist. Recente items wissen?",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1bM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T14:08:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//1cI\u003d",
       "revId": "681311719a320975513123b487f701f3b9049f45",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1bI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T14:08:02Z",
+      "side": 1,
+      "message": "Komt omdat het verwijst naar de app Galerij en dan wordt het een eigennaam.",
+      "parentUuid": "AAAAeX//1cE\u003d",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1cA\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 3
@@ -64,6 +118,24 @@
       "writtenOn": "2013-03-31T13:41:46Z",
       "side": 1,
       "message": "Meer van deze artiest?",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1bE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T14:08:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//1cA\u003d",
       "revId": "681311719a320975513123b487f701f3b9049f45",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1bA\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T14:08:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//1b8\u003d",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1b4\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 3
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1a8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T14:08:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAeX//1b4\u003d",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1b0\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 3
@@ -115,6 +223,24 @@
       "writtenOn": "2013-03-31T13:41:46Z",
       "side": 1,
       "message": "in de afgelopen maand? er lijkt iets te missen in elk geval...",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1a4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-03-31T14:08:02Z",
+      "side": 1,
+      "message": "Done (kon geen goede vertaling van \u0027last\u0027 vinden, maar \u0027afgelopen\u0027 klopt inderdaad)",
+      "parentUuid": "AAAAeX//1b0\u003d",
       "revId": "681311719a320975513123b487f701f3b9049f45",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
