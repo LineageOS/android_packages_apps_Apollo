@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//1cM\u003d",
+        "filename": "res/values-nl/plurals.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T13:41:46Z",
+      "side": 1,
+      "message": "nummers",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1cI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T13:41:46Z",
+      "side": 1,
+      "message": "Klinkt voor mij alsof er iets mist. Recente items wissen?",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1cE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T13:41:46Z",
+      "side": 1,
+      "message": "Galerij met hoofdletter?",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1cA\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T13:41:46Z",
+      "side": 1,
+      "message": "Meer van deze artiest?",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1b8\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T13:41:46Z",
+      "side": 1,
+      "message": "typfout: -scherm",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1b4\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T13:41:46Z",
+      "side": 1,
+      "message": "anders-\u003ealternatief?",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1b0\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 2248
+      },
+      "writtenOn": "2013-03-31T13:41:46Z",
+      "side": 1,
+      "message": "in de afgelopen maand? er lijkt iets te missen in elk geval...",
+      "revId": "681311719a320975513123b487f701f3b9049f45",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
