@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAeX//1Hk\u003d",
+        "filename": "src/com/andrew/apollo/widgets/ColorPickerView.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 968,
+      "author": {
+        "id": 1639
+      },
+      "writtenOn": "2013-04-01T14:23:57Z",
+      "side": 1,
+      "message": "You should call ApolloUtils.hasICS() here instead. I\u0027d prefer to have this as a part of ApolloUtils or in a separate class like SharedPreferencesCompat.",
+      "revId": "bb9f093e588cb7debbf98b475151c3986efd5cc8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAeX//1Hc\u003d",
+        "filename": "src/com/andrew/apollo/widgets/ColorPickerView.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 978,
+      "author": {
+        "id": 1639
+      },
+      "writtenOn": "2013-04-01T14:23:57Z",
+      "side": 1,
+      "message": "Also, is there any particular reason you don\u0027t import Paint?",
+      "revId": "bb9f093e588cb7debbf98b475151c3986efd5cc8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
