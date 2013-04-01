@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAeX//1GM\u003d",
+        "filename": "src/com/andrew/apollo/widgets/ColorPickerView.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 968,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-01T14:54:46Z",
+      "side": 1,
+      "message": "Actually, you can drop the check (and the reflection code) entirely: AndroidManifest.xml specifies minSdkLevel as 14, so SDK level \u003c 14 can\u0027t happen (especially not on CM).",
+      "parentUuid": "AAAAeX//1Hk\u003d",
+      "revId": "bb9f093e588cb7debbf98b475151c3986efd5cc8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAeX//1Hc\u003d",
         "filename": "src/com/andrew/apollo/widgets/ColorPickerView.java",
         "patchSetId": 1
