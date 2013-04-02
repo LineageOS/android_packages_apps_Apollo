@@ -157,6 +157,24 @@
       "revId": "181119b933b8aa4ded100215a556816accdef50a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///xs\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-04-02T16:15:39Z",
+      "side": 1,
+      "message": "Ich habe einfach ein wenig bei Google gesucht, aber wie gesagt man findet nicht viel und zu Albencover noch weniger als zu Albumcover. Da es sich hier aber wirklich um die Mehrzahl geht ist \u0027Albencover\u0027 wohl doch die bessere Wahl.",
+      "parentUuid": "AAAAen///yE\u003d",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
