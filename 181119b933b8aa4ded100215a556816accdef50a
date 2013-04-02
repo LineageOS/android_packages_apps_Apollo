@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen///yM\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-02T16:09:45Z",
+      "side": 1,
+      "message": "Ja, genau die. Ich hab ein paar davon zu Hause stehen :)\nDaher bin ich auch an \u0027Stilrichtungen\u0027 gewöhnt (und finde die Übersetzung auch gut), aber \u0027Genres\u0027 ist auch ok.",
+      "parentUuid": "AAAAen///zA\u003d",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen///0k\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -118,6 +136,24 @@
       "side": 1,
       "message": "Da war ich mir auch nicht sicher, weil es auch nirgendwo eindeutig definiert ist. \u0027Albumcover\u0027 ist aber eindeutig geläufiger nach meiner Recherche.",
       "parentUuid": "AAAAen///0c\u003d",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///yE\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-02T16:09:45Z",
+      "side": 1,
+      "message": "Wie hast du die Verwendung von \u0027Albumcover\u0027 vs. \u0027Albencover\u0027 (vs. \u0027Albumcovers\u0027 - *schauder*) in der Mehrzahl recherchiert? ;)",
+      "parentUuid": "AAAAen///y4\u003d",
       "revId": "181119b933b8aa4ded100215a556816accdef50a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
