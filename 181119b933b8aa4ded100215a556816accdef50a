@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen///0U\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-02T14:16:49Z",
+      "side": 1,
+      "message": "Das war mir fast klar ;)\n\u0027Stilrichtung\u0027 ist die Übersetzung, die in den SqueezeBoxen verwendet wird.",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///0k\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-02T14:16:49Z",
+      "side": 1,
+      "message": "Benutzen wir bislang irgendwo \u0027Icon\u0027 an Stelle von \u0027Symbol\u0027?",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///0g\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-02T14:16:49Z",
+      "side": 1,
+      "message": "Was ist denn der nicht-standardmäßige Farbakzent?",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///0c\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-04-02T14:16:49Z",
+      "side": 1,
+      "message": "Albencover ist IMHO korrekt.",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
