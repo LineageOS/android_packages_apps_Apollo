@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen///zA\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-04-02T15:33:41Z",
+      "side": 1,
+      "message": "Meinst du die SqueezeBoxen von Logitech, oder was habe ich darunter zu verstehen? Ich finde \u0027Genres\u0027 einfach gängiger da es in Google Play Music, iTunes und noch vielen anderen Musikplayern verwendet wird.",
+      "parentUuid": "AAAAen///0U\u003d",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen///0k\u003d",
         "filename": "res/values-de/strings.xml",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-04-02T14:16:49Z",
       "side": 1,
       "message": "Benutzen wir bislang irgendwo \u0027Icon\u0027 an Stelle von \u0027Symbol\u0027?",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///y8\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-04-02T15:33:41Z",
+      "side": 1,
+      "message": "Ich finde Symbol irgendwie immer so komisch, \u0027Icon\u0027 beschreibt IMHO besser, was gemeint ist (auch wenn Symbol eigentlich die richtige deutsche Übersetzung dafür ist :D). Um es aber einheitlich zu lassen, sollten wir bei Symbol bleiben ;)",
+      "parentUuid": "AAAAen///0k\u003d",
       "revId": "181119b933b8aa4ded100215a556816accdef50a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -64,6 +100,24 @@
       "writtenOn": "2013-04-02T14:16:49Z",
       "side": 1,
       "message": "Albencover ist IMHO korrekt.",
+      "revId": "181119b933b8aa4ded100215a556816accdef50a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen///y4\u003d",
+        "filename": "res/values-de/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2013-04-02T15:33:41Z",
+      "side": 1,
+      "message": "Da war ich mir auch nicht sicher, weil es auch nirgendwo eindeutig definiert ist. \u0027Albumcover\u0027 ist aber eindeutig geläufiger nach meiner Recherche.",
+      "parentUuid": "AAAAen///0c\u003d",
       "revId": "181119b933b8aa4ded100215a556816accdef50a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
