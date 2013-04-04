@@ -73,7 +73,7 @@
     <string name="cancel">Ακύρωση</string>
     <string name="overwrite">Αντικατάσταση</string>
     <string name="new_playlist_name_template">Λίστα αναπαραγ. <xliff:g id="number">%d</xliff:g></string>
-    <string name="create_playlist_prompt" msgid="942607395076646686">"Όνομα λίστας"</string>
+    <string name="create_playlist_prompt">Όνομα λίστας</string>
     <string name="delete_dialog_title">Διαγραφή <xliff:g id="item" example="album">%s</xliff:g>?</string>
     <string name="cannot_be_undone">Αυτό δεν μπορεί να αναιρεθεί</string>
     <string name="delete_warning">Αυτό θα διαγράψει μόνιμα τις προσωρινά αποθηκευμένες καταχωρήσεις εικόνων</string>
@@ -108,7 +108,7 @@
     <!-- Toast messages -->
     <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> καρφιτσώθηκε στην αρχική οθόνη σας</string>
     <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> δεν μπορεί να καρφιτσωθεί στην αρχική οθόνη σας</string>
-    <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" ορίστηκε ως ήχος κλήσης</string>
+    <string name="set_as_ringtone">\'<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\' ορίστηκε ως ήχος κλήσης</string>
     <string name="playlist_renamed">Playlist renamed</string>
     <string name="theme_set"><xliff:g id="name">%s</xliff:g> ορίστηκε ως θέμα</string>
 
@@ -150,8 +150,8 @@
     <!-- App widget -->
     <string name="app_widget_small">Apollo: 4x1</string>
     <string name="app_widget_large">Apollo: 4x2</string>
-    <string name="app_widget_large_alt">Apollo: 4x2 (Εναλλακτική)</string>
-    <string name="app_widget_recent">Apollo: Πρόσφατα ακούστηκαν</string>
+    <string name="app_widget_large_alt">Apollo: 4x2 (εναλλακτική)</string>
+    <string name="app_widget_recent">Apollo: πρόσφατα ακούστηκαν</string>
     <string name="app_widget_text_separator">-</string>
 
     <!-- Empty list / error messages -->
