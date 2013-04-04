@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//++0\u003d",
+        "filename": "res/values-el/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-04-04T18:04:14Z",
+      "side": 1,
+      "message": "missing letter",
+      "revId": "13c7fd0d2e1d162f7ec2c24d5fad6c04750ba4c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//++w\u003d",
+        "filename": "res/values-el/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-04-04T18:04:14Z",
+      "side": 1,
+      "message": "missing \"s\"",
+      "revId": "13c7fd0d2e1d162f7ec2c24d5fad6c04750ba4c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//++s\u003d",
+        "filename": "res/values-el/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-04-04T18:04:14Z",
+      "side": 1,
+      "message": "wrong spelling of last word",
+      "revId": "13c7fd0d2e1d162f7ec2c24d5fad6c04750ba4c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//++o\u003d",
+        "filename": "res/values-el/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 158,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2013-04-04T18:04:14Z",
+      "side": 1,
+      "message": "remove this, non-translatable",
+      "revId": "13c7fd0d2e1d162f7ec2c24d5fad6c04750ba4c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
