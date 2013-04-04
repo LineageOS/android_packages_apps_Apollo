@@ -36,7 +36,7 @@
     <string name="menu_clear_queue">Εκκαθάριση ουράς αναμονής</string>
     <string name="menu_save_queue">Αποθήκευση ουράς</string>
     <string name="menu_share">Κοινή χρήση</string>
-    <string name="menu_add_to_homescreen">Προσθήκη στην Αρχική οθόνη </string>
+    <string name="menu_add_to_homescreen">Προσθήκη στην Αρχική οθόνη</string>
     <string name="menu_equalizer">Ισοσταθμιστής</string>
     <string name="menu_simple">Απλό</string>
     <string name="menu_detailed">Λεπτομερή</string>
@@ -106,8 +106,8 @@
     <string name="accessibility_repeat_one">Επανάληψη ενός</string>
 
     <!-- Toast messages -->
-    <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> καρφιτσώθηκε στην αρχική οθόνη σας</string>
-    <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> δεν μπορεί να καρφιτσωθεί στην αρχική οθόνη σας</string>
+    <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g>καρφιτσώθηκε στην αρχική οθόνη σας</string>
+    <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g>δεν μπορεί να καρφιτσωθεί στην αρχική οθόνη σας</string>
     <string name="set_as_ringtone">\'<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\' ορίστηκε ως ήχος κλήσης</string>
     <string name="playlist_renamed">Playlist renamed</string>
     <string name="theme_set"><xliff:g id="name">%s</xliff:g> ορίστηκε ως θέμα</string>
