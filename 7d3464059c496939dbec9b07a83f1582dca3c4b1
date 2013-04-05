@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+Xc\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:57:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+1Y\u003d",
+      "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+1A\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2013-04-04T22:07:03Z",
       "side": 1,
       "message": "- Speciale dank",
+      "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+XY\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:57:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+1A\u003d",
       "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+XU\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:57:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+1M\u003d",
+      "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+1I\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2013-04-04T22:07:03Z",
       "side": 1,
       "message": "- Om gegevensgebruik te verminderen, niet downloaden via mobiele gegevensverbinding",
+      "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+XQ\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:57:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+1I\u003d",
       "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+XM\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:57:30Z",
+      "side": 1,
+      "message": "Inderdaad...",
+      "parentUuid": "AAAAen//+08\u003d",
+      "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+04\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 4
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAen//+XI\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:57:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+04\u003d",
+      "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAen//+0w\u003d",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 4
@@ -115,6 +223,24 @@
       "writtenOn": "2013-04-04T22:07:03Z",
       "side": 1,
       "message": "#NowPlaying is een bekende hashtag, ook bij NL radiostations op twitter. Ik zou die niet veranderen.\n\n\"Geen resultaten gevonden voor #NuAfspelen.\"",
+      "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//+XE\u003d",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-05T20:57:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAen//+0w\u003d",
       "revId": "7d3464059c496939dbec9b07a83f1582dca3c4b1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
