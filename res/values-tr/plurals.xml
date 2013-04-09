@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="Nartists">
+        <item quantity="other">%d sanatçı</item>
+        <item quantity="one">1 sanatçı</item>
+    </plurals>
+    <plurals name="Nalbums">
+        <item quantity="other">%d albüm</item>
+        <item quantity="one">1 albüm</item>
+    </plurals>
+    <plurals name="Nsongs">
+        <item quantity="other">%d şarkı</item>
+        <item quantity="one">1 şarkı</item>
+    </plurals>
+    <plurals name="Ngenres">
+        <item quantity="other">%d tür</item>
+        <item quantity="one">1 tür</item>
+    </plurals>
+    <plurals name="NNNtrackstoplaylist">
+        <item quantity="other">%d şarkı çalma listesine eklendi.</item>
+        <item quantity="one">1 şarkı çalma listesine eklendi.</item>
+    </plurals>
+    <plurals name="NNNtrackstoqueue">
+        <item quantity="other">%d şarkı kuyruğa eklendi.</item>
+        <item quantity="one">1 şarkı kuyruğa eklendi.</item>
+    </plurals>
+    <plurals name="NNNtrackstofavorites">
+        <item quantity="other">%d şarkı Favorilere eklendi.</item>
+        <item quantity="one">1 şarkı Favorilere eklendi.</item>
+    </plurals>
+    <plurals name="NNNtracksdeleted">
+        <item quantity="other">%d şarkı silindi.</item>
+        <item quantity="one">1 şarkı silindi.</item>
+    </plurals>
+</resources>
