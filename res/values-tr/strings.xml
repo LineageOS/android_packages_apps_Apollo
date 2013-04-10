@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!-- Copyright (C) 2012 Andrew Neal
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+ -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
     <string name="app_name">Apollo</string>
+    
+    <!-- Page titles -->
     <string name="page_recent">Son Çalınan</string>
     <string name="page_artists">Sanatçılar</string>
     <string name="page_albums">Albümler</string>
     <string name="page_songs">Şarkılar</string>
     <string name="page_playlists">Çalma Listeleri</string>
     <string name="page_genres">Türler</string>
+    
+    <!-- Option menu items -->
     <string name="menu_settings">Ayarlar</string>
     <string name="menu_search">Ara</string>
     <string name="menu_shuffle">Karışık Çal</string>
@@ -23,14 +42,18 @@
     <string name="menu_detailed">Detaylı</string>
     <string name="menu_grid">Izgara</string>
     <string name="menu_view_as">Görünüm</string>
+    
+    <!-- Playlist items -->
     <string name="add_to_playlist">Çalma Listesine Ekle</string>
     <string name="add_to_favorites">Favorilere Ekle</string>
     <string name="add_to_queue">Kuyruğa Ekle</string>
     <string name="remove_from_favorites">Favorilerden Sil</string>
     <string name="remove_from_recent">Son Çalınanlardan Sil</string>
     <string name="remove_from_queue">Kuyruktan Sil</string>
-    <string name="sort_order_entry_az">A'dan Z'ye</string>
-    <string name="sort_order_entry_za">Z'den A'ya</string>
+    
+    <!-- Sort orders -->
+    <string name="sort_order_entry_az">A´dan Z´ye</string>
+    <string name="sort_order_entry_za">Z´den A´ya</string>
     <string name="sort_order_entry_artist">Sanatçı</string>
     <string name="sort_order_entry_album">Albüm</string>
     <string name="sort_order_entry_year">Yıl</string>
@@ -39,21 +62,27 @@
     <string name="sort_order_entry_track_list">Parça Listesi</string>
     <string name="sort_order_entry_number_of_songs">Şarkı Sayısı</string>
     <string name="sort_order_entry_number_of_albums">Albüm Sayısı</string>
+    
+    <!-- Default playlist names -->
     <string name="playlist_favorites">Favoriler</string>
     <string name="playlist_last_added">Son Eklenenler</string>
+    
+    <!-- AlertDialog items -->
     <string name="new_playlist">Yeni Çalma Listesi</string>
     <string name="save">Kaydet</string>
     <string name="cancel">İptal</string>
     <string name="overwrite">Üzerine Yaz</string>
-    <string name="new_playlist_name_template">Çalma Listesi %d</string>
-    <string name="create_playlist_prompt">Çalma Listesi Adı</string>
-    <string name="delete_dialog_title">Silinsin mi %s?</string>
+    <string name="new_playlist_name_template">Çalma Listesi <xliff:g id="number">%d</xliff:g></string>
+    <string name="create_playlist_prompt" msgid="942607395076646686">"Çalma Listesi Adı"</string>
+    <string name="delete_dialog_title"><xliff:g id="item" example="album">%s</xliff:g>silinsin mi ?</string>
     <string name="cannot_be_undone">Bu işlem geri alınamaz</string>
     <string name="delete_warning">Önbelleğe alınan resimler kalıcı olarak silinecek</string>
     <string name="new_photo">Galeriden Fotoğraf Seç</string>
     <string name="google_search">Google arama</string>
     <string name="use_default">Varsayılan fotoğrafı kullan</string>
     <string name="old_photo">Önceki fotoğrafı kullan</string>
+    
+    <!-- Context menu items -->
     <string name="context_menu_play_selection">Çal</string>
     <string name="context_menu_play_next">Sonrakini çal</string>
     <string name="context_menu_more_by_artist">Sanatçıdan daha fazla</string>
@@ -61,9 +90,11 @@
     <string name="context_menu_delete">Sil</string>
     <string name="context_menu_fetch_album_art">Albüm kapağını al</string>
     <string name="context_menu_fetch_artist_image">Sanatçı resmini al</string>
-    <string name="context_menu_open_in_play_store">Play Store'da aç</string>
+    <string name="context_menu_open_in_play_store">Play Store´da aç</string>
     <string name="context_menu_remove_from_recent">Son çalınanlardan sil</string>
     <string name="context_menu_use_as_ringtone">Zil sesi yap</string>
+    
+    <!-- Content descriptions -->
     <string name="accessibility_play">Çal</string>
     <string name="accessibility_pause">Duraklat</string>
     <string name="accessibility_next">Sonraki</string>
@@ -73,11 +104,15 @@
     <string name="accessibility_repeat">Tekrar</string>
     <string name="accessibility_repeat_all">Hepsini tekrar et</string>
     <string name="accessibility_repeat_one">Birini tekrar et</string>
-    <string name="pinned_to_home_screen">%s ev ekranınıza eklendi</string>
-    <string name="could_not_be_pinned_to_home_screen">%s ev ekranınıza eklenemedi</string>
-    <string name="set_as_ringtone">\"%s\" zil sesi olarak ayarlandı</string>
+    
+    <!-- Toast messages -->
+    <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> ev ekranınıza eklendi</string>
+    <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> ev ekranınıza eklenemedi</string>
+    <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" zil sesi olarak ayarlandı</string>
     <string name="playlist_renamed">Çalma listesinin adı değiştirildi</string>
-    <string name="theme_set">%s tema olarak ayarlandı</string>
+    <string name="theme_set"><xliff:g id="name">%s</xliff:g> tema olarak ayarlandı</string>
+    
+    <!-- Settings -->
     <string name="settings_ui_category">Arayüz</string>
     <string name="settings_storage_category">Depolama</string>
     <string name="settings_data_category">Veri</string>
@@ -89,7 +124,7 @@
     <string name="settings_self_title">Andrew Neal</string>
     <string name="settings_lopez_title">A.J. Lopez</string>
     <string name="settings_lopez_summary">Simge ve Play Store banner dizaynı</string>
-    <string name="settings_color_scheme_title">"Apollo'nun varsayılan renk şeması"</string>
+    <string name="settings_color_scheme_title">"Apollo´nun varsayılan renk şeması"</string>
     <string name="settings_color_scheme_summary">Vurgu rengini değiştir</string>
     <string name="settings_theme_chooser_title">Tema seçici</string>
     <string name="settings_delete_cache_title">Önbelleği sil</string>
@@ -101,17 +136,25 @@
     <string name="settings_open_source_licenses">Açık kaynak lisansları</string>
     <string name="settings_use_lockscreen_controls">Kilit ekranı kontrollerini kullan</string>
     <string name="settings_version_title">Sürüm numarası</string>
-    <string name="now_listening_to">\#NowPlaying %2$s söylüyor %1$s #Apollo</string>
+    
+    <!-- Share Intent -->
+    <string name="now_listening_to">#NowPlaying <xliff:g id="artist">%2$s</xliff:g> söylüyor <xliff:g id="title">%1$s</xliff:g> #Apollo</string>
     <string name="share_track_using">Şununla paylaş:</string>
+    
+    <!-- ColorPicker -->
     <string name="color_picker_title">Renk şeması</string>
-    <string name="hex">\#</string>
+    <string name="hex">#</string>
     <string name="current_color">Geçerli olan</string>
     <string name="new_color">Yeni</string>
+    
+    <!-- App widget -->
     <string name="app_widget_small">Apollo: 4x1</string>
     <string name="app_widget_large">Apollo: 4x2</string>
     <string name="app_widget_large_alt">Apollo: 4x2 (Alternatif)</string>
     <string name="app_widget_recent">Apollo: Yakınlarda çalınan</string>
     <string name="app_widget_text_separator">-</string>
+    
+    <!-- Empty list / error messages -->
     <string name="no_effects_for_you">Ekolayzer açılamadı.</string>
     <string name="empty_music">Cihazınıza müzik kopyalamak için USB kablonuzu kullanın.</string>
     <string name="empty_last_added">"Son bir ay içerisinde eklediğiniz müzikler burada gözükecektir."</string>
