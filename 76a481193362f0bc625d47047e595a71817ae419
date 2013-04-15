@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//6hQ\u003d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-04-15T12:05:02Z",
+      "side": 1,
+      "message": "http://wiki.cyanogenmod.org/w/Doc:_Translation_Guide#Commit_message\n\n\"Apollo: UK translations\"",
+      "revId": "76a481193362f0bc625d47047e595a71817ae419",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
