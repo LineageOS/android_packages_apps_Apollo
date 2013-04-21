@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAen//3zs\u003d",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 6151
+      },
+      "writtenOn": "2013-04-21T17:19:29Z",
+      "side": 1,
+      "message": "Antal albummer.",
+      "revId": "625a11c21fc05aabde9b8ed951fef94bd0b07b98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAen//3zo\u003d",
+        "filename": "res/values-da/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 6151
+      },
+      "writtenOn": "2013-04-21T17:19:29Z",
+      "side": 1,
+      "message": "Ikon- og Play Butik bannerdesign?",
+      "revId": "625a11c21fc05aabde9b8ed951fef94bd0b07b98",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
