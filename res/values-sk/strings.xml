@@ -37,7 +37,7 @@
     <string name="menu_clear_queue">Zmazať frontu</string>
     <string name="menu_save_queue">Uložiť frontu</string>
     <string name="menu_clear_favorites">Zmazať obľúbené</string>
-    <string name="menu_share">Share</string>
+    <string name="menu_share">Zdieľať</string>
     <string name="menu_add_to_homescreen">Umiestniť na domovskú obrazovku</string>
     <string name="menu_equalizer">Ekvalizér</string>
     <string name="menu_simple">Jednoducho</string>
@@ -95,7 +95,7 @@
     <string name="context_menu_delete">Odstrániť</string>
     <string name="context_menu_fetch_album_art">Získať obrázok albumu</string>
     <string name="context_menu_fetch_artist_image">Získať obrázok interpreta</string>
-    <string name="context_menu_open_in_play_store">Otvoriť v obchode Google Play</string>
+    <string name="context_menu_open_in_play_store">Otvoriť v obchode Play</string>
     <string name="context_menu_remove_from_recent">Odstrániť z nedávnych</string>
     <string name="context_menu_remove_from_queue">Odstrániť z fronty</string>
     <string name="context_menu_use_as_ringtone">Nastaviť ako zvonenie</string>
@@ -135,7 +135,7 @@
     <string name="settings_cyanogenmod_title">CyanogenMod</string>
     <string name="settings_self_title">Andrew Neal</string>
     <string name="settings_lopez_title">A.J. Lopez</string>
-    <string name="settings_lopez_summary">Návrh ikony a banneru v obchode Google Play</string>
+    <string name="settings_lopez_summary">Návrh ikony a banneru v obchode Play</string>
     <string name="settings_color_scheme_title">Zvoliť predvolenú farebnú schému programu Apollo</string>
     <string name="settings_color_scheme_summary">Zmení farbu posuvníka v programe Apollo</string>
     <string name="settings_theme_chooser_title">Výber témy</string>
