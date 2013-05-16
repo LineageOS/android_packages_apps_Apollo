@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2012 Andrew Neal
+ 
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+ 
+       http://www.apache.org/licenses/LICENSE-2.0
+ 
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Used to indicate the number of artists -->
+    <plurals name="Nartists">
+
+        <!-- Only one artist -->
+        <item quantity="one">1 interpret</item>
+        <!-- More than one artist -->
+        <item quantity="zero"><xliff:g id="count">%d</xliff:g> interpretov</item>
+	<item quantity="few"><xliff:g id="count">%d</xliff:g> interpreti</item>
+    </plurals>
+
+    <!-- Used to indicate the number of albums for an artist -->
+    <plurals name="Nalbums">
+
+        <!-- Only one album -->
+        <item quantity="one">1 album</item>
+        <!-- More than one album -->
+        <item quantity="zero"><xliff:g id="count">%d</xliff:g> albumov</item>
+	<item quantity="few"><xliff:g id="count">%d</xliff:g> albumy</item>
+    </plurals>
+
+    <!-- Used to indicate the number of songs for an album -->
+    <plurals name="Nsongs">
+
+        <!-- Only one song -->
+        <item quantity="one">1 skladba</item>
+        <item quantity="zero"><xliff:g id="count">%d</xliff:g> skladieb</item>
+	<item quantity="few"><xliff:g id="count">%d</xliff:g> skladby</item>
+    </plurals>
+
+    <!-- Used to indicate the number of genres -->
+    <plurals name="Ngenres">
+
+        <!-- Only one genre -->
+        <item quantity="one">1 žáner</item>
+        <!-- More than one genre -->
+        <item quantity="zero"><xliff:g id="count">%d</xliff:g> žánrov</item>
+	<item quantity="few"><xliff:g id="count">%d</xliff:g> žánre</item>
+    </plurals>
+
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 skladba bola pridaná do hracieho zoznamu.</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="zero"><xliff:g id="number" example="27">%d</xliff:g> skladieb bolo pridaných do hracieho zoznamu.</item>
+	<item quantity="few"><xliff:g id="number" example="27">%d</xliff:g> skladby boli pridané do hracieho zoznamu.</item>
+    </plurals>
+
+    <!-- Toasts after adding song(s) to queue -->
+    <plurals name="NNNtrackstoqueue">
+
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 skladba bola pridaná do fronty.</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="zero"><xliff:g id="number" example="27">%d</xliff:g> skladieb bolo pridaných do fronty.</item>
+	<item quantity="few"><xliff:g id="number" example="27">%d</xliff:g> skladby boli pridané do fronty.</item>
+    </plurals>
+
+    <!-- Toasts after adding song(s) to the favorites list -->
+    <plurals name="NNNtrackstofavorites">
+
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 skladba bola pridaná do obľúbených.</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="zero"><xliff:g id="number" example="27">%d</xliff:g> skladieb bolo pridaných do obľúbených.</item>
+	<item quantity="few"><xliff:g id="number" example="27">%d</xliff:g> skladby boli pridané do obľúbených.</item>
+    </plurals>
+
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <plurals name="NNNtracksdeleted">
+
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">1 skladba bola odstránená.</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="zero"><xliff:g id="songs_to_delete">%d</xliff:g> skladieb bolo odstránených.</item>
+	<item quantity="few"><xliff:g id="songs_to_delete">%d</xliff:g> skladby boli odstránené.</item>
+    </plurals>
+
+</resources>
