@@ -157,6 +157,6 @@
     <string name="empty_last_added">Треки, добавленные за последний месяц, будут показаны здесь</string>
     <string name="empty_search">Поиск не дал результатов</string>
     <string name="empty_favorite">Треки, отмеченные как избранные, будут показаны здесь</string>
-    <string name="empty_recent">Прослушанные альбомы буду показаны здесь</string>
+    <string name="empty_recent">Прослушанные альбомы будут показаны здесь</string>
 
 </resources>
