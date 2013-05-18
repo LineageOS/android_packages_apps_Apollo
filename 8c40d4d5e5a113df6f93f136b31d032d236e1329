@@ -16,6 +16,24 @@
       "revId": "8c40d4d5e5a113df6f93f136b31d032d236e1329",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "hpHOJoI",
+        "filename": "res/values-ru/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 4
+      },
+      "writtenOn": "2013-05-18T23:48:52Z",
+      "side": 1,
+      "message": "Xm... A kak, esli tut stroka glya odnogo ispolnitelya? Ili ya ne pravil\u0027no ponyal?",
+      "parentUuid": "hvHXqiE",
+      "revId": "8c40d4d5e5a113df6f93f136b31d032d236e1329",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
