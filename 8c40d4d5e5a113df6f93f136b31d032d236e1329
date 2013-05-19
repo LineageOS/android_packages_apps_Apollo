@@ -70,6 +70,41 @@
       "revId": "8c40d4d5e5a113df6f93f136b31d032d236e1329",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "hpGVBkI",
+        "filename": "res/values-ru/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-05-19T00:05:51Z",
+      "side": 1,
+      "message": "Ya sobiral uzhe - vrode normal\u0027no rabotaet.",
+      "parentUuid": "htGqboU",
+      "revId": "8c40d4d5e5a113df6f93f136b31d032d236e1329",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "hnGSelk",
+        "filename": "res/values-ru/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-05-19T00:05:51Z",
+      "side": 1,
+      "message": "Eti tozhe mozhno izmenit\u0027.",
+      "revId": "8c40d4d5e5a113df6f93f136b31d032d236e1329",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
