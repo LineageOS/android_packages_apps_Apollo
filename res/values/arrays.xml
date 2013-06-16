@@ -2,7 +2,7 @@
 
 <resources>
 
-     <string-array name="tab_titles">
+     <string-array name="tab_titles" translatable="false">
         <item>@string/tab_recent</item>
         <item>@string/tab_artists</item>
         <item>@string/tab_albums</item>
