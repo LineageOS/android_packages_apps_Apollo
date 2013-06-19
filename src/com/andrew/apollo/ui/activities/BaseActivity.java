@@ -28,7 +28,6 @@ import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
@@ -247,10 +246,10 @@ public abstract class BaseActivity extends FragmentActivity implements ServiceCo
         super.onStart();
         final IntentFilter filter = new IntentFilter();
         // Play and pause changes
-        filter.addAction(MusicPlaybackService.PLAYSTATE_CHANGED);
+        filter.addAction(MusicPlaybackService.PLAY_STATE_CHANGED);
         // Shuffle and repeat changes
-        filter.addAction(MusicPlaybackService.SHUFFLEMODE_CHANGED);
-        filter.addAction(MusicPlaybackService.REPEATMODE_CHANGED);
+        filter.addAction(MusicPlaybackService.SHUFFLE_MODE_CHANGED);
+        filter.addAction(MusicPlaybackService.REPEAT_MODE_CHANGED);
         // Track changes
         filter.addAction(MusicPlaybackService.META_CHANGED);
         // Update a list, probably the playlist fragment's
@@ -420,11 +419,11 @@ public abstract class BaseActivity extends FragmentActivity implements ServiceCo
                         listener.onMetaChanged();
                     }
                 }
-            } else if (action.equals(MusicPlaybackService.PLAYSTATE_CHANGED)) {
+            } else if (action.equals(MusicPlaybackService.PLAY_STATE_CHANGED)) {
                 // Set the play and pause image
                 mReference.get().mPlayPauseButton.updateState();
-            } else if (action.equals(MusicPlaybackService.REPEATMODE_CHANGED)
-                    || action.equals(MusicPlaybackService.SHUFFLEMODE_CHANGED)) {
+            } else if (action.equals(MusicPlaybackService.REPEAT_MODE_CHANGED)
+                    || action.equals(MusicPlaybackService.SHUFFLE_MODE_CHANGED)) {
                 // Set the repeat image
                 mReference.get().mRepeatButton.updateRepeatState();
                 // Set the shuffle image

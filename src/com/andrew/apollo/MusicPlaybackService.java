@@ -28,7 +28,6 @@ import android.media.AudioManager;
 import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
-import android.media.MediaPlayer.OnCompletionListener;
 import android.media.RemoteControlClient;
 import android.media.audiofx.AudioEffect;
 import android.net.Uri;
@@ -52,7 +51,6 @@ import com.andrew.apollo.cache.ImageCache;
 import com.andrew.apollo.cache.ImageFetcher;
 import com.andrew.apollo.provider.FavoritesStore;
 import com.andrew.apollo.provider.RecentStore;
-import com.andrew.apollo.utils.ApolloUtils;
 import com.andrew.apollo.utils.Lists;
 import com.andrew.apollo.utils.MusicUtils;
 import com.andrew.apollo.utils.PreferenceUtils;
@@ -72,7 +70,7 @@ public class MusicPlaybackService extends Service {
     /**
      * Indicates that the music has paused or resumed
      */
-    public static final String PLAYSTATE_CHANGED = "com.andrew.apollo.playstatechanged";
+    public static final String PLAY_STATE_CHANGED = "com.andrew.apollo.playstatechanged";
 
     /**
      * Indicates the meta data has changed in some way, like a track change
@@ -87,12 +85,12 @@ public class MusicPlaybackService extends Service {
     /**
      * Indicates the repeat mode chaned
      */
-    public static final String REPEATMODE_CHANGED = "com.andrew.apollo.repeatmodechanged";
+    public static final String REPEAT_MODE_CHANGED = "com.andrew.apollo.repeatmodechanged";
 
     /**
      * Indicates the shuffle mode chaned
      */
-    public static final String SHUFFLEMODE_CHANGED = "com.andrew.apollo.shufflemodechanged";
+    public static final String SHUFFLE_MODE_CHANGED = "com.andrew.apollo.shufflemodechanged";
 
     /**
      * For backwards compatibility reasons, also provide sticky
@@ -105,12 +103,12 @@ public class MusicPlaybackService extends Service {
      * Called to indicate a general service commmand. Used in
      * {@link MediaButtonIntentReceiver}
      */
-    public static final String SERVICECMD = "com.andrew.apollo.musicservicecommand";
+    public static final String SERVICE_COMMAND = "com.andrew.apollo.musicservicecommand";
 
     /**
      * Called to go toggle between pausing and playing the music
      */
-    public static final String TOGGLEPAUSE_ACTION = "com.andrew.apollo.togglepause";
+    public static final String TOGGLE_PAUSE_ACTION = "com.andrew.apollo.togglepause";
 
     /**
      * Called to go to pause the playback
@@ -160,21 +158,21 @@ public class MusicPlaybackService extends Service {
      */
     public static final String UPDATE_LOCKSCREEN = "com.andrew.apollo.updatelockscreen";
 
-    public static final String CMDNAME = "command";
+    public static final String COMMAND_NAME = "command";
 
-    public static final String CMDTOGGLEPAUSE = "togglepause";
+    public static final String COMMAND_TOGGLE_PAUSE = "togglepause";
 
-    public static final String CMDSTOP = "stop";
+    public static final String COMMAND_STOP = "stop";
 
-    public static final String CMDPAUSE = "pause";
+    public static final String COMMAND_PAUSE = "pause";
 
-    public static final String CMDPLAY = "play";
+    public static final String COMMAND_PLAY = "play";
 
-    public static final String CMDPREVIOUS = "previous";
+    public static final String COMMAND_PREVIOUS = "previous";
 
-    public static final String CMDNEXT = "next";
+    public static final String COMMAND_NEXT = "next";
 
-    public static final String CMDNOTIF = "buttonId";
+    public static final String COMMAND_NOTIF = "buttonId";
 
     private static final int IDCOLIDX = 0;
 
@@ -246,7 +244,7 @@ public class MusicPlaybackService extends Service {
     /**
      * Indicates some sort of focus change, maybe a phone call
      */
-    private static final int FOCUSCHANGE = 5;
+    private static final int FOCUS_CHANGE = 5;
 
     /**
      * Indicates to fade the volume down
@@ -543,8 +541,8 @@ public class MusicPlaybackService extends Service {
 
         // Initialize the intent filter and each action
         final IntentFilter filter = new IntentFilter();
-        filter.addAction(SERVICECMD);
-        filter.addAction(TOGGLEPAUSE_ACTION);
+        filter.addAction(SERVICE_COMMAND);
+        filter.addAction(TOGGLE_PAUSE_ACTION);
         filter.addAction(PAUSE_ACTION);
         filter.addAction(STOP_ACTION);
         filter.addAction(NEXT_ACTION);
@@ -659,7 +657,7 @@ public class MusicPlaybackService extends Service {
                 if (mEnableLockscreenControls) {
                     setUpRemoteControlClient();
                     // Update the controls according to the current playback
-                    notifyChange(PLAYSTATE_CHANGED);
+                    notifyChange(PLAY_STATE_CHANGED);
                     notifyChange(META_CHANGED);
                 } else {
                     // Remove then unregister the controls
@@ -682,30 +680,30 @@ public class MusicPlaybackService extends Service {
 
     private void handleCommandIntent(Intent intent) {
         final String action = intent.getAction();
-        final String command = SERVICECMD.equals(action) ? intent.getStringExtra(CMDNAME) : null;
+        final String command = SERVICE_COMMAND.equals(action) ? intent.getStringExtra(COMMAND_NAME) : null;
 
-        if (CMDNEXT.equals(command) || NEXT_ACTION.equals(action)) {
+        if (COMMAND_NEXT.equals(command) || NEXT_ACTION.equals(action)) {
             gotoNext(true);
-        } else if (CMDPREVIOUS.equals(command) || PREVIOUS_ACTION.equals(action)) {
+        } else if (COMMAND_PREVIOUS.equals(command) || PREVIOUS_ACTION.equals(action)) {
             if (position() < 2000) {
                 prev();
             } else {
                 seek(0);
                 play();
             }
-        } else if (CMDTOGGLEPAUSE.equals(command) || TOGGLEPAUSE_ACTION.equals(action)) {
+        } else if (COMMAND_TOGGLE_PAUSE.equals(command) || TOGGLE_PAUSE_ACTION.equals(action)) {
             if (isPlaying()) {
                 pause();
                 mPausedByTransientLossOfFocus = false;
             } else {
                 play();
             }
-        } else if (CMDPAUSE.equals(command) || PAUSE_ACTION.equals(action)) {
+        } else if (COMMAND_PAUSE.equals(command) || PAUSE_ACTION.equals(action)) {
             pause();
             mPausedByTransientLossOfFocus = false;
-        } else if (CMDPLAY.equals(command)) {
+        } else if (COMMAND_PLAY.equals(command)) {
             play();
-        } else if (CMDSTOP.equals(command) || STOP_ACTION.equals(action)) {
+        } else if (COMMAND_STOP.equals(command) || STOP_ACTION.equals(action)) {
             pause();
             mPausedByTransientLossOfFocus = false;
             seek(0);
@@ -994,7 +992,7 @@ public class MusicPlaybackService extends Service {
                         gotoIdleState();
                         if (mIsSupposedToBePlaying) {
                             mIsSupposedToBePlaying = false;
-                            notifyChange(PLAYSTATE_CHANGED);
+                            notifyChange(PLAY_STATE_CHANGED);
                         }
                         return;
                     }
@@ -1007,7 +1005,7 @@ public class MusicPlaybackService extends Service {
                     gotoIdleState();
                     if (mIsSupposedToBePlaying) {
                         mIsSupposedToBePlaying = false;
-                        notifyChange(PLAYSTATE_CHANGED);
+                        notifyChange(PLAY_STATE_CHANGED);
                     }
                     return;
                 }
@@ -1244,7 +1242,7 @@ public class MusicPlaybackService extends Service {
             saveQueue(false);
         }
 
-        if (mBuildNotification && what.equals(PLAYSTATE_CHANGED)) {
+        if (mBuildNotification && what.equals(PLAY_STATE_CHANGED)) {
             mNotificationHelper.updatePlayState(isPlaying());
         }
 
@@ -1262,7 +1260,7 @@ public class MusicPlaybackService extends Service {
      */
     private void updateRemoteControlClient(final String what) {
         if (mEnableLockscreenControls && mRemoteControlClient != null) {
-            if (what.equals(PLAYSTATE_CHANGED)) {
+            if (what.equals(PLAY_STATE_CHANGED)) {
                 // If the playstate change notify the lock screen
                 // controls
                 mRemoteControlClient.setPlaybackState(mIsSupposedToBePlaying
@@ -1795,7 +1793,7 @@ public class MusicPlaybackService extends Service {
         if (mFavoritesCache != null) {
             synchronized (this) {
                 final Long id = mFavoritesCache.getSongId(getAudioId());
-                return id != null ? true : false;
+                return id != null;
             }
         }
         return false;
@@ -1872,7 +1870,7 @@ public class MusicPlaybackService extends Service {
             buildNotification();
             if (!mIsSupposedToBePlaying) {
                 mIsSupposedToBePlaying = true;
-                notifyChange(PLAYSTATE_CHANGED);
+                notifyChange(PLAY_STATE_CHANGED);
             }
 
         } else if (mPlayListLen <= 0) {
@@ -1890,7 +1888,7 @@ public class MusicPlaybackService extends Service {
                 mPlayer.pause();
                 gotoIdleState();
                 mIsSupposedToBePlaying = false;
-                notifyChange(PLAYSTATE_CHANGED);
+                notifyChange(PLAY_STATE_CHANGED);
             }
         }
     }
@@ -1908,7 +1906,7 @@ public class MusicPlaybackService extends Service {
                 gotoIdleState();
                 if (mIsSupposedToBePlaying) {
                     mIsSupposedToBePlaying = false;
-                    notifyChange(PLAYSTATE_CHANGED);
+                    notifyChange(PLAY_STATE_CHANGED);
                 }
                 return;
             }
@@ -1933,7 +1931,7 @@ public class MusicPlaybackService extends Service {
                     return;
                 }
                 final Integer pos = mHistory.remove(histsize - 1);
-                mPlayPos = pos.intValue();
+                mPlayPos = pos;
             } else {
                 if (mPlayPos > 0) {
                     mPlayPos--;
@@ -2020,7 +2018,7 @@ public class MusicPlaybackService extends Service {
             mRepeatMode = repeatmode;
             setNextTrack();
             saveQueue(false);
-            notifyChange(REPEATMODE_CHANGED);
+            notifyChange(REPEAT_MODE_CHANGED);
         }
     }
 
@@ -2049,7 +2047,7 @@ public class MusicPlaybackService extends Service {
                 }
             }
             saveQueue(false);
-            notifyChange(SHUFFLEMODE_CHANGED);
+            notifyChange(SHUFFLE_MODE_CHANGED);
         }
     }
 
@@ -2137,9 +2135,8 @@ public class MusicPlaybackService extends Service {
      */
     public Bitmap getAlbumArt() {
         // Return the cached artwork
-        final Bitmap bitmap = mImageFetcher.getArtwork(getAlbumName(),
+        return mImageFetcher.getArtwork(getAlbumName(),
                 getAlbumId(), getArtistName());
-        return bitmap;
     }
 
     /**
@@ -2155,7 +2152,7 @@ public class MusicPlaybackService extends Service {
          */
         @Override
         public void onReceive(final Context context, final Intent intent) {
-            final String command = intent.getStringExtra(CMDNAME);
+            final String command = intent.getStringExtra(COMMAND_NAME);
 
             if (AppWidgetSmall.CMDAPPWIDGETUPDATE.equals(command)) {
                 final int[] small = intent.getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS);
@@ -2182,7 +2179,7 @@ public class MusicPlaybackService extends Service {
          */
         @Override
         public void onAudioFocusChange(final int focusChange) {
-            mPlayerHandler.obtainMessage(FOCUSCHANGE, focusChange, 0).sendToTarget();
+            mPlayerHandler.obtainMessage(FOCUS_CHANGE, focusChange, 0).sendToTarget();
         }
     };
 
@@ -2290,7 +2287,7 @@ public class MusicPlaybackService extends Service {
                 case RELEASE_WAKELOCK:
                     service.mWakeLock.release();
                     break;
-                case FOCUSCHANGE:
+                case FOCUS_CHANGE:
                     switch (msg.arg1) {
                         case AudioManager.AUDIOFOCUS_LOSS:
                         case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
@@ -2370,7 +2367,7 @@ public class MusicPlaybackService extends Service {
                 }
             }
         }
-    };
+    }
 
     private static final class MultiPlayer implements MediaPlayer.OnErrorListener,
             MediaPlayer.OnCompletionListener {

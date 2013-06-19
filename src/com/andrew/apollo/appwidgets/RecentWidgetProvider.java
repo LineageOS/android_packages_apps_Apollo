@@ -99,8 +99,8 @@ public class RecentWidgetProvider extends AppWidgetBase {
             intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
             compatSetRemoteAdapter(mViews, appWidgetId, intent);
 
-            final Intent updateIntent = new Intent(MusicPlaybackService.SERVICECMD);
-            updateIntent.putExtra(MusicPlaybackService.CMDNAME,
+            final Intent updateIntent = new Intent(MusicPlaybackService.SERVICE_COMMAND);
+            updateIntent.putExtra(MusicPlaybackService.COMMAND_NAME,
                     RecentWidgetProvider.CMDAPPWIDGETUPDATE);
             updateIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, appWidgetIds);
             updateIntent.setFlags(Intent.FLAG_RECEIVER_REGISTERED_ONLY);
@@ -199,7 +199,7 @@ public class RecentWidgetProvider extends AppWidgetBase {
      */
     public void notifyChange(final MusicPlaybackService service, final String what) {
         if (hasInstances(service)) {
-            if (MusicPlaybackService.PLAYSTATE_CHANGED.equals(what)) {
+            if (MusicPlaybackService.PLAY_STATE_CHANGED.equals(what)) {
                 performUpdate(service, null);
             } else if (MusicPlaybackService.META_CHANGED.equals(what)) {
                 synchronized (service) {
@@ -272,7 +272,7 @@ public class RecentWidgetProvider extends AppWidgetBase {
         views.setOnClickPendingIntent(R.id.app_widget_recents_previous, pendingIntent);
 
         // Play and pause
-        pendingIntent = buildPendingIntent(context, MusicPlaybackService.TOGGLEPAUSE_ACTION, serviceName);
+        pendingIntent = buildPendingIntent(context, MusicPlaybackService.TOGGLE_PAUSE_ACTION, serviceName);
         views.setOnClickPendingIntent(R.id.app_widget_recents_play, pendingIntent);
 
         // Next track
