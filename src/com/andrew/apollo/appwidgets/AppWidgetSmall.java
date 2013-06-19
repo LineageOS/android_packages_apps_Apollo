@@ -54,8 +54,8 @@ public class AppWidgetSmall extends AppWidgetBase {
     public void onUpdate(final Context context, final AppWidgetManager appWidgetManager,
             final int[] appWidgetIds) {
         defaultAppWidget(context, appWidgetIds);
-        final Intent updateIntent = new Intent(MusicPlaybackService.SERVICECMD);
-        updateIntent.putExtra(MusicPlaybackService.CMDNAME, AppWidgetSmall.CMDAPPWIDGETUPDATE);
+        final Intent updateIntent = new Intent(MusicPlaybackService.SERVICE_COMMAND);
+        updateIntent.putExtra(MusicPlaybackService.COMMAND_NAME, AppWidgetSmall.CMDAPPWIDGETUPDATE);
         updateIntent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, appWidgetIds);
         updateIntent.addFlags(Intent.FLAG_RECEIVER_REGISTERED_ONLY);
         context.sendBroadcast(updateIntent);
@@ -100,7 +100,7 @@ public class AppWidgetSmall extends AppWidgetBase {
     public void notifyChange(final MusicPlaybackService service, final String what) {
         if (hasInstances(service)) {
             if (MusicPlaybackService.META_CHANGED.equals(what)
-                    || MusicPlaybackService.PLAYSTATE_CHANGED.equals(what)) {
+                    || MusicPlaybackService.PLAY_STATE_CHANGED.equals(what)) {
                 performUpdate(service, null);
             }
         }
@@ -185,7 +185,7 @@ public class AppWidgetSmall extends AppWidgetBase {
         views.setOnClickPendingIntent(R.id.app_widget_small_previous, pendingIntent);
 
         // Play and pause
-        pendingIntent = buildPendingIntent(context, MusicPlaybackService.TOGGLEPAUSE_ACTION, serviceName);
+        pendingIntent = buildPendingIntent(context, MusicPlaybackService.TOGGLE_PAUSE_ACTION, serviceName);
         views.setOnClickPendingIntent(R.id.app_widget_small_play, pendingIntent);
 
         // Next track

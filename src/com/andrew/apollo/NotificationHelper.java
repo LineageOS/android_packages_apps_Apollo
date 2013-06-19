@@ -20,7 +20,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.support.v4.app.NotificationCompat;
-import android.util.Log;
 import android.widget.RemoteViews;
 
 import com.andrew.apollo.utils.ApolloUtils;
@@ -202,7 +201,7 @@ public class NotificationHelper {
         switch (which) {
             case 1:
                 // Play and pause
-                action = new Intent(MusicPlaybackService.TOGGLEPAUSE_ACTION);
+                action = new Intent(MusicPlaybackService.TOGGLE_PAUSE_ACTION);
                 action.setComponent(serviceName);
                 pendingIntent = PendingIntent.getService(mService, 1, action, 0);
                 return pendingIntent;
