@@ -33,6 +33,15 @@ import com.andrew.apollo.utils.MusicUtils;
  */
 public class DeleteDialog extends DialogFragment {
 
+    public interface DeleteDialogCallacks {
+        public void onDelete(long[] id);
+    }
+
+    /**
+     * The callback to be called after deletion
+     */
+    protected DeleteDialogCallacks mCallback = null;
+
     /**
      * The item(s) to delete
      */
@@ -53,16 +62,28 @@ public class DeleteDialog extends DialogFragment {
      * @param title The title of the artist, album, or song to delete
      * @param items The item(s) to delete
      * @param key The key used to remove items from the cache.
+     * @param callback If provided the callback will be called after deletion, may be null
      * @return A new instance of the dialog
      */
-    public static DeleteDialog newInstance(final String title, final long[] items, final String key) {
+    public static DeleteDialog newInstance(final String title, final long[] items, final String key, DeleteDialogCallacks callback) {
         final DeleteDialog frag = new DeleteDialog();
         final Bundle args = new Bundle();
         args.putString(Config.NAME, title);
         args.putLongArray("items", items);
         args.putString("cachekey", key);
         frag.setArguments(args);
+        frag.mCallback = callback;
         return frag;
+    }
+
+    /**
+     * @param title The title of the artist, album, or song to delete
+     * @param items The item(s) to delete
+     * @param key The key used to remove items from the cache.
+     * @return A new instance of the dialog
+     */
+    public static DeleteDialog newInstance(final String title, final long[] items, final String key) {
+        return newInstance(title, items, key, null);
     }
 
     /**
@@ -92,6 +113,7 @@ public class DeleteDialog extends DialogFragment {
                         mFetcher.removeFromCache(key);
                         // Delete the selected item(s)
                         MusicUtils.deleteTracks(getActivity(), mItemList);
+                        mCallback.onDelete(mItemList);
                         dialog.dismiss();
                     }
                 }).setNegativeButton(R.string.cancel, new OnClickListener() {
