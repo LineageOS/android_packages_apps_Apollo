@@ -38,7 +38,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.Window;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -50,6 +49,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.andrew.apollo.IApolloService;
+import com.andrew.apollo.menu.DeleteDialog;
 import com.andrew.apollo.MusicPlaybackService;
 import com.andrew.apollo.R;
 import com.andrew.apollo.adapters.PagerAdapter;
@@ -73,7 +73,7 @@ import java.lang.ref.WeakReference;
  * @author Andrew Neal (andrewdneal@gmail.com)
  */
 public class AudioPlayerActivity extends FragmentActivity implements ServiceConnection,
-        OnSeekBarChangeListener {
+        OnSeekBarChangeListener, DeleteDialog.DeleteDialogCallback {
 
     // Message to refresh the time
     private static final int REFRESH_TIME = 1;
@@ -363,10 +363,23 @@ public class AudioPlayerActivity extends FragmentActivity implements ServiceConn
                 // Settings
                 NavUtils.openSettings(this);
                 return true;
+            case R.id.menu_audio_player_delete:
+                // Delete current song
+                DeleteDialog.newInstance(MusicUtils.getTrackName(), new long[] {
+                    MusicUtils.getCurrentAudioId()
+                }, null).show(getSupportFragmentManager(), "DeleteDialog");
+                return true;
             default:
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onDelete(long[] ids) {
+        ((QueueFragment)mPagerAdapter.getFragment(0)).refreshQueue();
+        if (MusicUtils.getQueue().length == 0) {
+            NavUtils.goHome(AudioPlayerActivity.this);
+        }
     }
 
     /**
