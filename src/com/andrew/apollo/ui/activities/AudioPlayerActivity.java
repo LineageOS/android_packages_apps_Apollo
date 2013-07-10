@@ -50,6 +50,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.andrew.apollo.IApolloService;
+import com.andrew.apollo.menu.DeleteDialog;
 import com.andrew.apollo.MusicPlaybackService;
 import com.andrew.apollo.R;
 import com.andrew.apollo.adapters.PagerAdapter;
@@ -362,6 +363,20 @@ public class AudioPlayerActivity extends FragmentActivity implements ServiceConn
             case R.id.menu_settings:
                 // Settings
                 NavUtils.openSettings(this);
+                return true;
+            case R.id.menu_audio_player_delete:
+                // Delete current song
+                DeleteDialog.newInstance(MusicUtils.getTrackName(), new long[] {
+                    MusicUtils.getCurrentAudioId()
+                }, null, new DeleteDialog.DeleteDialogCallacks() {
+                    @Override
+                    public void onDelete(long[] ids) {
+                        ((QueueFragment)mPagerAdapter.getFragment(0)).refreshQueue();
+                        if (MusicUtils.getQueue().length == 0) {
+                            NavUtils.goHome(AudioPlayerActivity.this);
+                        }
+                    }
+                }).show(getSupportFragmentManager(), "DeleteDialog");
                 return true;
             default:
                 break;
