@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dac4157f_56b63c3e",
+        "filename": "src/com/andrew/apollo/menu/DeleteDialog.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-11T16:01:55Z",
+      "side": 1,
+      "message": "DeleteDialogCallback",
+      "revId": "a97a2e1cb01b7e05ed164631970c66001b9bfd80",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dac4157f_3682a853",
+        "filename": "src/com/andrew/apollo/menu/DeleteDialog.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-11T16:01:55Z",
+      "side": 1,
+      "message": "Please wrap the line appropriately.",
+      "revId": "a97a2e1cb01b7e05ed164631970c66001b9bfd80",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
