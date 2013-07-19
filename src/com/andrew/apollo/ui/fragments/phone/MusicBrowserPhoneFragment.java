@@ -67,13 +67,19 @@ public class MusicBrowserPhoneFragment extends Fragment implements
 
     private PreferenceUtils mPreferences;
 
+	private boolean mIsPicker;
+
     /**
      * Empty constructor as per the {@link Fragment} documentation
      */
     public MusicBrowserPhoneFragment() {
     }
 
-    /**
+    public MusicBrowserPhoneFragment(boolean isPicker) {
+	    mIsPicker = isPicker;
+    }
+
+	/**
      * {@inheritDoc}
      */
     @Override
@@ -94,10 +100,19 @@ public class MusicBrowserPhoneFragment extends Fragment implements
                 R.layout.fragment_music_browser_phone, container, false);
 
         // Initialize the adapter
-        mPagerAdapter = new PagerAdapter(getActivity());
-        final MusicFragments[] mFragments = MusicFragments.values();
+        mPagerAdapter = new PagerAdapter(getActivity(), mIsPicker);
+        Bundle mArgs;
+        final MusicFragments[] mFragments;
+        if (mIsPicker) {
+        	mArgs = new Bundle();
+        	mArgs.putBoolean("picker", mIsPicker);
+        	mFragments = MusicFragments.getPickerValues();
+        } else {
+        	mArgs = null;
+        	mFragments = MusicFragments.values();
+        }
         for (final MusicFragments mFragment : mFragments) {
-            mPagerAdapter.add(mFragment.getFragmentClass(), null);
+            mPagerAdapter.add(mFragment.getFragmentClass(), mArgs);
         }
 
         // Initialize the ViewPager

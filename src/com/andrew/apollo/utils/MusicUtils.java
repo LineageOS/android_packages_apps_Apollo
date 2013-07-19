@@ -875,13 +875,9 @@ public final class MusicUtils {
         } catch (final RemoteException ignored) {
         }
     }
-
-    /**
-     * @param context The {@link Context} to use
-     * @param id The song ID.
-     */
-    public static void setRingtone(final Context context, final long id) {
-        final ContentResolver resolver = context.getContentResolver();
+    
+    public static boolean applyRingtoneValues(final Context context, final long id) {
+    	final ContentResolver resolver = context.getContentResolver();
         final Uri uri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id);
         try {
             final ContentValues values = new ContentValues(2);
@@ -889,8 +885,22 @@ public final class MusicUtils {
             values.put(AudioColumns.IS_ALARM, "1");
             resolver.update(uri, values, null, null);
         } catch (final UnsupportedOperationException ingored) {
-            return;
+            return false;
         }
+        return true;
+    }
+
+    /**
+     * @param context The {@link Context} to use
+     * @param id The song ID.
+     */
+    public static void setRingtone(final Context context, final long id) {
+        if (!applyRingtoneValues(context, id)) {
+        	return;
+        }
+        
+        final ContentResolver resolver = context.getContentResolver();
+        final Uri uri = ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id);
 
         final String[] projection = new String[] {
                 BaseColumns._ID, MediaColumns.DATA, MediaColumns.TITLE

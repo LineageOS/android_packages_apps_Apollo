@@ -82,11 +82,21 @@ public class PlaylistFragment extends Fragment implements LoaderCallbacks<List<P
      * Represents a playlist
      */
     private Playlist mPlaylist;
+    
+    /**
+     * Represents that current activity is Picker
+     */
+    private boolean mIsPicker;
 
     /**
      * Empty constructor as per the {@link Fragment} documentation
      */
     public PlaylistFragment() {
+    	this(false);
+    }
+
+    public PlaylistFragment(boolean isPicker) {
+    	mIsPicker = isPicker;
     }
 
     /**
@@ -95,8 +105,10 @@ public class PlaylistFragment extends Fragment implements LoaderCallbacks<List<P
     @Override
     public void onAttach(final Activity activity) {
         super.onAttach(activity);
-        // Register the music status listener
-        ((BaseActivity)activity).setMusicStateListenerListener(this);
+        if (!mIsPicker) {
+	        // Register the music status listener
+	        ((BaseActivity)activity).setMusicStateListenerListener(this);
+        }
     }
 
     /**
@@ -136,8 +148,10 @@ public class PlaylistFragment extends Fragment implements LoaderCallbacks<List<P
     @Override
     public void onActivityCreated(final Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        // Enable the options menu
-        setHasOptionsMenu(true);
+        if (!mIsPicker) {
+	        // Enable the options menu
+	        setHasOptionsMenu(true);
+        }
         // Start the loader
         getLoaderManager().initLoader(LOADER, null, this);
     }
@@ -226,11 +240,11 @@ public class PlaylistFragment extends Fragment implements LoaderCallbacks<List<P
         mPlaylist = mAdapter.getItem(position);
         String playlistName;
         // Favorites list
-        if (position == 0) {
+        if (position == 0 && !mIsPicker) {
             playlistName = getString(R.string.playlist_favorites);
             bundle.putString(Config.MIME_TYPE, getString(R.string.playlist_favorites));
             // Last added
-        } else if (position == 1) {
+        } else if (position == 1 && !mIsPicker) {
             playlistName = getString(R.string.playlist_last_added);
             bundle.putString(Config.MIME_TYPE, getString(R.string.playlist_last_added));
         } else {
@@ -245,7 +259,13 @@ public class PlaylistFragment extends Fragment implements LoaderCallbacks<List<P
         // Create the intent to launch the profile activity
         final Intent intent = new Intent(getActivity(), ProfileActivity.class);
         intent.putExtras(bundle);
-        startActivity(intent);
+
+        if (mIsPicker) {
+        	getActivity().setResult(Activity.RESULT_OK, intent);
+        	getActivity().finish();
+        } else {
+        	startActivity(intent);
+        }
     }
 
     /**
@@ -253,7 +273,7 @@ public class PlaylistFragment extends Fragment implements LoaderCallbacks<List<P
      */
     @Override
     public Loader<List<Playlist>> onCreateLoader(final int id, final Bundle args) {
-        return new PlaylistLoader(getActivity());
+        return new PlaylistLoader(getActivity(), mIsPicker);
     }
 
     /**

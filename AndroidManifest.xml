@@ -166,6 +166,24 @@
             android:name=".ui.activities.ThemesActivity"
             android:excludeFromRecents="true" />
         <!-- 4x1 App Widget -->
+        <activity
+            android:name=".ui.activities.PlaylistPickerActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.SongPickerActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.RINGTONE_PICKER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <receiver
             android:name="com.andrew.apollo.appwidgets.AppWidgetSmall"
             android:exported="false"
