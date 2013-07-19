@@ -24,6 +24,7 @@ import android.os.SystemClock;
 import android.provider.MediaStore;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -100,6 +101,8 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
     private ImageFetcher mImageFetcher;
 
     private PreferenceUtils mPreferences;
+
+    private boolean mIsPicker;
 
     /**
      * {@inheritDoc}
@@ -234,6 +237,11 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
         mViewPager.setOnPageChangeListener(this);
         // Attach the carousel listener
         mTabCarousel.setListener(this);
+
+        mIsPicker = getIntent().getExtras().getBoolean("picker");
+        if (mIsPicker) {
+            findViewById(R.id.bottom_action_bar_parent).setVisibility(View.GONE);
+        }
     }
 
     /**
@@ -301,7 +309,9 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
             case android.R.id.home:
                 // If an album profile, go up to the artist profile
                 if (isAlbum()) {
-                    NavUtils.openArtistProfile(this, mArtistName);
+                    if (!mIsPicker) { // we did not closed previous activity so just go back in stack
+                        NavUtils.openArtistProfile(this, mArtistName);
+                    }
                     finish();
                 } else {
                     // Otherwise just go back
@@ -499,39 +509,47 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
     @Override
     protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == NEW_PHOTO) {
-            if (resultCode == RESULT_OK) {
-                final Uri selectedImage = data.getData();
-                final String[] filePathColumn = {
-                    MediaStore.Images.Media.DATA
-                };
+        switch (requestCode) {
+            case NEW_PHOTO:
+                if (resultCode == RESULT_OK) {
+                    final Uri selectedImage = data.getData();
+                    final String[] filePathColumn = {
+                        MediaStore.Images.Media.DATA
+                    };
 
-                Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null,
-                        null, null);
-                if (cursor != null && cursor.moveToFirst()) {
-                    final int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                    final String picturePath = cursor.getString(columnIndex);
-                    cursor.close();
-                    cursor = null;
+                    Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null,
+                            null, null);
+                    if (cursor != null && cursor.moveToFirst()) {
+                        final int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                        final String picturePath = cursor.getString(columnIndex);
+                        cursor.close();
+                        cursor = null;
 
-                    String key = mProfileName;
-                    if (isArtist()) {
-                        key = mArtistName;
-                    } else if (isAlbum()) {
-                        key = mProfileName + Config.ALBUM_ART_SUFFIX;
-                    }
+                        String key = mProfileName;
+                        if (isArtist()) {
+                            key = mArtistName;
+                        } else if (isAlbum()) {
+                            key = mProfileName + Config.ALBUM_ART_SUFFIX;
+                        }
 
-                    final Bitmap bitmap = ImageFetcher.decodeSampledBitmapFromFile(picturePath);
-                    mImageFetcher.addBitmapToCache(key, bitmap);
-                    if (isAlbum()) {
-                        mTabCarousel.getAlbumArt().setImageBitmap(bitmap);
-                    } else {
-                        mTabCarousel.getPhoto().setImageBitmap(bitmap);
+                        final Bitmap bitmap = ImageFetcher.decodeSampledBitmapFromFile(picturePath);
+                        mImageFetcher.addBitmapToCache(key, bitmap);
+                        if (isAlbum()) {
+                            mTabCarousel.getAlbumArt().setImageBitmap(bitmap);
+                        } else {
+                            mTabCarousel.getPhoto().setImageBitmap(bitmap);
+                        }
                     }
                 }
-            } else {
+                break;
+            case NavUtils.REQUEST_PICKER:
+                if (resultCode == Activity.RESULT_OK) {
+                    setResult(resultCode, data);
+                    finish();
+                }
+                break;
+            default:
                 selectOldPhoto();
-            }
         }
     }
 

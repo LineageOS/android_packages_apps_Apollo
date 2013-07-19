@@ -46,6 +46,8 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
     private int mCurrentPage;
 
+    private boolean mIsPicker;
+
     /**
      * Constructor of <code>PagerAdatper<code>
      * 
@@ -53,8 +55,13 @@ public class PagerAdapter extends FragmentPagerAdapter {
      *            {@link Fragment}.
      */
     public PagerAdapter(final FragmentActivity fragmentActivity) {
+        this(fragmentActivity, false);
+        }
+
+    public PagerAdapter(final FragmentActivity fragmentActivity, boolean isPicker) {
         super(fragmentActivity.getSupportFragmentManager());
         mFragmentActivity = fragmentActivity;
+        mIsPicker = isPicker;
     }
 
     /**
@@ -140,7 +147,9 @@ public class PagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public CharSequence getPageTitle(final int position) {
-        return mFragmentActivity.getResources().getStringArray(R.array.page_titles)[position]
+        int id = mIsPicker ? R.array.page_titles_picker : R.array.page_titles;
+
+        return mFragmentActivity.getResources().getStringArray(id)[position]
                 .toUpperCase(Locale.getDefault());
     }
 
@@ -209,6 +218,10 @@ public class PagerAdapter extends FragmentPagerAdapter {
          */
         public Class<? extends Fragment> getFragmentClass() {
             return mFragmentClass;
+        }
+
+        public static MusicFragments[] getPickerValues() {
+            return new MusicFragments[] {ARTIST, ALBUM, SONG, GENRE};
         }
 
     }

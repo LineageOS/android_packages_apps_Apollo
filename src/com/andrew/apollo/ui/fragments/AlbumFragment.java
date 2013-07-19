@@ -114,14 +114,22 @@ public class AlbumFragment extends Fragment implements LoaderCallbacks<List<Albu
      */
     private boolean mShouldRefresh = false;
 
+    private boolean mIsPicker;
+
     /**
      * {@inheritDoc}
      */
     @Override
     public void onAttach(final Activity activity) {
         super.onAttach(activity);
-        // Register the music status listener
-        ((BaseActivity)activity).setMusicStateListenerListener(this);
+        Bundle args = getArguments();
+        if (args != null) {
+            mIsPicker = getArguments().getBoolean("picker");
+        }
+        if (!mIsPicker) {
+            // Register the music status listener
+            ((BaseActivity)activity).setMusicStateListenerListener(this);
+        }
     }
 
     /**
@@ -276,7 +284,8 @@ public class AlbumFragment extends Fragment implements LoaderCallbacks<List<Albu
     public void onItemClick(final AdapterView<?> parent, final View view, final int position,
             final long id) {
         mAlbum = mAdapter.getItem(position);
-        NavUtils.openAlbumProfile(getActivity(), mAlbum.mAlbumName, mAlbum.mArtistName, mAlbum.mAlbumId);
+        NavUtils.openAlbumProfile(getActivity(), mAlbum.mAlbumName,
+                mAlbum.mArtistName, mAlbum.mAlbumId, mIsPicker);
     }
 
     /**
