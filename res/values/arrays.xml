@@ -25,4 +25,11 @@
         <item>@string/page_genres</item>
     </string-array>
 
+    <string-array name="page_titles_picker" translatable="false">
+        <item>@string/page_artists</item>
+        <item>@string/page_albums</item>
+        <item>@string/page_songs</item>
+        <item>@string/page_genres</item>
+    </string-array>
+
 </resources>

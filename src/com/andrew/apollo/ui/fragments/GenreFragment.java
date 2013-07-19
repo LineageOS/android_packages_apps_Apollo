@@ -38,6 +38,7 @@ import com.andrew.apollo.model.Genre;
 import com.andrew.apollo.recycler.RecycleHolder;
 import com.andrew.apollo.ui.activities.ProfileActivity;
 import com.andrew.apollo.utils.MusicUtils;
+import com.andrew.apollo.utils.NavUtils;
 
 import java.util.List;
 
@@ -84,6 +85,8 @@ public class GenreFragment extends Fragment implements LoaderCallbacks<List<Genr
      */
     private Genre mGenre;
 
+    private boolean mIsPicker;
+
     /**
      * Empty constructor as per the {@link Fragment} documentation
      */
@@ -98,6 +101,10 @@ public class GenreFragment extends Fragment implements LoaderCallbacks<List<Genr
         super.onCreate(savedInstanceState);
         // Create the adpater
         mAdapter = new GenreAdapter(getActivity(), R.layout.list_item_simple);
+        Bundle args = getArguments();
+        if (args != null) {
+            mIsPicker = getArguments().getBoolean("picker");
+        }
     }
 
     /**
@@ -186,11 +193,19 @@ public class GenreFragment extends Fragment implements LoaderCallbacks<List<Genr
         bundle.putLong(Config.ID, mGenre.mGenreId);
         bundle.putString(Config.MIME_TYPE, MediaStore.Audio.Genres.CONTENT_TYPE);
         bundle.putString(Config.NAME, mGenre.mGenreName);
+        if (mIsPicker) {
+            bundle.putBoolean("picker", true);
+        }
 
         // Create the intent to launch the profile activity
         final Intent intent = new Intent(getActivity(), ProfileActivity.class);
         intent.putExtras(bundle);
-        startActivity(intent);
+
+        if (mIsPicker) {
+            getActivity().startActivityForResult(intent, NavUtils.REQUEST_PICKER);
+        } else {
+            getActivity().startActivity(intent);
+        }
     }
 
     /**

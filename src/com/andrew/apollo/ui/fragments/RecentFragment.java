@@ -114,14 +114,22 @@ public class RecentFragment extends Fragment implements LoaderCallbacks<List<Alb
      */
     private boolean mShouldRefresh = false;
 
+    private boolean mIsPicker;
+
     /**
      * {@inheritDoc}
      */
     @Override
     public void onAttach(final Activity activity) {
         super.onAttach(activity);
-        // Register the music status listener
-        ((BaseActivity)activity).setMusicStateListenerListener(this);
+        Bundle args = getArguments();
+        if (args != null) {
+            mIsPicker = getArguments().getBoolean("picker");
+        }
+        if (!mIsPicker) {
+            // Register the music status listener
+            ((BaseActivity)activity).setMusicStateListenerListener(this);
+        }
     }
 
     /**
