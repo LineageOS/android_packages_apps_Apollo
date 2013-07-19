@@ -12,9 +12,14 @@
 package com.andrew.apollo.ui.fragments;
 
 import android.app.Activity;
+import android.content.ContentUris;
+import android.content.Intent;
 import android.database.Cursor;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.provider.MediaStore.Audio.Media;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.Loader;
@@ -107,6 +112,8 @@ public class SongFragment extends Fragment implements LoaderCallbacks<List<Song>
      */
     private boolean mShouldRefresh = false;
 
+	private boolean mIsPicker;
+
     /**
      * Empty constructor as per the {@link Fragment} documentation
      */
@@ -119,8 +126,14 @@ public class SongFragment extends Fragment implements LoaderCallbacks<List<Song>
     @Override
     public void onAttach(final Activity activity) {
         super.onAttach(activity);
-        // Register the music status listener
-        ((BaseActivity)activity).setMusicStateListenerListener(this);
+        Bundle args = getArguments();
+        if (args != null) {
+        	mIsPicker = getArguments().getBoolean("picker");
+        }
+        if (!mIsPicker) {
+	        // Register the music status listener
+	        ((BaseActivity)activity).setMusicStateListenerListener(this);
+        }
     }
 
     /**
@@ -263,11 +276,15 @@ public class SongFragment extends Fragment implements LoaderCallbacks<List<Song>
     @Override
     public void onItemClick(final AdapterView<?> parent, final View view, final int position,
             final long id) {
-        Cursor cursor = SongLoader.makeSongCursor(getActivity());
-        final long[] list = MusicUtils.getSongListForCursor(cursor);
-        MusicUtils.playAll(getActivity(), list, position, false);
-        cursor.close();
-        cursor = null;
+    	if (mIsPicker) {
+    		NavUtils.finishPicker(getActivity(), mAdapter.getItem(position).mSongId);
+    	} else {
+	        Cursor cursor = SongLoader.makeSongCursor(getActivity());
+	        final long[] list = MusicUtils.getSongListForCursor(cursor);
+	        MusicUtils.playAll(getActivity(), list, position, false);
+	        cursor.close();
+	        cursor = null;
+    	}
     }
 
     /**

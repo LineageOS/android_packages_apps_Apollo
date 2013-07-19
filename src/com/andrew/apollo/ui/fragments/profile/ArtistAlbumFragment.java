@@ -91,6 +91,8 @@ public class ArtistAlbumFragment extends Fragment implements LoaderCallbacks<Lis
      */
     private ProfileTabCarousel mProfileTabCarousel;
 
+	private boolean mIsPicker;
+
     /**
      * Empty constructor as per the {@link Fragment} documentation
      */
@@ -116,6 +118,7 @@ public class ArtistAlbumFragment extends Fragment implements LoaderCallbacks<Lis
         // Create the adpater
         mAdapter = new ArtistAlbumAdapter(getActivity(),
                 R.layout.list_item_detailed_no_background);
+        mIsPicker = getArguments().getBoolean("picker");
     }
 
     /**
@@ -256,8 +259,10 @@ public class ArtistAlbumFragment extends Fragment implements LoaderCallbacks<Lis
             return;
         }
         mAlbum = mAdapter.getItem(position - 1);
-        NavUtils.openAlbumProfile(getActivity(), mAlbum.mAlbumName, mAlbum.mArtistName);
-        getActivity().finish();
+        NavUtils.openAlbumProfile(getActivity(), mAlbum.mAlbumName, mAlbum.mArtistName, mIsPicker);
+        if (!mIsPicker) {
+        	getActivity().finish();
+        }
     }
 
     /**

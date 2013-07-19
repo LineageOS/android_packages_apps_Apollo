@@ -42,6 +42,8 @@ public class PlaylistLoader extends WrappedAsyncTaskLoader<List<Playlist>> {
      * The {@link Cursor} used to run the query.
      */
     private Cursor mCursor;
+    
+    private boolean mIsPicker;
 
     /**
      * Constructor of <code>PlaylistLoader</code>
@@ -49,7 +51,17 @@ public class PlaylistLoader extends WrappedAsyncTaskLoader<List<Playlist>> {
      * @param context The {@link Context} to use
      */
     public PlaylistLoader(final Context context) {
+        this(context, false);
+    }
+    
+    /**
+     * Constructor of <code>PlaylistLoader</code>
+     * 
+     * @param context The {@link Context} to use
+     */
+    public PlaylistLoader(final Context context, boolean isPicker) {
         super(context);
+        mIsPicker = isPicker;
     }
 
     /**
@@ -90,15 +102,17 @@ public class PlaylistLoader extends WrappedAsyncTaskLoader<List<Playlist>> {
     private void makeDefaultPlaylists() {
         final Resources resources = getContext().getResources();
 
-        /* Favorites list */
-        final Playlist favorites = new Playlist(-1,
-                resources.getString(R.string.playlist_favorites));
-        mPlaylistList.add(favorites);
-
-        /* Last added list */
-        final Playlist lastAdded = new Playlist(-2,
-                resources.getString(R.string.playlist_last_added));
-        mPlaylistList.add(lastAdded);
+        if (!mIsPicker) {
+	        /* Favorites list */
+	        final Playlist favorites = new Playlist(-1,
+	                resources.getString(R.string.playlist_favorites));
+	        mPlaylistList.add(favorites);
+	
+	        /* Last added list */
+	        final Playlist lastAdded = new Playlist(-2,
+	                resources.getString(R.string.playlist_last_added));
+	        mPlaylistList.add(lastAdded);
+        }
     }
 
     /**
