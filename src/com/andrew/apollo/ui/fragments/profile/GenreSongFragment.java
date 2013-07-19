@@ -12,9 +12,14 @@
 package com.andrew.apollo.ui.fragments.profile;
 
 import android.app.Activity;
+import android.content.ContentUris;
+import android.content.Intent;
 import android.database.Cursor;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.provider.MediaStore.Audio.Media;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.Loader;
@@ -100,6 +105,8 @@ public class GenreSongFragment extends Fragment implements LoaderCallbacks<List<
      */
     private ProfileTabCarousel mProfileTabCarousel;
 
+    private boolean mIsPicker;
+
     /**
      * Empty constructor as per the {@link Fragment} documentation
      */
@@ -124,6 +131,7 @@ public class GenreSongFragment extends Fragment implements LoaderCallbacks<List<
         super.onCreate(savedInstanceState);
         // Create the adpater
         mAdapter = new ProfileSongAdapter(getActivity(), R.layout.list_item_simple);
+        mIsPicker = getArguments().getBoolean("picker");
     }
 
     /**
@@ -277,12 +285,16 @@ public class GenreSongFragment extends Fragment implements LoaderCallbacks<List<
         if (position == 0) {
             return;
         }
-        Cursor cursor = GenreSongLoader.makeGenreSongCursor(getActivity(), getArguments()
-                .getLong(Config.ID));
-        final long[] list = MusicUtils.getSongListForCursor(cursor);
-        MusicUtils.playAll(getActivity(), list, position - 1, false);
-        cursor.close();
-        cursor = null;
+        if (mIsPicker) {
+            NavUtils.finishPicker(getActivity(), mAdapter.getItem(position - 1).mSongId);
+        } else {
+            Cursor cursor = GenreSongLoader.makeGenreSongCursor(getActivity(), getArguments()
+                    .getLong(Config.ID));
+            final long[] list = MusicUtils.getSongListForCursor(cursor);
+            MusicUtils.playAll(getActivity(), list, position - 1, false);
+            cursor.close();
+            cursor = null;
+        }
     }
 
     /**

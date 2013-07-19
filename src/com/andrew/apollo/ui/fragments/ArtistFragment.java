@@ -112,6 +112,8 @@ public class ArtistFragment extends Fragment implements LoaderCallbacks<List<Art
      */
     private boolean mShouldRefresh = false;
 
+    private boolean mIsPicker;
+
     /**
      * Empty constructor as per the {@link Fragment} documentation
      */
@@ -124,8 +126,14 @@ public class ArtistFragment extends Fragment implements LoaderCallbacks<List<Art
     @Override
     public void onAttach(final Activity activity) {
         super.onAttach(activity);
-        // Register the music status listener
-        ((BaseActivity)activity).setMusicStateListenerListener(this);
+        Bundle args = getArguments();
+        if (args != null) {
+            mIsPicker = getArguments().getBoolean("picker");
+        }
+        if (!mIsPicker) {
+            // Register the music status listener
+            ((BaseActivity)activity).setMusicStateListenerListener(this);
+        }
     }
 
     /**
@@ -274,7 +282,7 @@ public class ArtistFragment extends Fragment implements LoaderCallbacks<List<Art
     public void onItemClick(final AdapterView<?> parent, final View view, final int position,
             final long id) {
         mArtist = mAdapter.getItem(position);
-        NavUtils.openArtistProfile(getActivity(), mArtist.mArtistName);
+        NavUtils.openArtistProfile(getActivity(), mArtist.mArtistName, mIsPicker);
     }
 
     /**

@@ -14,10 +14,14 @@ package com.andrew.apollo.utils;
 import android.app.Activity;
 import android.app.SearchManager;
 import android.content.ActivityNotFoundException;
+import android.content.ContentUris;
 import android.content.Intent;
+import android.media.RingtoneManager;
 import android.media.audiofx.AudioEffect;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.provider.MediaStore.Audio.Media;
 
 import com.andrew.apollo.Config;
 import com.andrew.apollo.R;
@@ -36,6 +40,8 @@ import com.devspark.appmsg.AppMsg;
  */
 public final class NavUtils {
 
+    public static final int REQUEST_PICKER = 2;
+
     /**
      * Opens the profile of an artist.
      * 
@@ -44,6 +50,11 @@ public final class NavUtils {
      */
     public static void openArtistProfile(final Activity context,
             final String artistName) {
+        openArtistProfile(context, artistName, false);
+    }
+
+    public static void openArtistProfile(final Activity context,
+            final String artistName, boolean isPicker) {
 
         // Create a new bundle to transfer the artist info
         final Bundle bundle = new Bundle();
@@ -53,8 +64,15 @@ public final class NavUtils {
 
         // Create the intent to launch the profile activity
         final Intent intent = new Intent(context, ProfileActivity.class);
+        if (isPicker) {
+            bundle.putBoolean("picker", true);
+        }
         intent.putExtras(bundle);
-        context.startActivity(intent);
+        if (isPicker) {
+            context.startActivityForResult(intent, REQUEST_PICKER);
+        } else {
+            context.startActivity(intent);
+        }
     }
 
     /**
@@ -67,6 +85,20 @@ public final class NavUtils {
      */
     public static void openAlbumProfile(final Activity context,
             final String albumName, final String artistName, final long albumId) {
+        openAlbumProfile(context, albumName, artistName, albumId, false);
+    }
+
+    /**
+     * Opens the profile of an album.
+     * 
+     * @param context The {@link Activity} to use.
+     * @param albumName The name of the album
+     * @param artistName The name of the album artist
+     * @param albumId The id of the album
+     * @param isPicker if true picker argument will be passed to activity
+     */
+    public static void openAlbumProfile(final Activity context,
+            final String albumName, final String artistName, final long albumId, boolean isPicker) {
 
         // Create a new bundle to transfer the album info
         final Bundle bundle = new Bundle();
@@ -76,10 +108,17 @@ public final class NavUtils {
         bundle.putLong(Config.ID, albumId);
         bundle.putString(Config.NAME, albumName);
 
+        if (isPicker) {
+            bundle.putBoolean("picker", true);
+        }
         // Create the intent to launch the profile activity
         final Intent intent = new Intent(context, ProfileActivity.class);
         intent.putExtras(bundle);
-        context.startActivity(intent);
+        if (isPicker) {
+            context.startActivityForResult(intent, REQUEST_PICKER);
+        } else {
+            context.startActivity(intent);
+        }
     }
 
     /**
@@ -147,6 +186,15 @@ public final class NavUtils {
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
+        activity.finish();
+    }
+
+    public static void finishPicker(final Activity activity, final long id) {
+        MusicUtils.applyRingtoneValues(activity, id);
+        Uri song_uri = ContentUris.withAppendedId(Media.EXTERNAL_CONTENT_URI, id);
+        Intent i = new Intent();
+        i.putExtra(RingtoneManager.EXTRA_RINGTONE_PICKED_URI, song_uri);
+        activity.setResult(Activity.RESULT_OK, i);
         activity.finish();
     }
 }
