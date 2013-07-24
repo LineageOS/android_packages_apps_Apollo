@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3acd31a7_978746d7",
+        "filename": "src/com/andrew/apollo/menu/DeleteDialog.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:07:59Z",
+      "side": 1,
+      "message": "Callback, not Callack.",
+      "revId": "7dd41f56acda4ab19fe3711bef92f8a367467a4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3acd31a7_776dca31",
+        "filename": "src/com/andrew/apollo/menu/DeleteDialog.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-24T06:07:59Z",
+      "side": 1,
+      "message": "After thinking about it, I think the callback won\u0027t be fired (due to it being null) after a rotation while the dialog is shown. Can you confirm that?",
+      "revId": "7dd41f56acda4ab19fe3711bef92f8a367467a4b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
