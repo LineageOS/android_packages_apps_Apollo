@@ -20,7 +20,7 @@
     <string name="page_artists">Interpreti</string>
     <string name="page_albums">Albumy</string>
     <string name="page_songs">Skladby</string>
-    <string name="page_playlists">Hracie zoznamy</string>
+    <string name="page_playlists">Zoznamy skladieb</string>
     <string name="page_genres">Žánre</string>
     <string name="menu_settings">Nastavenia</string>
     <string name="menu_search">Hľadať</string>
@@ -38,7 +38,7 @@
     <string name="menu_detailed">Podrobne</string>
     <string name="menu_grid">Mriežka</string>
     <string name="menu_view_as">Zobraziť ako</string>
-    <string name="add_to_playlist">Pridať do hracieho zoznamu</string>
+    <string name="add_to_playlist">Pridať do zoznamu skladieb</string>
     <string name="add_to_favorites">Pridať do obľúbených</string>
     <string name="add_to_queue">Pridať do fronty</string>
     <string name="remove_from_favorites">Odstrániť z obľúbených</string>
@@ -57,12 +57,12 @@
     <string name="playlist_favorite">Obľúbené skladby</string>
     <string name="playlist_favorites">Obľúbené skladby</string>
     <string name="playlist_last_added">Naposledy pridané skladby</string>
-    <string name="new_playlist">Nový hrací zoznam</string>
+    <string name="new_playlist">Nový zoznam skladieb</string>
     <string name="save">Uložiť</string>
     <string name="cancel">Zrušiť</string>
     <string name="overwrite">Prepísať</string>
-    <string name="new_playlist_name_template">Hrací zoznam <xliff:g id="number">%d</xliff:g></string>
-    <string name="create_playlist_prompt">Názov hracieho zoznamu</string>
+    <string name="new_playlist_name_template">Zoznam skladieb <xliff:g id="number">%d</xliff:g></string>
+    <string name="create_playlist_prompt">Názov zoznamu skladieb</string>
     <string name="delete_dialog_title">Odstrániť <xliff:g id="item" example="album">%s</xliff:g>?</string>
     <string name="cannot_be_undone">Táto akcia sa nedá vrátiť späť</string>
     <string name="delete_warning">Týmto natrvalo odstránite obrázky vo vyrovnávacej pamäti</string>
@@ -92,7 +92,7 @@
     <string name="pinned_to_home_screen">Skladba <xliff:g id="name">%s</xliff:g> bola pripnutá na vašu domovskú obrazovku</string>
     <string name="could_not_be_pinned_to_home_screen">Skladba <xliff:g id="name">%s</xliff:g> sa nedá pripnúť na vašu domovskú obrazovku</string>
     <string name="set_as_ringtone">Skladba „<xliff:g id="name" example="Alarm Bell">%s</xliff:g>“ bola nastavená ako zvonenie</string>
-    <string name="playlist_renamed">Hrací zoznam bol premenovaný</string>
+    <string name="playlist_renamed">Zoznam skladieb bol premenovaný</string>
     <string name="theme_set"><xliff:g id="name">%s</xliff:g> bola nastavená ako téma</string>
     <string name="settings_ui_category">Rozhranie</string>
     <string name="settings_storage_category">Úložisko</string>
