@@ -144,7 +144,7 @@ public class RecentWidgetService extends RemoteViewsService {
             Bitmap bitmap = mFetcher.getCachedBitmap(albumName);
 
             if (bitmap == null) {
-                bitmap = mFetcher.getCachedArtwork(albumName);
+                bitmap = mFetcher.getCachedArtwork(albumName, artist);
             }
             if (bitmap != null) {
                 mViews.setImageViewBitmap(R.id.app_widget_recents_base_image, bitmap);

@@ -148,7 +148,7 @@ public class ImageFetcher extends ImageWorker {
      */
     public void loadAlbumImage(final String artistName, final String albumName, final long albumId,
             final ImageView imageView) {
-        loadImage(albumName + Config.ALBUM_ART_SUFFIX, artistName, albumName, albumId, imageView,
+        loadImage(albumName + artistName + Config.ALBUM_ART_SUFFIX, artistName, albumName, albumId, imageView,
                 ImageType.ALBUM);
     }
 
@@ -156,8 +156,8 @@ public class ImageFetcher extends ImageWorker {
      * Used to fetch the current artwork.
      */
     public void loadCurrentArtwork(final ImageView imageView) {
-        loadImage(MusicUtils.getAlbumName() + Config.ALBUM_ART_SUFFIX, MusicUtils.getArtistName(),
-                MusicUtils.getAlbumName(), MusicUtils.getCurrentAlbumId(),
+        loadImage(MusicUtils.getAlbumName() + MusicUtils.getArtistName() + Config.ALBUM_ART_SUFFIX,
+                MusicUtils.getArtistName(), MusicUtils.getAlbumName(), MusicUtils.getCurrentAlbumId(),
                 imageView, ImageType.ALBUM);
     }
 
@@ -214,12 +214,13 @@ public class ImageFetcher extends ImageWorker {
     }
 
     /**
-     * @param key The key used to find the album art to return
+     * @param keyAlbum The key (album name) used to find the album art to return
+     * @param keyArtist The key (artist name) used to find the album art to return
      */
-    public Bitmap getCachedArtwork(final String key) {
+    public Bitmap getCachedArtwork(final String keyAlbum, final String keyArtist) {
         if (mImageCache != null) {
-            return mImageCache.getCachedArtwork(mContext, key + Config.ALBUM_ART_SUFFIX,
-                    MusicUtils.getIdForAlbum(mContext, key));
+            return mImageCache.getCachedArtwork(mContext, keyAlbum + keyArtist + Config.ALBUM_ART_SUFFIX,
+                    MusicUtils.getIdForAlbum(mContext, keyAlbum, keyArtist));
         }
         return getDefaultArtwork();
     }
@@ -239,7 +240,7 @@ public class ImageFetcher extends ImageWorker {
         Bitmap artwork = null;
 
         if (artwork == null && albumName != null && mImageCache != null) {
-            artwork = mImageCache.getBitmapFromDiskCache(albumName + Config.ALBUM_ART_SUFFIX);
+            artwork = mImageCache.getBitmapFromDiskCache(albumName + artistName + Config.ALBUM_ART_SUFFIX);
         }
         if (artwork == null && albumId >= 0 && mImageCache != null) {
             // Check for local artwork

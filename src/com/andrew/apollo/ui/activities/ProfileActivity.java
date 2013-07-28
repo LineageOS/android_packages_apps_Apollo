@@ -311,7 +311,7 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
             case R.id.menu_add_to_homescreen: {
                 // Place the artist, album, genre, or playlist onto the Home
                 // screen. Definitely one of my favorite features.
-                final String name = isArtist() ? mArtistName : mProfileName;
+                final String name = isArtist() ? mArtistName : mProfileName + mArtistName;
                 final Long id = mArguments.getLong(Config.ID);
                 ApolloUtils.createShortcutIntent(name, id, mType, this);
                 return true;
@@ -518,7 +518,7 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
                     if (isArtist()) {
                         key = mArtistName;
                     } else if (isAlbum()) {
-                        key = mProfileName + Config.ALBUM_ART_SUFFIX;
+                        key = mProfileName + mArtistName + Config.ALBUM_ART_SUFFIX;
                     }
 
                     final Bitmap bitmap = ImageFetcher.decodeSampledBitmapFromFile(picturePath);
@@ -573,7 +573,7 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
         // First remove the old image
         removeFromCache();
         // Fetch for the artwork
-        mTabCarousel.fetchAlbumPhoto(this, mProfileName);
+        mTabCarousel.fetchAlbumPhoto(this, mProfileName, mArtistName);
     }
 
     /**
@@ -599,7 +599,7 @@ public class ProfileActivity extends BaseActivity implements OnPageChangeListene
         if (isArtist()) {
             key = mArtistName;
         } else if (isAlbum()) {
-            key = mProfileName + Config.ALBUM_ART_SUFFIX;
+            key = mProfileName + mArtistName + Config.ALBUM_ART_SUFFIX;
         }
         mImageFetcher.removeFromCache(key);
         // Give the disk cache a little time before requesting a new image.

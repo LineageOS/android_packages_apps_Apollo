@@ -244,7 +244,7 @@ public class AlbumFragment extends Fragment implements LoaderCallbacks<List<Albu
                 case FragmentMenuItems.DELETE:
                     mShouldRefresh = true;
                     final String album = mAlbum.mAlbumName;
-                    DeleteDialog.newInstance(album, mAlbumList, album + Config.ALBUM_ART_SUFFIX)
+                    DeleteDialog.newInstance(album, mAlbumList, album + mAlbum.mArtistName + Config.ALBUM_ART_SUFFIX)
                             .show(getFragmentManager(), "DeleteDialog");
                     return true;
                 default:
