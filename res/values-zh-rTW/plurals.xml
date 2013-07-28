@@ -54,36 +54,36 @@
     <plurals name="NNNtrackstoplaylist">
 
         <!-- message shown when one song was added -->
-        <item quantity="one">新增 1 首歌曲到播放列表.</item>
+        <item quantity="one">已新增 1 首歌曲到播放列表.</item>
         <!-- message shown when zero or more than one song was added -->
-        <item quantity="other">新增 <xliff:g id="number" example="27">%d</xliff:g> 首歌曲到播放列表.</item>
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> 首歌曲已被新增到播放列表.</item>
     </plurals>
 
     <!-- Toasts after adding song(s) to queue -->
     <plurals name="NNNtrackstoqueue">
 
         <!-- message shown when one song was added -->
-        <item quantity="one">新增 1 首歌曲到隊列中.</item>
+        <item quantity="one">已新增 1 首歌曲到隊列.</item>
         <!-- message shown when zero or more than one song was added -->
-        <item quantity="other">新增 <xliff:g id="number" example="27">%d</xliff:g> 首歌曲到隊列中.</item>
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> 首歌曲已被新增到隊列.</item>
     </plurals>
 
     <!-- Toasts after adding song(s) to the favorites list -->
     <plurals name="NNNtrackstofavorites">
 
         <!-- message shown when one song was added -->
-        <item quantity="one">新增 1 首歌曲到收藏夾.</item>
+        <item quantity="one">已新增 1 首歌曲到我的最愛.</item>
         <!-- message shown when zero or more than one song was added -->
-        <item quantity="other">新增 <xliff:g id="number" example="27">%d</xliff:g> 首歌曲到收藏夾.</item>
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> 首歌曲已被新增到我的最愛.</item>
     </plurals>
 
     <!-- Toast confirming that song(s) was/were deleted. -->
     <plurals name="NNNtracksdeleted">
 
         <!-- delete confirmation message for 1 song -->
-        <item quantity="one">删除 1 首歌曲.</item>
+        <item quantity="one">已删除 1 首歌曲.</item>
         <!-- delete confirmation message for 0 or more than 1 songs -->
-        <item quantity="other">删除 <xliff:g id="songs_to_delete">%d</xliff:g> 首歌曲.</item>
+        <item quantity="other"><xliff:g id="songs_to_delete">%d</xliff:g> 首歌曲已被删除.</item>
     </plurals>
 
 </resources>

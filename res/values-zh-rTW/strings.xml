@@ -25,7 +25,7 @@
     <string name="page_genres">類型</string>
 
     <string name="menu_settings">設定</string>
-    <string name="menu_search">搜索</string>
+    <string name="menu_search">搜尋</string>
     <string name="menu_shuffle">全部隨機播放</string>
     <string name="menu_play_all">全部播放</string>
     <string name="menu_sort_by">排序方式</string>
@@ -34,17 +34,17 @@
     <string name="menu_clear_queue">清除隊列</string>
     <string name="menu_save_queue">保存隊列</string>
     <string name="menu_share">分享</string>
-    <string name="menu_add_to_homescreen">固定到主屏幕</string>
+    <string name="menu_add_to_homescreen">增加到主頁</string>
     <string name="menu_equalizer">均衡器</string>
     <string name="menu_simple">簡單</string>
     <string name="menu_detailed">詳細</string>
     <string name="menu_grid">網格</string>
-    <string name="menu_view_as">視圖</string>
+    <string name="menu_view_as">檢示為</string>
 
     <string name="add_to_playlist">添加到播放列表</string>
-    <string name="add_to_favorites">添加到收藏夾</string>
+    <string name="add_to_favorites">添加到我的最愛</string>
     <string name="add_to_queue">添加到隊列</string>
-    <string name="remove_from_favorites">從收藏夾移除</string>
+    <string name="remove_from_favorites">從我的最愛移除</string>
     <string name="remove_from_recent">從最近播放列表移除</string>
     <string name="remove_from_queue">從隊列移除</string>
 
@@ -59,8 +59,8 @@
     <string name="sort_order_entry_number_of_songs">歌曲數量</string>
     <string name="sort_order_entry_number_of_albums">專輯數量</string>
 
-    <string name="playlist_favorite">收藏夾</string>
-    <string name="playlist_favorites">收藏夾</string>
+    <string name="playlist_favorite">我的最愛</string>
+    <string name="playlist_favorites">我的最愛</string>
     <string name="playlist_last_added">最後添加</string>
 
     <string name="new_playlist">新的播放列表</string>
@@ -71,11 +71,11 @@
     <string name="create_playlist_prompt">播放列表名稱</string>
     <string name="delete_dialog_title">删除 <xliff:g id="item" example="album">%s</xliff:g>嗎?</string>
     <string name="cannot_be_undone">此操作不能被撤消</string>
-    <string name="delete_warning">這將永久刪除緩存的圖像</string>
+    <string name="delete_warning">這將永久刪除緩存的圖片</string>
     <string name="new_photo">從圖庫中選擇照片</string>
-    <string name="google_search">Google 搜索</string>
-    <string name="use_default">使用預設照片</string>
-    <string name="old_photo">使用舊照片</string>
+    <string name="google_search">Google 搜尋</string>
+    <string name="use_default">使用預設相片</string>
+    <string name="old_photo">使用舊相片</string>
 
     <string name="context_menu_play_selection">播放</string>
     <string name="context_menu_play_next">播放下一首</string>
@@ -98,8 +98,8 @@
     <string name="accessibility_repeat_all">全部重複播放</string>
     <string name="accessibility_repeat_one">單曲重複播放</string>
 
-    <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g>已固定到主屏幕</string>
-    <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g>不能被固定到主屏幕</string>
+    <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g>已固定到主頁</string>
+    <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g>不能被固定到主頁</string>
     <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" 設置為鈴聲</string>
     <string name="playlist_renamed">播放列表已被重新命名</string>
     <string name="theme_set">主題已設置為<xliff:g id="name">%s</xliff:g></string>
@@ -113,16 +113,16 @@
     <string name="settings_special_thanks">特別感謝</string>
     <string name="settings_lopez_summary">圖示與Play 商店橫幅設計</string>
     <string name="settings_color_scheme_title">選擇 Apollo 預設配色方案</string>
-    <string name="settings_color_scheme_summary">更改 Apollo 介面的主要色</string>
+    <string name="settings_color_scheme_summary">更改 Apollo 界面的主要色</string>
     <string name="settings_theme_chooser_title">主題選擇器</string>
     <string name="settings_delete_cache_title">清除緩存</string>
     <string name="settings_delete_cache_summary">清除所有緩存的圖像</string>
     <string name="settings_download_only_on_wifi_title">僅使用 Wi-Fi 下載</string>
-    <string name="settings_download_only_on_wifi_summary">不使用移動網絡數據下載</string>
+    <string name="settings_download_only_on_wifi_summary">不使用行動網絡數據下載</string>
     <string name="settings_download_missing_artwork_title">下載缺失的專輯封面</string>
     <string name="settings_download_artist_images_title">下載缺失的表演者的圖像</string>
     <string name="settings_open_source_licenses">開源許可證</string>
-    <string name="settings_use_lockscreen_controls">使用鎖屏控制</string>
+    <string name="settings_use_lockscreen_controls">使用屏幕鎖定控制</string>
     <string name="settings_version_title">版本</string>
 
     <string name="now_listening_to">#NowPlaying <xliff:g id="title">%1$s</xliff:g> - <xliff:g id="artist">%2$s</xliff:g> #Apollo</string>
@@ -135,7 +135,7 @@
 
     <string name="app_widget_small">Apollo: 4x1</string>
     <string name="app_widget_large">Apollo: 4x2</string>
-    <string name="app_widget_large_alt">Apollo: 4x2 (擴展控制)</string>
+    <string name="app_widget_large_alt">Apollo: 4x2 (其他樣式)</string>
     <string name="app_widget_recent">Apollo: 最近播放</string>
     <string name="app_widget_text_separator">-</string>
 
@@ -143,7 +143,7 @@
     <string name="empty_music">請使用 USB 數據線把音樂從您的電腦複製到您的設備中.</string>
     <string name="empty_last_added">您在這一個月以來新增的歌曲將在這裡顯示.</string>
     <string name="empty_search">無搜索結果</string>
-    <string name="empty_favorite">您標記為收藏的歌曲將在這裡顯示.</string>
+    <string name="empty_favorite">您標記為我的最愛的歌曲將在這裡顯示.</string>
     <string name="empty_recent">您曾經聽過的專輯將在這裡顯示。請嘗試播放一些音樂.</string>
 
 </resources>
