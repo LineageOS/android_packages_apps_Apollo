@@ -87,6 +87,23 @@
     },
     {
       "key": {
+        "uuid": "1aca2d91_d393944e",
+        "filename": "src/com/andrew/apollo/widgets/CarouselTab.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-07-29T00:23:45Z",
+      "side": 1,
+      "message": "Seeing this quite a number of times, I wonder whether it would make sense to factor it out into a helper method in ImageCache.java:\n\npublic static String generateCacheKey(final String albumName, final String artistName) {\n    return albumName + \"_\" + artistName + \"_\" Config.ALBUM_ART_SUFFIX;\n}",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1aca2d91_d33034a1",
         "filename": "src/com/andrew/apollo/widgets/ProfileTabCarousel.java",
         "patchSetId": 1
