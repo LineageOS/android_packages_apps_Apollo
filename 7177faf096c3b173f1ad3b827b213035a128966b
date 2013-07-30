@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1aca2d91_33f2c89b",
+        "filename": "src/com/andrew/apollo/appwidgets/RecentWidgetService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 147,
+      "author": {
+        "id": 6829
+      },
+      "writtenOn": "2013-07-30T06:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1aca2d91_93451c19",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1aca2d91_734ba02c",
         "filename": "src/com/andrew/apollo/cache/ImageFetcher.java",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-07-29T00:10:16Z",
       "side": 1,
       "message": "It might be worth creating a separate overload here: getCachedArtwork(album, artist, id)",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aca2d91_13efccb1",
+        "filename": "src/com/andrew/apollo/cache/ImageFetcher.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 6829
+      },
+      "writtenOn": "2013-07-30T06:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1aca2d91_734ba02c",
       "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "1aca2d91_13d8ec1c",
+        "filename": "src/com/andrew/apollo/ui/activities/ProfileActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 6829
+      },
+      "writtenOn": "2013-07-30T06:59:03Z",
+      "side": 1,
+      "message": "True. Fixed, by modifying ApolloUtils.createShortcutIntent to take one more parameter. Ain\u0027t the prettiest solution, but I think it\u0027s good enough.",
+      "parentUuid": "1aca2d91_5348a42d",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1aca2d91_3303e8ba",
         "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2013-07-29T00:10:16Z",
       "side": 1,
       "message": "With the ID, I think you can simplify this:\n\nUri uri \u003d ContentUris.withAppendedId(MediaStore.Audio.Albums.EXTERNAL_CONTENT_URI, id);\nCursor cursor \u003d context.getContentResolver().query(uri, new String[] { AlbumColumns.NUMBER_OF_SONGS }, null, null);",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aca2d91_73d160fb",
+        "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 905,
+      "author": {
+        "id": 6829
+      },
+      "writtenOn": "2013-07-30T06:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1aca2d91_3303e8ba",
       "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "1aca2d91_53ce645b",
+        "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 929,
+      "author": {
+        "id": 6829
+      },
+      "writtenOn": "2013-07-30T06:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1aca2d91_1300eca9",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1aca2d91_d393944e",
         "filename": "src/com/andrew/apollo/widgets/CarouselTab.java",
         "patchSetId": 1
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "1aca2d91_93ebdcb0",
+        "filename": "src/com/andrew/apollo/widgets/CarouselTab.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 152,
+      "author": {
+        "id": 6829
+      },
+      "writtenOn": "2013-07-30T06:59:03Z",
+      "side": 1,
+      "message": "That makes a lot sense.\nAdded to ImageFetcher, as somehow I feel this is no one\u0027s else thing to know how to create cache string. Use StringBuffer to put the strings together.\n\nIn fact this let me to find a few more places where this string is used. See updated commit",
+      "parentUuid": "1aca2d91_d393944e",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1aca2d91_d33034a1",
         "filename": "src/com/andrew/apollo/widgets/ProfileTabCarousel.java",
         "patchSetId": 1
@@ -115,6 +223,24 @@
       "writtenOn": "2013-07-29T00:10:16Z",
       "side": 1,
       "message": "This tab should be 8 spaces.",
+      "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aca2d91_f3b9f0ed",
+        "filename": "src/com/andrew/apollo/widgets/ProfileTabCarousel.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 495,
+      "author": {
+        "id": 6829
+      },
+      "writtenOn": "2013-07-30T06:59:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1aca2d91_d33034a1",
       "revId": "7177faf096c3b173f1ad3b827b213035a128966b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
