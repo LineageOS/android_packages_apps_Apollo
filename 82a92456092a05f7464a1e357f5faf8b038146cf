@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1aca2d91_0bbb08c6",
+        "filename": "src/com/andrew/apollo/ui/fragments/QueueFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 278,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-03T22:43:16Z",
+      "side": 1,
+      "message": "Is the queue reloaded after selecting ok in the dialog?",
+      "revId": "82a92456092a05f7464a1e357f5faf8b038146cf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
