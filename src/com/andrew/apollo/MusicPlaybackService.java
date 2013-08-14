@@ -1316,6 +1316,9 @@ public class MusicPlaybackService extends Service {
                     MusicUtils.getReleaseDateForAlbum(this, getAlbumId()));
         } else if (what.equals(QUEUE_CHANGED)) {
             saveQueue(true);
+            if(isPlaying()) {
+            	setNextTrack();
+            }
         } else {
             saveQueue(false);
         }
