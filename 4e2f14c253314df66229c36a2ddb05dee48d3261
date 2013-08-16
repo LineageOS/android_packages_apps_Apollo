@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "dae975fb_9f2295b8",
+        "filename": "src/com/andrew/apollo/MusicPlaybackService.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 1174,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2013-08-16T21:42:39Z",
+      "side": 1,
+      "message": "Actually, the mNextPlayPos calculation and the if statement can be kept as-is. It\u0027s sufficient to just to this part:\n\n[...]\n} else {\n    mPlayer.setNextDataSource(null);\n}",
+      "parentUuid": "dae975fb_1f4fc593",
+      "revId": "4e2f14c253314df66229c36a2ddb05dee48d3261",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae975fb_1f8d8531",
         "filename": "src/com/andrew/apollo/MusicPlaybackService.java",
         "patchSetId": 3
