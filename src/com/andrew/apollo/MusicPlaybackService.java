@@ -931,6 +931,9 @@ public class MusicPlaybackService extends Service {
                     }
                     final boolean wasPlaying = isPlaying();
                     stop(false);
+                    if (mShuffleMode != SHUFFLE_NONE) {
+                        mPlayPos = getNextPosition(true);
+                    }
                     openCurrentAndNext();
                     if (wasPlaying) {
                         play();
