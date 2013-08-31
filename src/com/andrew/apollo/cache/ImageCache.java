@@ -136,7 +136,6 @@ public final class ImageCache {
 
             @Override
             protected Void doInBackground(final Void... unused) {
-                // Initialize the disk cahe in a background thread
                 initDiskCache(context);
                 return null;
             }
@@ -153,7 +152,7 @@ public final class ImageCache {
      *
      * @param context The {@link Context} to use
      */
-    public void initDiskCache(final Context context) {
+    private synchronized void initDiskCache(final Context context) {
         // Set up disk cache
         if (mDiskCache == null || mDiskCache.isClosed()) {
             File diskCacheDir = getDiskCacheDir(context, TAG);
@@ -625,11 +624,11 @@ public final class ImageCache {
      * @return The cache directory
      */
     public static final File getDiskCacheDir(final Context context, final String uniqueName) {
-        final String cachePath = Environment.MEDIA_MOUNTED.equals(Environment
-                .getExternalStorageState()) || !isExternalStorageRemovable() ? getExternalCacheDir(
-                context).getPath() : context.getCacheDir().getPath();
-
-        return new File(cachePath + File.separator + uniqueName);
+        // getExternalCacheDir(context) returns null if external storage is not ready
+        final String cachePath = getExternalCacheDir(context) != null
+                                    ? getExternalCacheDir(context).getPath()
+                                    : context.getCacheDir().getPath();
+        return new File(cachePath, uniqueName);
     }
 
     /**
