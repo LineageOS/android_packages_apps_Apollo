@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "da1255d7_6c3ab3cf",
+        "filename": "res/menu/audio_player.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 7260
+      },
+      "writtenOn": "2013-09-04T21:12:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da1255d7_29814d90",
+      "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da1255d7_097e89ae",
         "filename": "src/com/andrew/apollo/ui/fragments/profile/PlaylistSongFragment.java",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2013-09-04T19:06:40Z",
       "side": 1,
       "message": "Why are those {} needed?",
+      "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da1255d7_4c37efe3",
+        "filename": "src/com/andrew/apollo/ui/fragments/profile/PlaylistSongFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 283,
+      "author": {
+        "id": 7260
+      },
+      "writtenOn": "2013-09-04T21:12:58Z",
+      "side": 1,
+      "message": "\u0027final long mPlaylistId \u003d ...\u0027 in the next line (278) was overriding the this.mPlaylistId in scope of the whole switch.\nSolution was to either narrow down its scope to one case with brackets, change its name or use this.mPlaylistId in every following case statement.\nDecided to lose the brackets and used this.mPlaylistId in REMOVE_FROM_PLAYLIST case.",
+      "parentUuid": "da1255d7_097e89ae",
       "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "da1255d7_2c34bbdc",
+        "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 840,
+      "author": {
+        "id": 7260
+      },
+      "writtenOn": "2013-09-04T21:12:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da1255d7_e949f58f",
+      "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da1255d7_c94e3196",
         "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2013-09-04T19:06:40Z",
       "side": 1,
       "message": "...being removed from",
+      "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da1255d7_0c31f7ec",
+        "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 843,
+      "author": {
+        "id": 7260
+      },
+      "writtenOn": "2013-09-04T21:12:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da1255d7_c94e3196",
       "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "da1255d7_ec4c6378",
+        "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 845,
+      "author": {
+        "id": 7260
+      },
+      "writtenOn": "2013-09-04T21:12:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da1255d7_a943fd6b",
+      "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da1255d7_89483989",
         "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
         "patchSetId": 1
@@ -98,6 +188,24 @@
       "writtenOn": "2013-09-04T19:06:40Z",
       "side": 1,
       "message": "Please wrap at 100 characters:\n\nfinal ContentResolver resolver \u003d context.getContentResolver();\nresolver.delete(uri, Playlists.Members.AUDIO_ID + \" \u003d ? \", new String[] {\n    Long.toString(id)\n});",
+      "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da1255d7_cc519f10",
+        "filename": "src/com/andrew/apollo/utils/MusicUtils.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 847,
+      "author": {
+        "id": 7260
+      },
+      "writtenOn": "2013-09-04T21:12:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da1255d7_89483989",
       "revId": "76aff7506304e26995186bedc11fe9a97c3a1b08",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
