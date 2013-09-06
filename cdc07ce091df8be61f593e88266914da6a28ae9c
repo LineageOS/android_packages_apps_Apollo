@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba076199_8b2a712b",
+        "filename": "res/values-hu/plurals.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-09-06T00:45:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba076199_abf2d504",
+      "revId": "cdc07ce091df8be61f593e88266914da6a28ae9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba076199_cbed0927",
         "filename": "res/values-hu/strings.xml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2013-09-05T19:59:07Z",
       "side": 1,
       "message": "listából",
+      "revId": "cdc07ce091df8be61f593e88266914da6a28ae9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_4b1d990e",
+        "filename": "res/values-hu/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 5393
+      },
+      "writtenOn": "2013-09-06T00:45:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba076199_cbed0927",
       "revId": "cdc07ce091df8be61f593e88266914da6a28ae9c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
