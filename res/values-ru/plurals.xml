@@ -59,6 +59,15 @@
         <item quantity="other">Добавлено треков в плейлист: <xliff:g id="number" example="27">%d</xliff:g></item>
     </plurals>
 
+   <!-- Toasts after removing a song from playlist -->
+    <plurals name="NNNtracksfromplaylist">
+
+        <!-- message shown when one song was removed -->
+        <item quantity="one">Удалено треков из плейлиста: <xliff:g id="number" example="27">%d</xliff:g></item>
+        <!-- message shown when zero or more than one song was removed -->
+        <item quantity="other">Удалено треков из плейлиста: <xliff:g id="number" example="27">%d</xliff:g></item>
+    </plurals>
+
     <!-- Toasts after adding song(s) to queue -->
     <plurals name="NNNtrackstoqueue">
 
