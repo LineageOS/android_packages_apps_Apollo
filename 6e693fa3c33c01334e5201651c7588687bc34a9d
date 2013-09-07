@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba076199_3cc86974",
+        "filename": "res/values-ru/plurals.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-09-07T05:56:47Z",
+      "side": 1,
+      "message": "udalEno",
+      "revId": "6e693fa3c33c01334e5201651c7588687bc34a9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba076199_fca091a7",
+        "filename": "res/values-ru/plurals.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 5896
+      },
+      "writtenOn": "2013-09-07T05:56:47Z",
+      "side": 1,
+      "message": "udalEno",
+      "revId": "6e693fa3c33c01334e5201651c7588687bc34a9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
