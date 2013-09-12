@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "9a0c5dc1_db515310",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-12T08:11:41Z",
+      "side": 1,
+      "message": "- Albumhoes ophalen",
+      "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a0c5dc1_304e4ec2",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -13,6 +30,24 @@
       "writtenOn": "2013-09-12T07:00:49Z",
       "side": 1,
       "message": "wifi",
+      "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_1b312bed",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-12T08:11:41Z",
+      "side": 1,
+      "message": "yup",
+      "parentUuid": "9a0c5dc1_304e4ec2",
       "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -36,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "9a0c5dc1_bb1fbf5a",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-12T08:11:41Z",
+      "side": 1,
+      "message": "Mee eens, is nu wel superkort afgekapt. Vind \"hoes\" ook beter dan illustratie, maar dan moet dat op andere punten ook aangepast worden.\n\nVan mij mag het \"Ontbr.\" ook helemaal weg, het is toch duidelijk dat als je deze optie aan zet, dat er gedownload gaat worden?\n\nAs het toch moet blijven, dan volluit schrijven, want het is een onduidelijke afkorting,\n\n- Albumhoezen downloaden\n\n- Ontbrekende albumhoezen downloaden",
+      "parentUuid": "9a0c5dc1_30fc0e3e",
+      "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a0c5dc1_f0bb1674",
         "filename": "res/values-nl/strings.xml",
         "patchSetId": 1
@@ -47,6 +100,24 @@
       "writtenOn": "2013-09-12T07:00:49Z",
       "side": 1,
       "message": "\"Ontbr. artiest afbeelding downloaden\" (afkorting art. is onduidelijk)",
+      "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_3b34efdc",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-09-12T08:11:41Z",
+      "side": 1,
+      "message": "- Artiestafbeeldingen downloaden\n\n- Ontbrekende artiestafbeeldingen downloaden",
+      "parentUuid": "9a0c5dc1_f0bb1674",
       "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
