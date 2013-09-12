@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a0c5dc1_304e4ec2",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2013-09-12T07:00:49Z",
+      "side": 1,
+      "message": "wifi",
+      "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_30fc0e3e",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2013-09-12T07:00:49Z",
+      "side": 1,
+      "message": "\"Ontbr. albumhoes downloaden\"\n(ik denk dat het net past)",
+      "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a0c5dc1_f0bb1674",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 7221
+      },
+      "writtenOn": "2013-09-12T07:00:49Z",
+      "side": 1,
+      "message": "\"Ontbr. artiest afbeelding downloaden\" (afkorting art. is onduidelijk)",
+      "revId": "1b5739c285af0890856d42132ba3b4608e6272cd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
