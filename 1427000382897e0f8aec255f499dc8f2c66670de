@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a0c5dc1_9b3f5bd6",
+        "filename": "res/values-nl/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2013-09-13T02:57:53Z",
+      "side": 1,
+      "message": "Artiestenafb. downloaden?",
+      "revId": "1427000382897e0f8aec255f499dc8f2c66670de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
