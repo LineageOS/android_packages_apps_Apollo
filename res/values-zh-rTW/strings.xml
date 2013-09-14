@@ -79,6 +79,7 @@
     <string name="context_menu_open_in_play_store">在Play商店中開啟</string>
     <string name="context_menu_remove_from_recent">從最近撥放移除</string>
     <string name="context_menu_use_as_ringtone">做為鈴聲</string>
+    <string name="context_menu_remove_from_playlist">從播放清單中移除</string>
     <string name="accessibility_play">播放</string>
     <string name="accessibility_pause">暫停</string>
     <string name="accessibility_next">下一首</string>
