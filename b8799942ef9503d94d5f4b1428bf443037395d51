@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a016987_b557cac9",
+        "filename": "res/values-zh-rTW/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 4280
+      },
+      "writtenOn": "2013-09-15T07:30:39Z",
+      "side": 1,
+      "message": "Can you help me correct this translation? thanks.",
+      "revId": "b8799942ef9503d94d5f4b1428bf443037395d51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
