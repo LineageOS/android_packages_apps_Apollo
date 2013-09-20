@@ -5,7 +5,7 @@
     <string name="page_artists">Kunstenaars</string>
     <string name="page_albums">Albums</string>
     <string name="page_songs">Liedjies</string>
-    <string name="page_playlists">Speellys</string>
+    <string name="page_playlists">Speel lys</string>
     <string name="page_genres">Genres</string>
     <string name="menu_settings">Instellings</string>
     <string name="menu_search">Soek</string>
@@ -15,7 +15,7 @@
     <string name="menu_shop">Koop temas</string>
     <string name="menu_clear_recents">Vee items uit</string>
     <string name="menu_clear_queue">Vee lys uit</string>
-    <string name="menu_save_queue">Stoor speellys</string>
+    <string name="menu_save_queue">Stoor speel lys</string>
     <string name="menu_share">Deel</string>
     <string name="menu_add_to_homescreen">Plaas op tuis skerm</string>
     <string name="menu_equalizer">Equalizer</string>
@@ -23,7 +23,7 @@
     <string name="menu_detailed">Gedetailleerde</string>
     <string name="menu_grid">Rooster</string>
     <string name="menu_view_as">Bekyk as</string>
-    <string name="add_to_playlist">Voeg by speellys</string>
+    <string name="add_to_playlist">Voeg by speel lys</string>
     <string name="add_to_favorites">Voeg by gunstellinge</string>
     <string name="add_to_queue">Voeg by lys</string>
     <string name="remove_from_favorites">Verwyder vanuit gunstellinge</string>
@@ -42,12 +42,12 @@
     <string name="playlist_favorite">Gunstelling</string>
     <string name="playlist_favorites">Gunstellinge</string>
     <string name="playlist_last_added">Laaste bygevoeg</string>
-    <string name="new_playlist">Skep speellys</string>
+    <string name="new_playlist">Skep speel lys</string>
     <string name="save">Stoor</string>
     <string name="cancel">Kanselleer</string>
     <string name="overwrite">Oorskryf</string>
-    <string name="new_playlist_name_template">Speellys <xliff:g id="number">%d</xliff:g></string>
-    <string name="create_playlist_prompt" msgid="942607395076646686">"Speellys naam"</string>
+    <string name="new_playlist_name_template">Speel lys <xliff:g id="number">%d</xliff:g></string>
+    <string name="create_playlist_prompt" msgid="942607395076646686">"Speel lys naam"</string>
     <string name="delete_dialog_title">Skrap <xliff:g id="item" example="album">%s</xliff:g>?</string>
     <string name="cannot_be_undone">Hierdie kan nie ontgedaan gemaak word nie</string>
     <string name="delete_warning">Items sal permanent verwyder word</string>
@@ -65,6 +65,7 @@
     <string name="context_menu_open_in_play_store">Maak in Play-winkel oop</string>
     <string name="context_menu_remove_from_recent">Verwyder van onlangse lys</string>
     <string name="context_menu_use_as_ringtone">Gebruik as luitoon</string>
+    <string name="context_menu_remove_from_playlist">Verwyder van speel lys</string>
     <string name="accessibility_play">Speel</string>
     <string name="accessibility_pause">Pouseer</string>
     <string name="accessibility_next">Volgende</string>
@@ -77,7 +78,7 @@
     <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> vasgepen op tuisskerm</string>
     <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> kon nie vasgepen word op tuisskerm nie</string>
     <string name="set_as_ringtone">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" gestel as luitoon</string>
-    <string name="playlist_renamed">Speellys is hernoem</string>
+    <string name="playlist_renamed">Speel lys is hernoem</string>
     <string name="theme_set"><xliff:g id="name">%s</xliff:g> stel as tema</string>
     <string name="settings_ui_category">Koppelvlak</string>
     <string name="settings_storage_category">Berging</string>

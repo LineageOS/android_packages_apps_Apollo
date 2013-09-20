@@ -17,8 +17,12 @@
         <item quantity="other"><xliff:g id="count">%d</xliff:g> genres</item>
     </plurals>
     <plurals name="NNNtrackstoplaylist">
-        <item quantity="one">1 lied is bygevoeg by die speellys.</item>
-        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> liedjies is bygevoeg by die speellys.</item>
+        <item quantity="one">1 lied is bygevoeg by die speel lys.</item>
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> liedjies is bygevoeg by die speel lys.</item>
+    </plurals>
+    <plurals name="NNNtracksfromplaylist">
+        <item quantity="one">1 lied is verwyder van speel lys.</item>
+        <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> liedjies is verwyder van die speel lys.</item>
     </plurals>
     <plurals name="NNNtrackstoqueue">
         <item quantity="one">1 lied is bygevoeg by die lys.</item>
