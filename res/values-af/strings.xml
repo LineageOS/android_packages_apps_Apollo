@@ -36,7 +36,7 @@
     <string name="sort_order_entry_year">Jaar</string>
     <string name="sort_order_entry_duration">Lente</string>
     <string name="sort_order_entry_date_added">Datum bygevoeg</string>
-    <string name="sort_order_entry_track_list">Speel lys</string>
+    <string name="sort_order_entry_track_list">Speellys</string>
     <string name="sort_order_entry_number_of_songs">Aantal liedjies</string>
     <string name="sort_order_entry_number_of_albums">Aantal albums</string>
     <string name="playlist_favorite">Gunstelling</string>
@@ -65,6 +65,7 @@
     <string name="context_menu_open_in_play_store">Maak in Play-winkel oop</string>
     <string name="context_menu_remove_from_recent">Verwyder van onlangse lys</string>
     <string name="context_menu_use_as_ringtone">Gebruik as luitoon</string>
+    <string name="context_menu_remove_from_playlist">Verwyder van speellys</string>
     <string name="accessibility_play">Speel</string>
     <string name="accessibility_pause">Pouseer</string>
     <string name="accessibility_next">Volgende</string>
