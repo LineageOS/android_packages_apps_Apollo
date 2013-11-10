@@ -105,16 +105,11 @@ public class ImageFetcher extends ImageWorker {
             case ARTIST:
                 if (!TextUtils.isEmpty(artistName)) {
                     if (PreferenceUtils.getInstance(mContext).downloadMissingArtistImages()) {
-                        final PaginatedResult<Image> paginatedResult = Artist.getImages(mContext,
-                                artistName);
-                        if (paginatedResult != null) {
-                            final Iterator<Image> iterator = paginatedResult.pageResults.iterator();
-                            while (iterator.hasNext()) {
-                                final Image temp = iterator.next();
-                                final String url = temp.getImageURL(ImageSize.EXTRALARGE);
-                                if (url != null) {
-                                    return url;
-                                }
+                        final Artist artist = Artist.getInfo(mContext, artistName);
+                        if (artist != null) {
+                            final String url = artist.getImageURL(ImageSize.EXTRALARGE);
+                            if (url != null) {
+                                return url;
                             }
                         }
                     }
@@ -128,7 +123,7 @@ public class ImageFetcher extends ImageWorker {
                             final Album album = Album.getInfo(mContext, correction.getName(),
                                     albumName);
                             if (album != null) {
-                                final String url = album.getImageURL(ImageSize.LARGE);
+                                final String url = album.getImageURL(ImageSize.EXTRALARGE);
                                 if (url != null) {
                                     return url;
                                 }
