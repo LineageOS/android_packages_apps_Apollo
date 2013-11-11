@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_f0af7d92",
+        "filename": "src/com/andrew/apollo/lastfm/ImageHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1639
+      },
+      "writtenOn": "2013-11-11T12:13:19Z",
+      "side": 1,
+      "message": "Some images might not have an `EXTRALARGE` size. I think Lastfm has improved on this since the last time I checked, but you should fallback to a slightly smaller size.",
+      "revId": "3781b900a24063a6b383ae426fbc5b214e39efd2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
