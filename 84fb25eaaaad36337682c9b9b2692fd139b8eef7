@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_ce109551",
+        "filename": "src/com/andrew/apollo/cache/ImageFetcher.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1639
+      },
+      "writtenOn": "2013-11-13T15:47:20Z",
+      "side": 1,
+      "message": "Please wrap the return statement in brackets, otherwise it all checks out. Thanks for handling this.\n\nif (url !\u003d null) {\n    return url;\n }",
+      "revId": "84fb25eaaaad36337682c9b9b2692fd139b8eef7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
