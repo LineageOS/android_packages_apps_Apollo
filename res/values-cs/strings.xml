@@ -57,6 +57,7 @@
     <string name="sort_order_entry_track_list">Seznamu stop</string>
     <string name="sort_order_entry_number_of_songs">Počtu skladeb</string>
     <string name="sort_order_entry_number_of_albums">Počtu alb</string>
+    <string name="sort_order_entry_filename">Názvu souboru</string>
 
     <string name="playlist_favorite">Oblíbený</string>
     <string name="playlist_favorites">Oblíbené</string>
