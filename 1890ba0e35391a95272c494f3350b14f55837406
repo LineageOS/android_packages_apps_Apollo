@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_a739ca43",
+        "filename": "res/values-sk/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 8308
+      },
+      "writtenOn": "2013-12-23T19:25:42Z",
+      "side": 1,
+      "message": "Why you remove a cyanogenmod copy right?",
+      "revId": "1890ba0e35391a95272c494f3350b14f55837406",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_473fae25",
+        "filename": "res/values-sk/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 8308
+      },
+      "writtenOn": "2013-12-23T19:25:42Z",
+      "side": 1,
+      "message": "Remove all of comment and white line please\n(Except copyrigth. Don\u0027t remove this)",
+      "revId": "1890ba0e35391a95272c494f3350b14f55837406",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_673c3230",
+        "filename": "res/values-sk/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 8308
+      },
+      "writtenOn": "2013-12-23T19:25:42Z",
+      "side": 1,
+      "message": "Not complete?\nIf it not have meaning in your language please remove this\nIt will use from /res/value/strings.xml",
+      "revId": "1890ba0e35391a95272c494f3350b14f55837406",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_0749b6d0",
+        "filename": "res/values-sk/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 126,
+      "author": {
+        "id": 8308
+      },
+      "writtenOn": "2013-12-23T19:25:42Z",
+      "side": 1,
+      "message": "Remove line is translate\u003dflase please\nIt will use string from /res/values not on your language",
+      "revId": "1890ba0e35391a95272c494f3350b14f55837406",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
