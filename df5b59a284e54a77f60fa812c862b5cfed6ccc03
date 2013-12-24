@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_ea16a7a6",
+        "filename": "res/values-th/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-24T03:48:26Z",
+      "side": 1,
+      "message": "update this to 2013 and Cyanogenmod, like here \nhttps://github.com/CyanogenMod/android_packages_apps_Apollo/blob/cm-10.2/res/values-nl/strings.xml",
+      "revId": "df5b59a284e54a77f60fa812c862b5cfed6ccc03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_aa10afa9",
+        "filename": "res/values-th/plurals.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-24T03:48:26Z",
+      "side": 1,
+      "message": "Something is wrong with all the xliff\n\nIt should look like this\n\n\u003cxliff:g id\u003d\"count\"\u003e%d\u003c/xliff:g\u003e",
+      "revId": "df5b59a284e54a77f60fa812c862b5cfed6ccc03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_8a0b6b7d",
+        "filename": "res/values-th/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-24T03:48:26Z",
+      "side": 1,
+      "message": "update this to 2013 and Cyanogenmod, like here \nhttps://github.com/CyanogenMod/android_packages_apps_Apollo/blob/cm-10.2/res/values-nl/strings.xml",
+      "revId": "df5b59a284e54a77f60fa812c862b5cfed6ccc03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_6a239706",
+        "filename": "res/values-th/strings.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 2881
+      },
+      "writtenOn": "2013-12-24T03:48:26Z",
+      "side": 1,
+      "message": "wrong xliff\u0027s",
+      "revId": "df5b59a284e54a77f60fa812c862b5cfed6ccc03",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
