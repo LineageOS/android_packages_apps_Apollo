@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center"
         android:padding="@dimen/list_preferred_item_padding"
-        android:textColor="@color/holo_blue_light"
+        android:textColor="@color/white"
         android:textSize="@dimen/text_size_large"
         android:textStyle="bold"
         android:visibility="gone" />

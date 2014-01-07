@@ -85,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/colorstrip_height"
         android:layout_below="@+id/app_widget_recents_action_bar"
-        android:background="@color/holo_blue_light"
+        android:background="@color/white"
         android:contentDescription="@null" />
 
     <FrameLayout
