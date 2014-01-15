@@ -17,6 +17,7 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.KeyEvent;
 
 import com.andrew.apollo.ui.activities.HomeActivity;
@@ -26,6 +27,7 @@ import com.andrew.apollo.ui.activities.HomeActivity;
  * next track Long press: voice search.
  */
 public class MediaButtonIntentReceiver extends BroadcastReceiver {
+    private static final String TAG = "ApolloMediaButton";
 
     private static final int MSG_LONGPRESS_TIMEOUT = 1;
 
@@ -34,6 +36,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
     private static final int DOUBLE_CLICK = 800;
 
     private static long mLastClickTime = 0;
+    private static long mLastLastClickTime = 0;
 
     private static boolean mDown = false;
 
@@ -128,14 +131,32 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                         // a command.
                         final Intent i = new Intent(context, MusicPlaybackService.class);
                         i.setAction(MusicPlaybackService.SERVICECMD);
-                        if (keycode == KeyEvent.KEYCODE_HEADSETHOOK
-                                && eventtime - mLastClickTime < DOUBLE_CLICK) {
+                        if (keycode == KeyEvent.KEYCODE_HEADSETHOOK 
+                                && eventtime - mLastClickTime < DOUBLE_CLICK 
+                                && eventtime - mLastLastClickTime >= 2 * DOUBLE_CLICK) {
+                            // handles double click.
+                            Log.d(TAG, "Running double click action");
                             i.putExtra(MusicPlaybackService.CMDNAME, MusicPlaybackService.CMDNEXT);
                             context.startService(i);
+                            mLastLastClickTime = mLastClickTime;
+                            mLastClickTime = eventtime;
+                        } else if (keycode == KeyEvent.KEYCODE_HEADSETHOOK
+                                && eventtime - mLastClickTime < DOUBLE_CLICK 
+                                && eventtime - mLastLastClickTime < 2 * DOUBLE_CLICK) {
+                            // handle triple click
+                            Log.d(TAG, "Running triple click action");
+                            i.putExtra(MusicPlaybackService.CMDNAME, MusicPlaybackService.CMDPREVIOUS);
+                            context.startService(i);
+                            // Second time because we just went forward once so the previous is
+                            // an undo action.
+                            i.putExtra(MusicPlaybackService.CMDNAME, MusicPlaybackService.CMDPREVIOUS);
+                            context.startService(i);
                             mLastClickTime = 0;
+                            mLastLastClickTime = 0;
                         } else {
                             i.putExtra(MusicPlaybackService.CMDNAME, command);
                             context.startService(i);
+                            mLastLastClickTime = mLastClickTime;
                             mLastClickTime = eventtime;
                         }
                         mLaunched = false;
