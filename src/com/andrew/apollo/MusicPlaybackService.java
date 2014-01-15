@@ -746,7 +746,7 @@ public class MusicPlaybackService extends Service {
         if (CMDNEXT.equals(command) || NEXT_ACTION.equals(action)) {
             gotoNext(true);
         } else if (CMDPREVIOUS.equals(command) || PREVIOUS_ACTION.equals(action)) {
-            if (position() < 2000) {
+            if (position() < 2500) {
                 prev();
             } else {
                 seek(0);
