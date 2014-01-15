@@ -15,29 +15,41 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 import android.view.KeyEvent;
 
 import com.andrew.apollo.ui.activities.HomeActivity;
 
 /**
- * Used to control headset playback. Single press: pause/resume. Double press:
- * next track Long press: voice search.
+ * Used to control headset playback.
+ *   Single press: pause/resume
+ *   Double press: next track
+ *   Triple press: previous track
+ *   Long press: voice search
  */
 public class MediaButtonIntentReceiver extends BroadcastReceiver {
+    private static final boolean DEBUG = false;
+    private static final String TAG = "MediaButtonIntentReceiver";
 
     private static final int MSG_LONGPRESS_TIMEOUT = 1;
+    private static final int MSG_HEADSET_CLICK = 2;
 
     private static final int LONG_PRESS_DELAY = 1000;
 
     private static final int DOUBLE_CLICK = 800;
 
+    private static int mClickCounter = 0;
     private static long mLastClickTime = 0;
 
     private static boolean mDown = false;
 
     private static boolean mLaunched = false;
+
+    private static Runnable mSingleClickTask;
+    private static Runnable mDoubleClickTask;
 
     private static Handler mHandler = new Handler() {
 
@@ -56,6 +68,77 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                         context.startActivity(i);
                         mLaunched = true;
                     }
+                    break;
+
+                case MSG_HEADSET_CLICK:
+                    final Bundle data = msg.getData();
+                    final long eventtime = data.getLong("eventtime");
+                    final String command = data.getString("command");
+                    final Context context = (Context)msg.obj;
+
+                    if (eventtime - mLastClickTime < DOUBLE_CLICK || mClickCounter == 0) {
+                        mClickCounter++;
+                        if (mClickCounter == 1) {
+                            mSingleClickTask = new Runnable() {
+                                public void run() {
+                                    final Intent i = new Intent(context,
+                                            MusicPlaybackService.class);
+                                    i.setAction(MusicPlaybackService.SERVICECMD);
+                                    i.putExtra(MusicPlaybackService.CMDNAME,
+                                            MusicPlaybackService.CMDTOGGLEPAUSE);
+                                    context.startService(i);
+                                    Log.d(TAG, "Single click fired. Toggling pause...");
+                                    mClickCounter = 0;
+                                }
+                            };
+
+                            if (DEBUG) {
+                                Log.v(TAG, "Single click scheduled");
+                            }
+
+                            postDelayed(mSingleClickTask, DOUBLE_CLICK);
+                        } else if (mClickCounter == 2) {
+                            removeCallbacks(mSingleClickTask);
+                            mSingleClickTask = null;
+                            if (DEBUG) {
+                                Log.v(TAG, "Single click canceled");
+                                Log.v(TAG, "Double click scheduled");
+                            }
+
+                            mDoubleClickTask = new Runnable() {
+                                public void run() {
+                                    final Intent i = new Intent(context,
+                                            MusicPlaybackService.class);
+                                    i.setAction(MusicPlaybackService.SERVICECMD);
+                                    i.putExtra(MusicPlaybackService.CMDNAME,
+                                            MusicPlaybackService.CMDNEXT);
+                                    context.startService(i);
+                                    Log.d(TAG, "Double click fired. Skipping to next song...");
+                                    mClickCounter = 0;
+                                }
+                            };
+                            postDelayed(mDoubleClickTask, DOUBLE_CLICK);
+                        } else if (mClickCounter == 3) {
+                            removeCallbacks(mDoubleClickTask);
+                            mDoubleClickTask = null;
+
+                            if (DEBUG) {
+                                Log.v(TAG, "Double click canceled");
+                            }
+
+                            final Intent i = new Intent(context, MusicPlaybackService.class);
+                            i.setAction(MusicPlaybackService.SERVICECMD);
+                            i.putExtra(MusicPlaybackService.CMDNAME,
+                                    MusicPlaybackService.CMDPREVIOUS);
+                            context.startService(i);
+                            Log.d(TAG, "Triple click fired. Going to previous song...");
+                            mClickCounter = 0;
+                        }
+                    } else {
+                        Log.e(TAG, "This should really never happen as runnables should set click counter to 0 by now.");
+                        mClickCounter = 0;
+                    }
+                    mLastClickTime = eventtime;
                     break;
             }
         }
@@ -128,15 +211,16 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                         // a command.
                         final Intent i = new Intent(context, MusicPlaybackService.class);
                         i.setAction(MusicPlaybackService.SERVICECMD);
-                        if (keycode == KeyEvent.KEYCODE_HEADSETHOOK
-                                && eventtime - mLastClickTime < DOUBLE_CLICK) {
-                            i.putExtra(MusicPlaybackService.CMDNAME, MusicPlaybackService.CMDNEXT);
-                            context.startService(i);
-                            mLastClickTime = 0;
+                        if (keycode == KeyEvent.KEYCODE_HEADSETHOOK) {
+                            Message msg = mHandler.obtainMessage(MSG_HEADSET_CLICK, context);
+                            Bundle data = new Bundle();
+                            data.putLong("eventtime", eventtime);
+                            data.putString("command", command);
+                            msg.setData(data);
+                            mHandler.sendMessage(msg);
                         } else {
                             i.putExtra(MusicPlaybackService.CMDNAME, command);
                             context.startService(i);
-                            mLastClickTime = eventtime;
                         }
                         mLaunched = false;
                         mDown = true;
