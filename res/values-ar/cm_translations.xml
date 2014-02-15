@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012-2013 Andrew Neal
+     Copyright (C) 2012-2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Apollo</string>
+  <string name="page_recent">الأخير</string>
+  <string name="page_artists">الفنانون</string>
+  <string name="page_albums">الألبومات</string>
+  <string name="page_songs">الصوتيات</string>
+  <string name="page_playlists">قوائم التشغيل</string>
+  <string name="page_genres">الأنواع</string>
+  <string name="menu_settings">الإعدادات</string>
+  <string name="menu_search">البحث</string>
+  <string name="menu_shuffle">خلط الكل</string>
+  <string name="menu_play_all">تشغيل الكل</string>
+  <string name="menu_sort_by">الفرز بواسطة</string>
+  <string name="menu_shop">التسوق للعثور على السِمَات</string>
+  <string name="menu_clear_recents">مسح الأخير</string>
+  <string name="menu_clear_queue">مسح قائمة الانتظار</string>
+  <string name="menu_save_queue">حفظ قائمة الانتظار</string>
+  <string name="menu_share">شارك</string>
+  <string name="menu_add_to_homescreen">تثبيت على شاشتك الرئيسية</string>
+  <string name="menu_equalizer">المعادل</string>
+  <string name="menu_simple">عادي</string>
+  <string name="menu_detailed">مُفَصَل</string>
+  <string name="menu_grid">شبكة</string>
+  <string name="menu_view_as">العرض كـ</string>
+  <string name="add_to_playlist">الإضافة إلى قائمة التشغيل</string>
+  <string name="add_to_favorites">الإضافة إلى المفضلة</string>
+  <string name="add_to_queue">الإضافة إلى قائمة الانتظار</string>
+  <string name="remove_from_favorites">الإزالة من المفضلة</string>
+  <string name="remove_from_recent">الإزالة من الأخير</string>
+  <string name="remove_from_queue">الإزالة من قائمة الانتظار</string>
+  <string name="sort_order_entry_az">أ إلى ي</string>
+  <string name="sort_order_entry_za">ي إلى أ</string>
+  <string name="sort_order_entry_artist">الفنان</string>
+  <string name="sort_order_entry_album">الألبوم</string>
+  <string name="sort_order_entry_year">السنة</string>
+  <string name="sort_order_entry_duration">المدة</string>
+  <string name="sort_order_entry_date_added">تاريخ الإضافة</string>
+  <string name="sort_order_entry_track_list">قائمة المسارات</string>
+  <string name="sort_order_entry_number_of_songs">عدد الصوتيات</string>
+  <string name="sort_order_entry_number_of_albums">عدد الألبومات</string>
+  <string name="sort_order_entry_filename">اسم الملف</string>
+  <string name="playlist_favorites">المفضلة</string>
+  <string name="playlist_last_added">المضاف أخيراً</string>
+  <string name="new_playlist">قائمة تشغيل جديدة</string>
+  <string name="save">حفظ</string>
+  <string name="cancel">إلغاء</string>
+  <string name="overwrite">الاستبدال</string>
+  <string name="new_playlist_name_template">قائمة التشغيل <xliff:g id="number">%d</xliff:g></string>
+  <string name="create_playlist_prompt">اسم قائمة التشغيل</string>
+  <string name="delete_dialog_title">حذف <xliff:g id="item" example="album">%s</xliff:g>?</string>
+  <string name="cannot_be_undone">هذا لا يمكن التراجع عنه</string>
+  <string name="delete_warning">سيؤدي هذا إلى حذف الصور المخزنة مؤقتاً بشكل دائم</string>
+  <string name="new_photo">اختر صورة من معرض الصور</string>
+  <string name="google_search">Google بحث</string>
+  <string name="use_default">استخدم الصورة الافتراضية</string>
+  <string name="old_photo">استخدم الصورة القديمة</string>
+  <string name="context_menu_play_selection">تشغيل</string>
+  <string name="context_menu_play_next">تشغيل التالي</string>
+  <string name="context_menu_more_by_artist">المزيد من أعمال الفنان</string>
+  <string name="context_menu_rename_playlist">إعادة تسمية</string>
+  <string name="context_menu_delete">حذف</string>
+  <string name="context_menu_fetch_album_art">جلب صورة الألبوم</string>
+  <string name="context_menu_fetch_artist_image">جلب صورة الفنان</string>
+  <string name="context_menu_open_in_play_store">فتح في السوق Play</string>
+  <string name="context_menu_remove_from_recent">الإزالة من الأخير</string>
+  <string name="context_menu_use_as_ringtone">تعيين كنغمة رنين</string>
+  <string name="context_menu_remove_from_playlist">الإزالة من قائمة التشغيل</string>
+  <string name="accessibility_play">تشغيل</string>
+  <string name="accessibility_pause">إيقاف مؤقت</string>
+  <string name="accessibility_next">التالي</string>
+  <string name="accessibility_prev">السابق</string>
+  <string name="accessibility_shuffle">خلط</string>
+  <string name="accessibility_shuffle_all">خلط الكل</string>
+  <string name="accessibility_repeat">تكرار</string>
+  <string name="accessibility_repeat_all">تكرار الكل</string>
+  <string name="accessibility_repeat_one">تكرار مرة واحدة</string>
+  <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> ثبتت على شاشتك</string>
+  <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> لا يمكن تثبيتها على شاشتك</string>
+  <string name="set_as_ringtone">'<xliff:g id="name" example="Alarm Bell">%s</xliff:g>' تم تعيينها كنغمة رنين</string>
+  <string name="playlist_renamed">تمت إعادة تسمية قائمة التشغيل</string>
+  <string name="theme_set"> تم تعيين السِمَة <xliff:g id="name">%s</xliff:g></string>
+  <string name="settings_ui_category">الواجهة</string>
+  <string name="settings_storage_category">التخزين</string>
+  <string name="settings_data_category">البيانات</string>
+  <string name="settings_about_category">حول</string>
+  <string name="settings_author_title">المؤلف</string>
+  <string name="settings_about_apollo">حول Apollo</string>
+  <string name="settings_special_thanks">شكر خاص</string>
+  <string name="settings_lopez_summary">مُصمم الأيقونة والشعار على جوجل play</string>
+  <string name="settings_color_scheme_title">اختر لون التخطيط الافتراضي لـApollo</string>
+  <string name="settings_color_scheme_summary">يمكنك تغيير لون الحدود في Apollo</string>
+  <string name="settings_theme_chooser_title">موفر السِمَات</string>
+  <string name="settings_delete_cache_title">حذف ذاكرة التخزين المؤقت</string>
+  <string name="settings_delete_cache_summary">إزالة كل ملفات الصور المؤقتة</string>
+  <string name="settings_download_only_on_wifi_title">التحميل عبر Wi-Fi فقط</string>
+  <string name="settings_download_only_on_wifi_summary">للتقليل من رسوم موفر الشبكة، الرجاء عدم التحميل بواسطة شبكات الهاتف المحمول</string>
+  <string name="settings_download_missing_artwork_title">تحميل صورة الألبوم المفقودة</string>
+  <string name="settings_download_artist_images_title">تحميل صور الفنان المفقودة</string>
+  <string name="settings_open_source_licenses">التراخيص مفتوحة المصدر</string>
+  <string name="settings_version_title">رقم الإصدار</string>
+  <string name="now_listening_to">#المشغل الآن <xliff:g id="title">%1$s</xliff:g> بواسطة <xliff:g id="artist">%2$s</xliff:g> #Apollo</string>
+  <string name="share_track_using">مشاركة المسار باستخدام:</string>
+  <string name="color_picker_title">لون التخطيط</string>
+  <string name="hex">#</string>
+  <string name="current_color">الحالي</string>
+  <string name="new_color">جديد</string>
+  <string name="app_widget_small">Apollo: 4x1</string>
+  <string name="app_widget_large">Apollo: 4x2</string>
+  <string name="app_widget_large_alt">Apollo: 4x2 (التبادلي)</string>
+  <string name="app_widget_recent">Apollo: المستمع مؤخرا</string>
+  <string name="app_widget_text_separator">-</string>
+  <string name="no_effects_for_you">تعذر فتح المعادل.</string>
+  <string name="empty_music">لنسخ الموسيقى من الكمبيوتر إلى الجهاز الخاص بك، استخدام كابل USB.</string>
+  <string name="empty_last_added">سيتم عرض الصوتيات التي قمت بإضافتها خلال الشهر الماضي هنا.</string>
+  <string name="empty_search">لم يتم العثور على نتائج للبحث</string>
+  <string name="empty_favorite">سيتم عرض الصوتيات التي اخترتها كمفضلة هنا.</string>
+  <string name="empty_recent">الألبومات التي إستمعتَ إليها سَتَظْهرُ هنا. حاول تشغيل بعض الصوتيات.</string>
+</resources>
