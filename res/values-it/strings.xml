@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2012 Andrew Neal
-     Copyright (C) 2014 The CyanogenMod Project
+     Copyright (C) 2012-2013 Andrew Neal
+     Copyright (C) 2012-2014 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,6 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Apollo</string>
     <string name="page_recent">Recenti</string>
     <string name="page_artists">Artisti</string>
     <string name="page_albums">Album</string>
@@ -63,7 +64,7 @@
     <string name="cancel">Annulla</string>
     <string name="overwrite">Sovrascrivi</string>
     <string name="new_playlist_name_template">Playlist <xliff:g id="number">%d</xliff:g></string>
-    <string name="create_playlist_prompt">"Nome playlist"</string>
+    <string name="create_playlist_prompt">Nome playlist</string>
     <string name="delete_dialog_title">Eliminare <xliff:g id="item" example="album">%s</xliff:g>?</string>
     <string name="cannot_be_undone">Questa azione non può essere annullata</string>
     <string name="delete_warning">Eliminare definitivamente le immagini memorizzate nella cache?</string>
@@ -93,7 +94,6 @@
     <string name="accessibility_repeat_one">Ripeti singolo</string>
     <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> aggiunto alla schermata home</string>
     <string name="could_not_be_pinned_to_home_screen">impossibile aggiungere alla schermata home <xliff:g id="name">%s</xliff:g></string>
-    <string name="set_as_ringtone">\'<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\' impostata come suoneria</string>
     <string name="playlist_renamed">playlist rinominata</string>
     <string name="theme_set"><xliff:g id="name">%s</xliff:g> impostato come tema</string>
     <string name="settings_ui_category">Interfaccia</string>
@@ -118,10 +118,14 @@
     <string name="now_listening_to">#Ascoltando <xliff:g id="title">%1$s</xliff:g> di <xliff:g id="artist">%2$s</xliff:g> #Apollo</string>
     <string name="share_track_using">Condividi canzone:</string>
     <string name="color_picker_title">Schema colori</string>
+    <string name="hex">#</string>
     <string name="current_color">Corrente</string>
     <string name="new_color">Nuovo</string>
-    <string name="app_widget_large_alt">Apollo: 4×2 (alternativo)</string>
+    <string name="app_widget_small">Apollo: 4x1</string>
+    <string name="app_widget_large">Apollo: 4x2</string>
+    <string name="app_widget_large_alt">Apollo: 4x2 (alternativo)</string>
     <string name="app_widget_recent">Apollo: ascoltato recentemente</string>
+    <string name="app_widget_text_separator">-</string>
     <string name="no_effects_for_you">L\'equalizzatore non può essere aperto.</string>
     <string name="empty_music">Per copiare musica dal tuo computer al dispositivo, utilizzare un cavo USB.</string>
     <string name="empty_last_added">Le canzoni che hai aggiunto nel corso dell\'ultimo mese saranno indicate qui.</string>
