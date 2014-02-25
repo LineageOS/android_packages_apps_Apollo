@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_69c53d5a",
+        "filename": "res/values-pt-rBR/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-02-25T00:20:52Z",
+      "side": 1,
+      "message": "Please remove the xmlns:xliff part",
+      "revId": "a265377967d79648bf5ace8f864334ce501d48fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
