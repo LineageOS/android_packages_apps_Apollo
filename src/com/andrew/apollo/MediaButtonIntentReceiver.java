@@ -17,6 +17,8 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Handler;
 import android.os.Message;
+import android.os.PowerManager;
+import android.os.PowerManager.WakeLock;
 import android.util.Log;
 import android.view.KeyEvent;
 
@@ -37,14 +39,12 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
     private static final int MSG_HEADSET_DOUBLE_CLICK_TIMEOUT = 2;
 
     private static final int LONG_PRESS_DELAY = 1000;
-
     private static final int DOUBLE_CLICK = 800;
 
+    private static WakeLock mWakeLock = null;
     private static int mClickCounter = 0;
     private static long mLastClickTime = 0;
-
     private static boolean mDown = false;
-
     private static boolean mLaunched = false;
 
     private static Handler mHandler = new Handler() {
@@ -67,11 +67,10 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                     break;
 
                 case MSG_HEADSET_DOUBLE_CLICK_TIMEOUT:
-                    if (DEBUG) Log.v(TAG, "Handling headset click, count = " + mClickCounter);
-
                     final int clickCount = msg.arg1;
                     final String command;
 
+                    if (DEBUG) Log.v(TAG, "Handling headset click, count = " + clickCount);
                     switch (clickCount) {
                         case 1: command = MusicPlaybackService.CMDTOGGLEPAUSE; break;
                         case 2: command = MusicPlaybackService.CMDNEXT; break;
@@ -88,6 +87,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                     }
                     break;
             }
+            releaseWakeLockIfHandlerIdle();
         }
     };
 
@@ -137,24 +137,21 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
             if (command != null) {
                 if (action == KeyEvent.ACTION_DOWN) {
                     if (mDown) {
-                        if ((MusicPlaybackService.CMDTOGGLEPAUSE.equals(command) || MusicPlaybackService.CMDPLAY
-                                .equals(command))
-                                && mLastClickTime != 0
-                                && eventtime - mLastClickTime > LONG_PRESS_DELAY) {
-                            mHandler.sendMessage(mHandler.obtainMessage(MSG_LONGPRESS_TIMEOUT,
-                                    context));
+                        if (MusicPlaybackService.CMDTOGGLEPAUSE.equals(command)
+                                || MusicPlaybackService.CMDPLAY.equals(command)) {
+                            if (mLastClickTime != 0
+                                    && eventtime - mLastClickTime > LONG_PRESS_DELAY) {
+                                acquireWakeLockAndSendMessage(context,
+                                        mHandler.obtainMessage(MSG_LONGPRESS_TIMEOUT, context), 0);
+                            }
                         }
                     } else if (event.getRepeatCount() == 0) {
-                        // Only consider the first event in a sequence, not the
-                        // repeat events,
-                        // so that we don't trigger in cases where the first
-                        // event went to
-                        // a different app (e.g. when the user ends a phone call
-                        // by
+                        // Only consider the first event in a sequence, not the repeat events,
+                        // so that we don't trigger in cases where the first event went to
+                        // a different app (e.g. when the user ends a phone call by
                         // long pressing the headset button)
 
-                        // The service may or may not be running, but we need to
-                        // send it
+                        // The service may or may not be running, but we need to send it
                         // a command.
                         if (keycode == KeyEvent.KEYCODE_HEADSETHOOK) {
                             if (eventtime - mLastClickTime >= DOUBLE_CLICK) {
@@ -168,13 +165,12 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                             Message msg = mHandler.obtainMessage(
                                     MSG_HEADSET_DOUBLE_CLICK_TIMEOUT, mClickCounter, 0, context);
 
-                            if (mClickCounter < 3) {
-                                mHandler.sendMessageDelayed(msg, DOUBLE_CLICK);
-                            } else {
-                                mHandler.sendMessage(msg);
+                            long delay = mClickCounter < 3 ? DOUBLE_CLICK : 0;
+                            if (mClickCounter >= 3) {
                                 mClickCounter = 0;
                             }
                             mLastClickTime = eventtime;
+                            acquireWakeLockAndSendMessage(context, msg, delay);
                         } else {
                             final Intent i = new Intent(context, MusicPlaybackService.class);
                             i.setAction(MusicPlaybackService.SERVICECMD);
@@ -191,7 +187,35 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                 if (isOrderedBroadcast()) {
                     abortBroadcast();
                 }
+                releaseWakeLockIfHandlerIdle();
             }
+        }
+    }
+
+    private static void acquireWakeLockAndSendMessage(Context context, Message msg, long delay) {
+        if (mWakeLock == null) {
+            Context appContext = context.getApplicationContext();
+            PowerManager pm = (PowerManager) appContext.getSystemService(Context.POWER_SERVICE);
+            mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Apollo headset button");
+            mWakeLock.setReferenceCounted(false);
+        }
+        if (DEBUG) Log.v(TAG, "Acquiring wake lock");
+        // Make sure we don't indefinitely hold the wake lock under any circumstances
+        mWakeLock.acquire(10000);
+
+        mHandler.sendMessageDelayed(msg, delay);
+    }
+
+    private static void releaseWakeLockIfHandlerIdle() {
+        if (mHandler.hasMessages(MSG_LONGPRESS_TIMEOUT)
+                || mHandler.hasMessages(MSG_HEADSET_DOUBLE_CLICK_TIMEOUT)) {
+            return;
+        }
+
+        if (mWakeLock != null) {
+            if (DEBUG) Log.v(TAG, "Releasing wake lock");
+            mWakeLock.release();
+            mWakeLock = null;
         }
     }
 }
