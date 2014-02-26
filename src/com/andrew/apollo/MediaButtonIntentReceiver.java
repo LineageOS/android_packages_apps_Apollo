@@ -17,6 +17,8 @@ import android.content.Intent;
 import android.media.AudioManager;
 import android.os.Handler;
 import android.os.Message;
+import android.os.PowerManager;
+import android.os.PowerManager.WakeLock;
 import android.util.Log;
 import android.view.KeyEvent;
 
@@ -37,14 +39,12 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
     private static final int MSG_HEADSET_DOUBLE_CLICK_TIMEOUT = 2;
 
     private static final int LONG_PRESS_DELAY = 1000;
-
     private static final int DOUBLE_CLICK = 800;
 
+    private static WakeLock mWakeLock = null;
     private static int mClickCounter = 0;
     private static long mLastClickTime = 0;
-
     private static boolean mDown = false;
-
     private static boolean mLaunched = false;
 
     private static Handler mHandler = new Handler() {
@@ -64,6 +64,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                         context.startActivity(i);
                         mLaunched = true;
                     }
+                    releaseWakeLock();
                     break;
 
                 case MSG_HEADSET_DOUBLE_CLICK_TIMEOUT:
@@ -86,6 +87,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                         i.putExtra(MusicPlaybackService.CMDNAME, command);
                         context.startService(i);
                     }
+                    releaseWakeLock();
                     break;
             }
         }
@@ -143,6 +145,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                                 && eventtime - mLastClickTime > LONG_PRESS_DELAY) {
                             mHandler.sendMessage(mHandler.obtainMessage(MSG_LONGPRESS_TIMEOUT,
                                     context));
+                            acquireWakeLock(context);
                         }
                     } else if (event.getRepeatCount() == 0) {
                         // Only consider the first event in a sequence, not the
@@ -175,23 +178,44 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                                 mClickCounter = 0;
                             }
                             mLastClickTime = eventtime;
+                            acquireWakeLock(context);
                         } else {
                             final Intent i = new Intent(context, MusicPlaybackService.class);
                             i.setAction(MusicPlaybackService.SERVICECMD);
                             i.putExtra(MusicPlaybackService.CMDNAME, command);
                             context.startService(i);
+                            releaseWakeLock();
                         }
                         mLaunched = false;
                         mDown = true;
                     }
                 } else {
                     mHandler.removeMessages(MSG_LONGPRESS_TIMEOUT);
+                    releaseWakeLock();
                     mDown = false;
                 }
                 if (isOrderedBroadcast()) {
                     abortBroadcast();
                 }
             }
+        }
+    }
+
+    private static void acquireWakeLock(Context context) {
+        if (mWakeLock == null) {
+            Context appContext = context.getApplicationContext();
+            PowerManager pm = (PowerManager) appContext.getSystemService(Context.POWER_SERVICE);
+            mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Apollo headset button");
+            mWakeLock.setReferenceCounted(false);
+        }
+        // Make sure we don't indefinitely hold the wake lock under any circumstances
+        mWakeLock.acquire(10000);
+    }
+
+    private static void releaseWakeLock() {
+        if (mWakeLock != null) {
+            mWakeLock.release();
+            mWakeLock = null;
         }
     }
 }
