@@ -17,28 +17,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <plurals name="Nartists">
-    <item quantity="other">1 位艺术家</item>
-  </plurals>
-  <plurals name="Nalbums">
-    <item quantity="other">1 张专辑</item>
-  </plurals>
-  <plurals name="Nsongs">
-    <item quantity="other">1 首歌曲</item>
-  </plurals>
-  <plurals name="Ngenres">
-    <item quantity="other">1 种类型</item>
-  </plurals>
-  <plurals name="NNNtrackstoplaylist">
-    <item quantity="other">添加 1 首歌曲到播放列表.</item>
-  </plurals>
-  <plurals name="NNNtrackstoqueue">
-    <item quantity="other">添加 1 首歌曲到队列中.</item>
-  </plurals>
-  <plurals name="NNNtrackstofavorites">
-    <item quantity="other">添加 1 首歌曲到收藏夹.</item>
-  </plurals>
-  <plurals name="NNNtracksdeleted">
-    <item quantity="other">删除 1 首歌曲.</item>
-  </plurals>
+  <string name="menu_settings">ตั้งค่า</string>
+  <string name="menu_search">ค้นหา</string>
+  <string name="menu_simple">อย่างง่าย</string>
+  <string name="save">บันทึก</string>
+  <string name="cancel">ยกเลิก</string>
+  <string name="overwrite">เขียนทับ</string>
+  <string name="context_menu_rename_playlist">เปลี่ยนชื่อ</string>
+  <string name="accessibility_prev">ก่อนหน้า</string>
+  <string name="settings_ui_category">หน้าตา</string>
+  <string name="settings_about_category">เกี่ยวกับ</string>
+  <string name="color_picker_title">เฉดสี</string>
+  <string name="new_color">ใหม่</string>
 </resources>

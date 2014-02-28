@@ -17,28 +17,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <plurals name="Nartists">
-    <item quantity="other">1 位艺术家</item>
-  </plurals>
-  <plurals name="Nalbums">
-    <item quantity="other">1 张专辑</item>
-  </plurals>
-  <plurals name="Nsongs">
-    <item quantity="other">1 首歌曲</item>
-  </plurals>
-  <plurals name="Ngenres">
-    <item quantity="other">1 种类型</item>
-  </plurals>
-  <plurals name="NNNtrackstoplaylist">
-    <item quantity="other">添加 1 首歌曲到播放列表.</item>
-  </plurals>
-  <plurals name="NNNtrackstoqueue">
-    <item quantity="other">添加 1 首歌曲到队列中.</item>
-  </plurals>
-  <plurals name="NNNtrackstofavorites">
-    <item quantity="other">添加 1 首歌曲到收藏夹.</item>
-  </plurals>
-  <plurals name="NNNtracksdeleted">
-    <item quantity="other">删除 1 首歌曲.</item>
-  </plurals>
+  <string name="menu_settings">إعدادات</string>
 </resources>
