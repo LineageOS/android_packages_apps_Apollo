@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_801debbf",
+        "filename": "res/values-it/strings.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 2597
+      },
+      "writtenOn": "2014-03-01T02:46:58Z",
+      "side": 1,
+      "message": "This is not translatable.\nhttps://github.com/CyanogenMod/android_packages_apps_Apollo/blob/cm-11.0/res/values/strings.xml#L20",
+      "revId": "2179b2db77e14b0db703b38f1efc0a3b3ddb269e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
