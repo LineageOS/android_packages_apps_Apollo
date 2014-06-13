@@ -145,6 +145,7 @@ public class Caller {
             return result;
         } catch (final IOException ignored) {
         } catch (final SAXException ignored) {
+        } catch (final NullPointerException ignored) {
         }
         return null;
     }
@@ -212,7 +213,7 @@ public class Caller {
      * @throws IOException
      */
     private Result createResultFromInputStream(final InputStream inputStream) throws SAXException,
-            IOException {
+            IOException, NullPointerException {
         final Document document = newDocumentBuilder().parse(
                 new InputSource(new InputStreamReader(inputStream, "UTF-8")));
         final Element root = document.getDocumentElement(); // lfm element
