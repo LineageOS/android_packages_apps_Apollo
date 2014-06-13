@@ -171,6 +171,9 @@ public final class ResponseBuilder {
      * @return
      */
     public static <T> T buildItem(final Result result, final Class<T> itemClass) {
+        if (result==null) {
+            return null;
+        }
         return buildItem(result, getItemFactory(itemClass));
     }
 
