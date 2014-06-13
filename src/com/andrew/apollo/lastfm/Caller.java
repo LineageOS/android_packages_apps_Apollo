@@ -141,7 +141,8 @@ public class Caller {
 
         try {
             final Result result = createResultFromInputStream(inputStream);
-            lastResult = result;
+            if(result != null)
+            	lastResult = result;
             return result;
         } catch (final IOException ignored) {
         } catch (final SAXException ignored) {
@@ -220,6 +221,9 @@ public class Caller {
         final Status status = "ok".equals(statusString) ? Status.OK : Status.FAILED;
         if (status == Status.FAILED) {
             final Element errorElement = (Element)root.getElementsByTagName("error").item(0);
+            if (errorElement != null){
+            	return null;
+            }
             final int errorCode = Integer.parseInt(errorElement.getAttribute("code"));
             final String message = errorElement.getTextContent();
             return Result.createRestErrorResult(errorCode, message);
