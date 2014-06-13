@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_2c74ebcd",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-06-13T18:33:50Z",
+      "side": 1,
+      "message": "This block can be nuked when following the suggestions below. Otherwise it has formatting issues:\n\nif (result !\u003d null) {\n    lastResult \u003d result;\n}",
+      "revId": "396d51069a4322fe947a6bb345896618fdf3d9fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_8c81b792",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-06-13T18:33:50Z",
+      "side": 1,
+      "message": "This should be \u003d\u003d null, not !\u003d null. It also shouldn\u0027t return null, as ResponseBuilder.buildItem dereferences it unconditionally. I guess it\u0027s better to make up an error in that case. Also formatting needs fixing:\n\nif (errorElement \u003d\u003d null) {\n    return Result.createRestErrorResult(-1, \"\");\n}\n\nIt would be great though to get the rest URL for the failure, though, so we can check exactly what\u0027s wrong in the XML.",
+      "revId": "396d51069a4322fe947a6bb345896618fdf3d9fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_6c7ee3af",
+        "filename": "src/com/andrew/apollo/lastfm/ResponseBuilder.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 176,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-06-13T18:33:50Z",
+      "side": 1,
+      "message": "This can be removed when following the suggestions in Caller.java, otherwise\n- formatting needs fixing\n- the block needs to go into the method below",
+      "revId": "396d51069a4322fe947a6bb345896618fdf3d9fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
