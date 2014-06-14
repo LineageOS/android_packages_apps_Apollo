@@ -16,6 +16,23 @@
       "revId": "102ea7d8dac77aa2802a48f780822553dffa8cc9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_a71c9478",
+        "filename": "AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1639
+      },
+      "writtenOn": "2014-06-14T16:03:57Z",
+      "side": 1,
+      "message": "Like Bing-Hua suggests, please a comment about why the permission is being used. You could be descriptive or just add \"Allows Apollo to read from external storage\".",
+      "revId": "102ea7d8dac77aa2802a48f780822553dffa8cc9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
