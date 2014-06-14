@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_07abc08a",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-06-14T07:56:56Z",
+      "side": 1,
+      "message": "Ok, makes sense. In that case, just the formatting needs fixing and the change in ResponseBuilder needs moving.",
+      "parentUuid": "ba0121b8_6769dc8b",
+      "revId": "396d51069a4322fe947a6bb345896618fdf3d9fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_6c7ee3af",
         "filename": "src/com/andrew/apollo/lastfm/ResponseBuilder.java",
         "patchSetId": 5
