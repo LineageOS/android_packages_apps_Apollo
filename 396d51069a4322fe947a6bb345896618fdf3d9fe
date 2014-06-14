@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_6769dc8b",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 226,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2014-06-14T04:02:07Z",
+      "side": 1,
+      "message": "Oh derp, i must of had an old version commited\n\n I was thinking of doing that but the call() function when resultfrominputstream is thrown an exception it will automatically return null... \nI am following the convention of error handling in the related function",
+      "parentUuid": "ba0121b8_8c81b792",
+      "revId": "396d51069a4322fe947a6bb345896618fdf3d9fe",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_6c7ee3af",
         "filename": "src/com/andrew/apollo/lastfm/ResponseBuilder.java",
         "patchSetId": 5
