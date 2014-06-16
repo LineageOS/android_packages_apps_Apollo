@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_7f1a0070",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-06-16T19:46:33Z",
+      "side": 1,
+      "message": "if (",
+      "revId": "5494c04baccf844aa623c862e6963ce13ab3fe06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_df250caf",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-06-16T19:46:33Z",
+      "side": 1,
+      "message": "if (errorElement \u003d\u003d null) {",
+      "revId": "5494c04baccf844aa623c862e6963ce13ab3fe06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
