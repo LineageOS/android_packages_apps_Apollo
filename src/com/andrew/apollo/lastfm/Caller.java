@@ -145,7 +145,8 @@ public class Caller {
             return result;
         } catch (final IOException ignored) {
         } catch (final SAXException ignored) {
-        }
+        } catch (final NullPointerException ignored) {
+	}
         return null;
     }
 
