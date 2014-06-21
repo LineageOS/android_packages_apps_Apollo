@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_49adc630",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-06-21T07:16:51Z",
+      "side": 1,
+      "message": "Please us spaces instead of tabs.",
+      "revId": "68a4c01fe171ac3031d6ed35df41847021a60435",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_a9aaa217",
+        "filename": "src/com/andrew/apollo/lastfm/ResponseBuilder.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-06-21T07:16:51Z",
+      "side": 1,
+      "message": "result \u003d\u003d null",
+      "revId": "68a4c01fe171ac3031d6ed35df41847021a60435",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
