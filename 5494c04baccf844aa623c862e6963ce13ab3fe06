@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_ea62c9ac",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2014-06-22T02:49:57Z",
+      "side": 1,
+      "message": "Agreed, i will figure something out when i get back on Tuesday",
+      "parentUuid": "ba0121b8_6a6519e0",
+      "revId": "5494c04baccf844aa623c862e6963ce13ab3fe06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_7f1a0070",
         "filename": "src/com/andrew/apollo/lastfm/Caller.java",
         "patchSetId": 6
