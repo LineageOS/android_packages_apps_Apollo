@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba0121b8_ea780992",
+        "filename": "src/com/andrew/apollo/lastfm/Caller.java",
+        "patchSetId": 6
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2014-06-22T00:18:43Z",
+      "side": 1,
+      "message": "Shareef, Danny, IHMO the problem obviously is here. It the network fails the we should return Result.FAILED here and don\u0027t try to parse the reveived document. Return FAILED the rest of the code should work properly. \n\nException from http://review.cyanogenmod.org/#/c/66120\n\n\n * This is the error - E/AndroidRuntime(10584): FATAL EXCEPTION: AsyncTask #1\nE/AndroidRuntime(10584): java.lang.RuntimeException: An error occured while executing doInBackground()\nE/AndroidRuntime(10584): \tat android.os.AsyncTask$3.done(AsyncTask.java:299)\nE/AndroidRuntime(10584): \tat java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)\nE/AndroidRuntime(10584): \tat java.util.concurrent.FutureTask.setException(FutureTask.java:219)\nE/AndroidRuntime(10584): \tat java.util.concurrent.FutureTask.run(FutureTask.java:239)\nE/AndroidRuntime(10584): \tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)\nE/AndroidRuntime(10584): \tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)\nE/AndroidRuntime(10584): \tat java.lang.Thread.run(Thread.java:841)\nE/AndroidRuntime(10584): Caused by: java.lang.NullPointerException: lock \u003d\u003d null\nE/AndroidRuntime(10584): \tat java.io.Reader.\u003cinit\u003e(Reader.java:64)\nE/AndroidRuntime(10584): \tat java.io.InputStreamReader.\u003cinit\u003e(InputStreamReader.java:79)\nE/AndroidRuntime(10584): \tat com.andrew.apollo.lastfm.Caller.createResultFromInputStream(Caller.java:216)\nE/AndroidRuntime(10584): \tat com.andrew.apollo.lastfm.Caller.call(Caller.java:143)\nE/AndroidRuntime(10584): \tat com.andrew.apollo.lastfm.Artist.getInfo(Artist.java:73)\nE/AndroidRuntime(10584): \tat com.andrew.apollo.lastfm.Artist.getInfo(Artist.java:55)\nE/AndroidRuntime(10584): \tat com.andrew.apollo.cache.ImageFetcher.processImageUrl(ImageFetcher.java:117)\nE/AndroidRuntime(10584): \tat com.andrew.apollo.cache.ImageWorker$BitmapWorkerTask.doInBackground(ImageWorker.java:238)\nE/AndroidRuntime(10584): \tat com.andrew.apollo.cache.ImageWorker$BitmapWorkerTask.doInBackground(ImageWorker.java:155)\nE/AndroidRuntime(10584): \tat android.os.AsyncTask$2.call(AsyncTask.java:287)\nE/AndroidRuntime(10584): \tat java.util.concurrent.FutureTask.run(FutureTask.java:234)\nE/AndroidRuntime(10584): \t... 3 more",
+      "revId": "5494c04baccf844aa623c862e6963ce13ab3fe06",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_7f1a0070",
         "filename": "src/com/andrew/apollo/lastfm/Caller.java",
         "patchSetId": 6
