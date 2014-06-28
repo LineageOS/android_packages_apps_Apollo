@@ -26,6 +26,7 @@
 
     <!-- Adpater lines -->
     <color name="line_one">@color/white</color>
+    <color name="line_one_right">@color/white</color>
     <color name="line_two">@color/transparent_white</color>
     <color name="line_three">@color/transparent_white</color>
 
