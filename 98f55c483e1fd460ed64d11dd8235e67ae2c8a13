@@ -19,6 +19,91 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_1a301901",
+        "filename": "src/com/andrew/apollo/loaders/QueueLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2014-06-30T19:24:11Z",
+      "side": 1,
+      "message": "// Convert the duration into seconds\n\nfinal int durationInSecs \u003d (int) duration / 1000;",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_3a1d1d74",
+        "filename": "src/com/andrew/apollo/loaders/QueueLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2014-06-30T19:24:11Z",
+      "side": 1,
+      "message": "final Song song \u003d new Song(id, songName, artist, album, durationInSecs);",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_5a18d184",
+        "filename": "src/com/andrew/apollo/loaders/SongLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2014-06-30T19:24:11Z",
+      "side": 1,
+      "message": "// Convert the duration into seconds\n\nfinal int durationInSecs \u003d (int) duration / 1000;",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_9a126961",
+        "filename": "src/com/andrew/apollo/loaders/SongLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2014-06-30T19:24:11Z",
+      "side": 1,
+      "message": "final Song song \u003d new Song(id, songName, artist, album, durationInSecs);",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_7a179551",
+        "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2014-06-30T19:24:11Z",
+      "side": 1,
+      "message": "Please remove trailing space",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_fa55651d",
         "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
         "patchSetId": 1
@@ -30,6 +115,23 @@
       "writtenOn": "2014-06-30T19:02:21Z",
       "side": 1,
       "message": "Please wrap the line to keep it \u003c 100 chars.",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_da0ce144",
+        "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2014-06-30T19:24:11Z",
+      "side": 1,
+      "message": "Please remove trailing space",
       "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
