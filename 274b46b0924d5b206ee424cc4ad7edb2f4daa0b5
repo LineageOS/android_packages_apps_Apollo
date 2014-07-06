@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_54cffdaf",
+        "filename": "src/com/andrew/apollo/adapters/ProfileSongAdapter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 4884
+      },
+      "writtenOn": "2014-07-06T02:28:50Z",
+      "side": 1,
+      "message": "} else {",
+      "revId": "274b46b0924d5b206ee424cc4ad7edb2f4daa0b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
