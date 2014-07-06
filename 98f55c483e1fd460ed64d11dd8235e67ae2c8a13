@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_3437e9b1",
+        "filename": "res/values/themeconfig.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_1a59395b",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_1a301901",
         "filename": "src/com/andrew/apollo/loaders/QueueLoader.java",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2014-06-30T19:24:11Z",
       "side": 1,
       "message": "// Convert the duration into seconds\n\nfinal int durationInSecs \u003d (int) duration / 1000;",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_143c6592",
+        "filename": "src/com/andrew/apollo/loaders/QueueLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_1a301901",
       "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_7441610b",
+        "filename": "src/com/andrew/apollo/loaders/QueueLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_3a1d1d74",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_5a18d184",
         "filename": "src/com/andrew/apollo/loaders/SongLoader.java",
         "patchSetId": 1
@@ -64,6 +118,24 @@
       "writtenOn": "2014-06-30T19:24:11Z",
       "side": 1,
       "message": "// Convert the duration into seconds\n\nfinal int durationInSecs \u003d (int) duration / 1000;",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_5446dd23",
+        "filename": "src/com/andrew/apollo/loaders/SongLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_5a18d184",
       "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_b44bf92a",
+        "filename": "src/com/andrew/apollo/loaders/SongLoader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_9a126961",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_7a179551",
         "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
         "patchSetId": 1
@@ -98,6 +188,24 @@
       "writtenOn": "2014-06-30T19:24:11Z",
       "side": 1,
       "message": "Please remove trailing space",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_9448752f",
+        "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_7a179551",
       "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "ba0121b8_f45571c6",
+        "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_fa55651d",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba0121b8_da0ce144",
         "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
         "patchSetId": 1
@@ -132,6 +258,24 @@
       "writtenOn": "2014-06-30T19:24:11Z",
       "side": 1,
       "message": "Please remove trailing space",
+      "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_d452eddc",
+        "filename": "src/com/andrew/apollo/ui/MusicHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:45:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_da0ce144",
       "revId": "98f55c483e1fd460ed64d11dd8235e67ae2c8a13",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
