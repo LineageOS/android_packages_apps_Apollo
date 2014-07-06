@@ -16,6 +16,24 @@
       "revId": "274b46b0924d5b206ee424cc4ad7edb2f4daa0b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba0121b8_f4be11fe",
+        "filename": "src/com/andrew/apollo/adapters/ProfileSongAdapter.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 9936
+      },
+      "writtenOn": "2014-07-06T02:40:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba0121b8_54cffdaf",
+      "revId": "274b46b0924d5b206ee424cc4ad7edb2f4daa0b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
