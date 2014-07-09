@@ -11,6 +11,8 @@
 
 package com.andrew.apollo.utils;
 
+import java.util.Set;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -77,6 +79,12 @@ public final class PreferenceUtils {
 
     // Key used to set the overall theme color
     public static final String DEFAULT_THEME_COLOR = "default_theme_color";
+    
+    // Key used to set whether or not we should automatically start playing when we are connected to Bluetooth
+    public static final String AUTOPLAY_ON_BLUETOOTH_CONNECTION = "autoplay_on_bluetooth_connection";
+    
+    // Key used to set which Bluetooth devices we should autoplay on. This is because we dont want to autoplay when we connect to our Handsfree kit for example, but we do want to autoplay when we connect to our car head unit
+    public static final String AUTOPLAY_ON_BLUETOOTH_CONNECTION_DEVICES = "autoplay_on_bluetooth_connection_devices";
 
     private static PreferenceUtils sInstance;
 
@@ -382,5 +390,21 @@ public final class PreferenceUtils {
         final String defaultValue = "simple";
         return mPreferences.getString(which, defaultValue).equals(grid);
     }
+    
+    /**    
+     * @return True if the user has checked 'Autoplay on Bluetooth Connection', false otherwise
+     */
+    public boolean isAutoplayOnBluetoothEnabled() {
+    	return mPreferences.getBoolean(AUTOPLAY_ON_BLUETOOTH_CONNECTION, false);
+    }
+    
+    /**
+     * Gets the list of bluetooth device IDs that the user has allowed
+     * @return A set of strings where each string is the Bluetooth DeviceID of an allowed device
+     */
+    public Set<String> getAllowedBluetoothDevices() {
+    	return mPreferences.getStringSet(AUTOPLAY_ON_BLUETOOTH_CONNECTION_DEVICES, null);
+    }
+ 
 
 }

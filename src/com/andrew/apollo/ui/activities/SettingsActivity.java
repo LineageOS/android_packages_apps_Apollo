@@ -11,7 +11,11 @@
 
 package com.andrew.apollo.ui.activities;
 
+import java.util.Set;
+
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
 import android.content.Intent;
@@ -20,9 +24,11 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
+import android.preference.MultiSelectListPreference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceCategory;
 import android.view.MenuItem;
 
 import com.andrew.apollo.MusicPlaybackService;
@@ -74,6 +80,8 @@ public class SettingsActivity extends PreferenceActivity {
         initInterface();
         // Removes the cache entries
         deleteCache();
+        // Bluetooth
+        registerAvailableBluetoothDevices();
         // About
         showOpenSourceLicenses();
         // Update the version number
@@ -199,5 +207,30 @@ public class SettingsActivity extends PreferenceActivity {
                 return true;
             }
         });
+    }
+    
+    private void registerAvailableBluetoothDevices() {
+    	BluetoothAdapter ba = BluetoothAdapter.getDefaultAdapter();
+    	MultiSelectListPreference pref = (MultiSelectListPreference) findPreference(PreferenceUtils.AUTOPLAY_ON_BLUETOOTH_CONNECTION_DEVICES);
+    	if (ba != null) {
+    		//compile a list of paired devices so the user can choose which ones they want to autoplay on 
+    		Set<BluetoothDevice> devices = ba.getBondedDevices();
+    		CharSequence entries[] = new String[devices.size()];
+    		CharSequence entryValues[] = new String[devices.size()];
+    		
+    		int i = 0;
+    		for (BluetoothDevice b : devices) {
+    			entries[i] = b.getName();
+    			entryValues[i] = b.getAddress();
+    			i++;
+    		}
+    		
+    		pref.setEntries(entries);
+    		pref.setEntryValues(entryValues);
+    	} else {
+    		//hide entire Bluetooth section; device doesnt support bluetooth
+    		PreferenceCategory section = (PreferenceCategory) findPreference("settings_bluetooth_category");
+    		getPreferenceScreen().removePreference(section);
+    	}
     }
 }

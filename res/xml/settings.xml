@@ -58,6 +58,16 @@
             android:summary="@string/settings_delete_cache_summary"
             android:title="@string/settings_delete_cache_title" />
     </PreferenceCategory>
+    <!-- Bluetooth Category -->
+    <PreferenceCategory android:title="@string/settings_bluetooth_category" android:key="settings_bluetooth_category">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="autoplay_on_bluetooth_connection"
+            android:title="@string/settings_autoplay_on_bluetooth_connection_title" />
+       	<MultiSelectListPreference
+       	    android:key="autoplay_on_bluetooth_connection_devices"
+       	    android:title="@string/settings_autoplay_on_bluetooth_connection_devices_title" />
+    </PreferenceCategory>
     <!-- About -->
     <PreferenceCategory android:title="@string/settings_about_category" >
         <PreferenceScreen android:title="@string/settings_about_apollo" >

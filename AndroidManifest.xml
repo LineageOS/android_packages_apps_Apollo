@@ -43,6 +43,7 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <!-- Allows Apollo to read from External Storage -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
 
     <application
         android:name=".ApolloApplication"
