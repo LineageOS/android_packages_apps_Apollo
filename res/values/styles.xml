@@ -123,4 +123,24 @@
         <item name="android:contentDescription">@string/accessibility_repeat</item>
     </style>
 
+    <!-- The text appearance for principal information (text that need to be highlighted) -->
+    <style name="primary_text_appearance">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Breadcrumb element -->
+    <style name="breadcrumb_element">
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+
+    <!-- Breadcrumb item -->
+    <style name="breadcrumb_item" parent="@style/breadcrumb_element">
+        <item name="android:textAppearance">@style/primary_text_appearance</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">@dimen/breadcrumb_item_margin_space</item>
+        <item name="android:paddingRight">@dimen/breadcrumb_item_margin_space</item>
+        <item name="android:minWidth">@dimen/breadcrumb_item_min_size</item>
+    </style>
 </resources>

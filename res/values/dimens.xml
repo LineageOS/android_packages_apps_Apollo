@@ -107,6 +107,11 @@
     <dimen name="app_widget_padding">0.0dip</dimen>
     <dimen name="app_widget_bottom_margin">4.0dip</dimen>
 
+    <!-- Breadcrumb -->
+    <dimen name="breadcrumb_small_margin">2dp</dimen>
+    <dimen name="breadcrumb_item_margin_space">3dp</dimen>
+    <dimen name="breadcrumb_item_min_size">24dp</dimen>
+
     <!-- Shadow height -->
     <dimen name="shadow_height">5.0dip</dimen>
 

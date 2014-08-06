@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright (C) 2012-2013 Andrew Neal
-     Copyright (C) 2012-2014 The CyanogenMod Project
+<!-- Copyright (C) 2012 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,18 +12,11 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+ -->
 
-    <!-- Main TitlePageIndicator titles -->
-    <string-array name="page_titles" translatable="false">
-        <item>@string/page_playlists</item>
-        <item>@string/page_recent</item>
-        <item>@string/page_artists</item>
-        <item>@string/page_albums</item>
-        <item>@string/page_songs</item>
-        <item>@string/page_genres</item>
-        <item>@string/page_files</item>
-    </string-array>
-
-</resources>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@style/breadcrumb_element"
+  android:layout_width="wrap_content"
+  android:layout_height="match_parent"
+  android:contentDescription="@null"
+  android:src="@drawable/ic_breadcrumb_divider" />

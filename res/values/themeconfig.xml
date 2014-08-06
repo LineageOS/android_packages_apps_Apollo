@@ -46,5 +46,4 @@
     <color name="search_action">@color/transparent_white</color>
     <color name="shop_action">@color/transparent_white</color>
     <color name="pinn_to_action">@color/transparent_white</color>
-
 </resources>

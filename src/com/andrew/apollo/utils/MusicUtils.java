@@ -557,6 +557,31 @@ public final class MusicUtils {
     }
 
     /**
+     * Gets the MediaStore audio ID of a given file on external storage
+     * @param file The path (on external storage) of the file to resolve the ID of
+     * @return the audio ID arrays as a long[]
+     */
+    public static long[] getSongListFromFile(final Context context, File file) {
+        final String[] projection = new String[] {
+                AudioColumns._ID
+        };
+        final String request = MediaStore.Audio.AudioColumns.DATA + " LIKE '" + file.getAbsolutePath() + "%'";
+        final Uri audiosUri = MediaStore.Audio.Media.getContentUri("external");
+
+        Cursor cursor = context.getContentResolver().query(audiosUri, projection, request, null,
+                MediaStore.Audio.AudioColumns.DATA);
+
+        if (cursor != null) {
+            final long[] mList = getSongListForCursor(cursor);
+            cursor.close();
+            cursor = null;
+            return mList;
+        }
+
+        return sEmptyList;
+    }
+
+    /**
      * @param context The {@link Context} to use.
      * @param id The ID of the genre.
      * @return The song list for an genre.
@@ -571,12 +596,7 @@ public final class MusicUtils {
         final Uri uri = MediaStore.Audio.Genres.Members.getContentUri("external", Long.valueOf(id));
         Cursor cursor = context.getContentResolver().query(uri, projection, selection.toString(),
                 null, null);
-        if (cursor != null) {
-            final long[] mList = getSongListForCursor(cursor);
-            cursor.close();
-            cursor = null;
-            return mList;
-        }
+
         return sEmptyList;
     }
 
@@ -604,6 +624,24 @@ public final class MusicUtils {
             mService.openFile(filename);
             mService.play();
         } catch (final RemoteException ignored) {
+        }
+    }
+
+    /**
+     * @param context The {@link Context} to use
+     * @param file The link to file
+     */
+    public static void playFile(final Context context, final File file) {
+        if (file == null || mService == null) {
+            return;
+        }
+
+        try {
+            mService.stop();
+            mService.openFile(file.getAbsolutePath());
+            mService.play();
+        } catch (final RemoteException ignored) {
+        } catch (final IllegalArgumentException ignored) {
         }
     }
 
