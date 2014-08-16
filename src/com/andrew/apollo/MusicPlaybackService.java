@@ -1198,8 +1198,14 @@ public class MusicPlaybackService extends Service {
         if (D) Log.d(TAG, "setNextTrack: next play position = " + mNextPlayPos);
         if (mNextPlayPos >= 0 && mPlayList != null) {
             final long id = mPlayList[mNextPlayPos];
-            mPlayer.setNextDataSource(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI + "/" + id);
-        } else {
+            if (mPlayer != null){
+                if (mPlayer.isInitialized()){
+                    mPlayer.setNextDataSource(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI + "/" + id);
+                } else {
+                    mPlayer.setDataSource(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI + "/" + id);
+                }
+            }
+        } else if (mPlayer != null) {
             mPlayer.setNextDataSource(null);
         }
     }
@@ -2568,7 +2574,10 @@ public class MusicPlaybackService extends Service {
             mNextMediaPlayer.setWakeMode(mService.get(), PowerManager.PARTIAL_WAKE_LOCK);
             mNextMediaPlayer.setAudioSessionId(getAudioSessionId());
             if (setDataSourceImpl(mNextMediaPlayer, path)) {
-                mCurrentMediaPlayer.setNextMediaPlayer(mNextMediaPlayer);
+                try {
+                     mCurrentMediaPlayer.setNextMediaPlayer(mNextMediaPlayer);
+                } catch (IllegalArgumentException ignored) {
+                }
             } else {
                 if (mNextMediaPlayer != null) {
                     mNextMediaPlayer.release();
