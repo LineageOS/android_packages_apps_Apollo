@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_a50928e0",
+        "filename": "src/com/andrew/apollo/MusicPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1201,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-18T00:30:45Z",
+      "side": 1,
+      "message": "I don\u0027t think mPlayer can be null, it\u0027s valid through the entire life cycle of the service.",
+      "revId": "fbbb546a3623c55c69ad8e634df146f5deee68a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_e513200c",
+        "filename": "src/com/andrew/apollo/MusicPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 1202,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-18T00:30:45Z",
+      "side": 1,
+      "message": "Space missing before {, and 100 chars below.",
+      "revId": "fbbb546a3623c55c69ad8e634df146f5deee68a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_45f934c8",
+        "filename": "src/com/andrew/apollo/MusicPlaybackService.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 2580,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-08-18T00:30:45Z",
+      "side": 1,
+      "message": "This try-catch should go.",
+      "revId": "fbbb546a3623c55c69ad8e634df146f5deee68a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
