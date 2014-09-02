@@ -12,7 +12,6 @@
 package com.andrew.apollo.ui.fragments.profile;
 
 import android.app.Activity;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v4.app.Fragment;
@@ -278,12 +277,15 @@ public class ArtistSongFragment extends Fragment implements LoaderCallbacks<List
         if (position == 0) {
             return;
         }
-        Cursor cursor = ArtistSongLoader.makeArtistSongCursor(getActivity(), getArguments()
-                .getLong(Config.ID));
-        final long[] list = MusicUtils.getSongListForCursor(cursor);
+        long[] list = {};
+        if (mAdapter != null) {
+            int count = mAdapter.getCount() - 1;
+            list = new long[count];
+            for (int i = 0; i < count; i++) {
+                list[i] = ((Song) mAdapter.getItem(i)).mSongId;
+            }
+        }
         MusicUtils.playAll(getActivity(), list, position - 1, false);
-        cursor.close();
-        cursor = null;
     }
 
     /**
