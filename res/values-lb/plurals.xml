@@ -17,5 +17,12 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="old_photo">பழைய புகைப்படம் பயன்படுத்தவும்</string>
+  <plurals name="Nalbums">
+    <item quantity="one"><xliff:g id="count">%d</xliff:g> Album</item>
+    <item quantity="other"><xliff:g id="count">%d</xliff:g> Albumen</item>
+  </plurals>
+  <plurals name="Nsongs">
+    <item quantity="one"><xliff:g id="count">%d</xliff:g> Lidd</item>
+    <item quantity="other"><xliff:g id="count">%d</xliff:g> Lidder</item>
+  </plurals>
 </resources>
