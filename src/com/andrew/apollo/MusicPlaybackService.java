@@ -2275,8 +2275,12 @@ public class MusicPlaybackService extends Service {
      */
     public Bitmap getAlbumArt() {
         // Return the cached artwork
-        final Bitmap bitmap = mImageFetcher.getArtwork(getAlbumName(),
+        Bitmap bitmap = mImageFetcher.getId3TagArtwork(getAlbumName(),
+                getArtistName(), getAudioId());
+        if (bitmap == null) {
+            bitmap = mImageFetcher.getArtwork(getAlbumName(),
                 getAlbumId(), getArtistName());
+        }
         return bitmap;
     }
 
