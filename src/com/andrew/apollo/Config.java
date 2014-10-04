@@ -33,6 +33,11 @@ public final class Config {
     public static final String ALBUM_ART_SUFFIX = "album";
 
     /**
+     * Used to distinguish audio track art from album and artist images
+     */
+    public static final String AUDIO_ART_SUFFIX = "track";
+
+    /**
      * The ID of an artist, album, genre, or playlist passed to the profile
      * activity
      */

@@ -14,6 +14,7 @@ package com.andrew.apollo.cache;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
@@ -162,7 +163,7 @@ public abstract class ImageWorker {
         /**
          * Type of URL to download
          */
-        private final ImageType mImageType;
+        private ImageType mImageType;
 
         /**
          * The key used to store cached entries
@@ -190,6 +191,11 @@ public abstract class ImageWorker {
         private String mUrl;
 
         /**
+         * The data of the artwork
+         */
+        private byte[] mImageData;
+
+        /**
          * Constructor of <code>BitmapWorkerTask</code>
          *
          * @param imageView The {@link ImageView} to use.
@@ -200,6 +206,19 @@ public abstract class ImageWorker {
             imageView.setBackgroundDrawable(mDefaultArtwork);
             mImageReference = new WeakReference<ImageView>(imageView);
             mImageType = imageType;
+        }
+
+        /**
+         * Constructor of <code>BitmapWorkerTask</code>
+         *
+         * @param imageView The {@link ImageView} to use.
+         * @param imageType The type of image URL to fetch for.
+         */
+        @SuppressWarnings("deprecation")
+        public BitmapWorkerTask(final ImageView imageView, final byte[] imageData) {
+            imageView.setBackgroundDrawable(mDefaultArtwork);
+            mImageReference = new WeakReference<ImageView>(imageView);
+            mImageData = imageData;
         }
 
         /**
@@ -219,25 +238,29 @@ public abstract class ImageWorker {
                 bitmap = mImageCache.getCachedBitmap(mKey);
             }
 
-            // Define the album id now
-            mAlbumId = Long.valueOf(params[3]);
+            if (mImageData != null) {
+                bitmap = BitmapFactory.decodeByteArray(mImageData, 0, mImageData.length);
+            } else {
+                // Define the album id now
+                mAlbumId = Long.valueOf(params[3]);
 
-            // Second, if we're fetching artwork, check the device for the image
-            if (bitmap == null && mImageType.equals(ImageType.ALBUM) && mAlbumId >= 0
-                    && mKey != null && !isCancelled() && getAttachedImageView() != null
-                    && mImageCache != null) {
-                bitmap = mImageCache.getCachedArtwork(mContext, mKey, mAlbumId);
-            }
+                // Second, if we're fetching artwork, check the device for the image
+                if (bitmap == null && mImageType.equals(ImageType.ALBUM) && mAlbumId >= 0
+                        && mKey != null && !isCancelled() && getAttachedImageView() != null
+                        && mImageCache != null) {
+                    bitmap = mImageCache.getCachedArtwork(mContext, mKey, mAlbumId);
+                }
 
-            // Third, by now we need to download the image
-            if (bitmap == null && ApolloUtils.isOnline(mContext) && !isCancelled()
-                    && getAttachedImageView() != null) {
-                // Now define what the artist name, album name, and url are.
-                mArtistName = params[1];
-                mAlbumName = params[2];
-                mUrl = processImageUrl(mArtistName, mAlbumName, mImageType);
-                if (mUrl != null) {
-                    bitmap = processBitmap(mUrl);
+                // Third, by now we need to download the image
+                if (bitmap == null && ApolloUtils.isOnline(mContext) && !isCancelled()
+                        && getAttachedImageView() != null) {
+                    // Now define what the artist name, album name, and url are.
+                    mArtistName = params[1];
+                    mAlbumName = params[2];
+                    mUrl = processImageUrl(mArtistName, mAlbumName, mImageType);
+                    if (mUrl != null) {
+                        bitmap = processBitmap(mUrl);
+                    }
                 }
             }
 
@@ -403,6 +426,37 @@ public abstract class ImageWorker {
             } catch (RejectedExecutionException e) {
                 // Executor has exhausted queue space, show default artwork
                 imageView.setImageBitmap(getDefaultArtwork());
+            }
+        }
+    }
+
+    protected void loadId3TagArtwork(final String key, final byte[] artwork,
+            final ImageView imageView) {
+        if (key == null || mImageCache == null || imageView == null) {
+            return;
+        }
+        // First, check the memory for the image
+        final Bitmap lruBitmap = mImageCache.getBitmapFromMemCache(key);
+        if (lruBitmap != null && imageView != null) {
+            // Bitmap found in memory cache
+            imageView.setImageBitmap(lruBitmap);
+        } else if (executePotentialWork(key, imageView)
+                && imageView != null && !mImageCache.isDiskCachePaused()) {
+            // Otherwise run the worker task
+            final BitmapWorkerTask bitmapWorkerTask = new BitmapWorkerTask(imageView, artwork);
+            final AsyncDrawable asyncDrawable = new AsyncDrawable(mResources, mDefault,
+                    bitmapWorkerTask);
+            imageView.setImageDrawable(asyncDrawable);
+            try {
+                ApolloUtils.execute(false, bitmapWorkerTask, key);
+            } catch (RejectedExecutionException e) {
+                // Executor has exhausted queue space, show default artwork
+                Bitmap bitmap = BitmapFactory.decodeByteArray(artwork, 0, artwork.length);
+                if (bitmap != null) {
+                    imageView.setImageBitmap(bitmap);
+                } else {
+                    imageView.setImageBitmap(getDefaultArtwork());
+                }
             }
         }
     }

@@ -25,6 +25,9 @@ import com.andrew.apollo.lastfm.MusicEntry;
 import com.andrew.apollo.lastfm.ImageSize;
 import com.andrew.apollo.utils.MusicUtils;
 import com.andrew.apollo.utils.PreferenceUtils;
+import com.mpatric.mp3agic.InvalidDataException;
+import com.mpatric.mp3agic.Mp3File;
+import com.mpatric.mp3agic.UnsupportedTagException;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -154,9 +157,39 @@ public class ImageFetcher extends ImageWorker {
      * Used to fetch the current artwork.
      */
     public void loadCurrentArtwork(final ImageView imageView) {
-        loadImage(generateAlbumCacheKey(MusicUtils.getAlbumName(), MusicUtils.getArtistName()),
-                MusicUtils.getArtistName(), MusicUtils.getAlbumName(), MusicUtils.getCurrentAlbumId(),
-                imageView, ImageType.ALBUM);
+        byte[] artwork = getId3TagArtwork();
+        if (artwork != null) {
+            loadId3TagArtwork(generateId3TagArtworkCacheKey(MusicUtils.getAlbumName(),
+                    MusicUtils.getArtistName(), MusicUtils.getCurrentAudioId()),
+                    artwork, imageView);
+        } else {
+            loadImage(generateAlbumCacheKey(MusicUtils.getAlbumName(), MusicUtils.getArtistName()),
+                    MusicUtils.getArtistName(), MusicUtils.getAlbumName(),
+                    MusicUtils.getCurrentAlbumId(), imageView, ImageType.ALBUM);
+        }
+    }
+
+    private byte[] getId3TagArtwork() {
+        String currentSongPath = MusicUtils.getFilePath();
+        if (currentSongPath == null) {
+            return null;
+        }
+        try {
+            Mp3File song = new Mp3File(currentSongPath);
+            if (song.hasId3v2Tag()) {
+                byte[] imageBuffer = song.getId3v2Tag().getAlbumImage();
+                if (imageBuffer != null && imageBuffer.length > 0) {
+                    return imageBuffer;
+                }
+            }
+        } catch (UnsupportedTagException e) {
+            // Ignore
+        } catch (InvalidDataException e) {
+            // Ignore
+        } catch (IOException e) {
+            // Ignore
+        }
+        return null;
     }
 
     /**
@@ -245,9 +278,14 @@ public class ImageFetcher extends ImageWorker {
      *            missing artwork
      * @return The album art as an {@link Bitmap}
      */
-    public Bitmap getArtwork(final String albumName, final long albumId, final String artistName) {
+    public Bitmap getArtwork(final String albumName, final long albumId, final String artistName,
+            final long trackId) {
+
         // Check the disk cache
-        Bitmap artwork = null;
+        Bitmap artwork = getId3TagArtwork(albumName, artistName, trackId);
+        if (artwork != null) {
+            return artwork;
+        }
 
         if (artwork == null && albumName != null && mImageCache != null) {
             artwork = mImageCache.getBitmapFromDiskCache(
@@ -261,6 +299,30 @@ public class ImageFetcher extends ImageWorker {
             return artwork;
         }
         return getDefaultArtwork();
+    }
+
+    /**
+     * Finds cached or downloads album art. Used in {@link MusicPlaybackService}
+     * to set the current album art in the notification and lock screen
+     *
+     * @param albumName The name of the current album
+     * @param artistName The album artist
+     * @param albumName The current audio track id
+     * @return The album art as an {@link Bitmap}
+     */
+    public Bitmap getId3TagArtwork(final String albumName, final String artistName,
+            final long audioId) {
+        // Check the disk cache
+        Bitmap artwork = null;
+
+        if (artwork == null && albumName != null && mImageCache != null) {
+            artwork = mImageCache.getBitmapFromDiskCache(
+                    generateId3TagArtworkCacheKey(albumName, artistName, audioId));
+        }
+        if (artwork != null) {
+            return artwork;
+        }
+        return null;
     }
 
     /**
@@ -410,5 +472,30 @@ public class ImageFetcher extends ImageWorker {
                 .append("_")
                 .append(Config.ALBUM_ART_SUFFIX)
                 .toString();
+    }
+
+    /**
+     * Generates key used by id3tag art cache. It needs both album name, artist name and
+     * audio track id to let to select correct image for the case when there are two albums
+     * with the same artist.
+     *
+     * @param albumName The album name the cache key needs to be generated.
+     * @param artistName The artist name the cache key needs to be generated.
+     * @param audioId The track id
+     * @return
+     */
+    public static String generateId3TagArtworkCacheKey(final String albumName,
+            final String artistName, final long audioId) {
+        if (albumName == null || artistName == null || audioId <= 0) {
+            return null;
+        }
+        return new StringBuilder(albumName)
+            .append("_")
+            .append(artistName)
+            .append("_")
+            .append(audioId)
+            .append("_")
+            .append(Config.AUDIO_ART_SUFFIX)
+            .toString();
     }
 }
