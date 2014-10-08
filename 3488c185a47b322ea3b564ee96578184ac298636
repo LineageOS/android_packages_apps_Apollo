@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_e0ebc076",
+        "filename": "src/com/andrew/apollo/cache/ImageFetcher.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-10-08T20:14:11Z",
+      "side": 1,
+      "message": "This stuff does I/O, doesn\u0027t it? If it does, wouldn\u0027t it benefit from being done asynchronously as well, especially given it\u0027s somewhat likely every track will be affected by it? (Looking at my music collection, I have album artist tags set on everything, but also have artwork in every file)\n\nThe way it\u0027s set up now will cause the file to be re-scanned for tags every time the image is bound to the respective view, rendering the memory cache somewhat useless. I think it might be worthwhile to check at least the memory cache for presence of the ID3 artwork, and also cache the non-presence of artwork - basically scan each file only once.\n\nOne idea would be\n- introduce a new ImageType.TRACK_OR_ALBUM enum value\n- pass both keys (track and album) into the loadImage() method, using the track one as primary one\n- let the BitmapWorkerTask figure out what artwork to use\n\nAn algorithm for the latter could look like this:\n- Cache entry for track present? If yes -\u003e use\n- Was ID3 artwork for file already scanned? If no -\u003e fetch ID3 artwork for file; present? If yes -\u003e use\n- Cache entry for album present? If yes -\u003e use\n- Try to download album art; successful? If yes -\u003e use",
+      "revId": "3488c185a47b322ea3b564ee96578184ac298636",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
