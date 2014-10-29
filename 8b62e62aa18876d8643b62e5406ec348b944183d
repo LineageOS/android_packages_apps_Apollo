@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a18252c_0db0fcf3",
+        "filename": "src/com/andrew/apollo/MusicPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1806,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-10-29T03:26:56Z",
+      "side": 1,
+      "message": "Line length should be \u003c\u003d 100 chars (here, above and below)",
+      "revId": "8b62e62aa18876d8643b62e5406ec348b944183d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a18252c_6d95303f",
+        "filename": "src/com/andrew/apollo/MusicPlaybackService.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 1809,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2014-10-29T03:26:56Z",
+      "side": 1,
+      "message": "genreCursor might also be null and - if it isn\u0027t - needs to be closed.\n\nCursor genreCursor \u003d ...\nif (genreCursor !\u003d null) {\n    try {\n        if (genreCursor.moveToFirst()) {\n            return genreCursor.getString(...);\n        }\n    } finally {\n        genreCursor.close();\n    }\n}\nreturn null;",
+      "revId": "8b62e62aa18876d8643b62e5406ec348b944183d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
