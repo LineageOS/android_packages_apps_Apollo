@@ -68,6 +68,7 @@ import com.andrew.apollo.widgets.RepeatingImageButton;
 import com.andrew.apollo.widgets.ShuffleButton;
 
 import java.lang.ref.WeakReference;
+import java.io.File;
 
 /**
  * Apollo's "now playing" interface.
@@ -833,12 +834,13 @@ public class AudioPlayerActivity extends FragmentActivity implements ServiceConn
             return;
         }
         final Intent shareIntent = new Intent();
-        final String shareMessage = getString(R.string.now_listening_to,
-                MusicUtils.getTrackName(), MusicUtils.getArtistName());
 
         shareIntent.setAction(Intent.ACTION_SEND);
-        shareIntent.setType("text/plain");
-        shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+        shareIntent.setType("audio/*");
+
+        Uri uri = Uri.fromFile(new File(MusicUtils.getFilePath()));
+        shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+
         startActivity(Intent.createChooser(shareIntent, getString(R.string.share_track_using)));
     }
 
