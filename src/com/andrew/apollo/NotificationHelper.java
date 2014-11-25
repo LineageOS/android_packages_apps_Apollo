@@ -12,6 +12,7 @@
 package com.andrew.apollo;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -19,7 +20,9 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.media.session.MediaSession;
 import android.support.v4.app.NotificationCompat;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.RemoteViews;
 
@@ -64,13 +67,17 @@ public class NotificationHelper {
      */
     private RemoteViews mExpandedView;
 
+    private MediaSession.Token mToken;
+
     /**
      * Constructor of <code>NotificationHelper</code>
      *
      * @param service The {@link Context} to use
      */
-    public NotificationHelper(final MusicPlaybackService service) {
+    public NotificationHelper(final MusicPlaybackService service,
+            final MediaSession.Token token) {
         mService = service;
+        mToken = token;
         mNotificationManager = (NotificationManager)service
                 .getSystemService(Context.NOTIFICATION_SERVICE);
     }
@@ -81,33 +88,66 @@ public class NotificationHelper {
     public void buildNotification(final String albumName, final String artistName,
             final String trackName, final Long albumId, final Bitmap albumArt,
             final boolean isPlaying) {
+        if (mToken != null) {
+            // Lollipop notification
+            String text = TextUtils.isEmpty(albumName)
+                    ? artistName : artistName + " - " + albumName;
 
-        // Default notfication layout
-        mNotificationTemplate = new RemoteViews(mService.getPackageName(),
-                R.layout.notification_template_base);
+            int playButtonResId = isPlaying
+                    ? R.drawable.btn_playback_pause : R.drawable.btn_playback_play;
+            int playButtonTitleResId = isPlaying
+                    ? R.string.accessibility_pause : R.string.accessibility_play;
 
-        // Set up the content view
-        initCollapsedLayout(trackName, artistName, albumArt);
+            Notification.MediaStyle style = new Notification.MediaStyle()
+                .setMediaSession(mToken)
+                .setShowActionsInCompactView(0, 1, 2);
 
-        // Notification Builder
-        mNotification = new NotificationCompat.Builder(mService)
-                .setSmallIcon(R.drawable.stat_notify_music)
-                .setContentIntent(getPendingIntent())
-                .setPriority(Notification.PRIORITY_DEFAULT)
-                .setContent(mNotificationTemplate)
-                .build();
-        // Control playback from the notification
-        initPlaybackActions(isPlaying);
-        if (ApolloUtils.hasJellyBean()) {
-            // Expanded notifiction style
-            mExpandedView = new RemoteViews(mService.getPackageName(),
-                    R.layout.notification_template_expanded_base);
-            mNotification.bigContentView = mExpandedView;
+            mNotification = new Notification.Builder(mService)
+                    .setSmallIcon(R.drawable.stat_notify_music)
+                    .setLargeIcon(albumArt)
+                    .setContentIntent(getPendingIntent())
+                    .setContentTitle(trackName)
+                    .setContentText(text)
+                    .setStyle(style)
+                    .setVisibility(Notification.VISIBILITY_PUBLIC)
+                    .addAction(R.drawable.btn_playback_previous,
+                            mService.getString(R.string.accessibility_prev),
+                            retreivePlaybackActions(3))
+                    .addAction(playButtonResId, mService.getString(playButtonTitleResId),
+                            retreivePlaybackActions(1))
+                    .addAction(R.drawable.btn_playback_next,
+                            mService.getString(R.string.accessibility_next),
+                            retreivePlaybackActions(2))
+                    .build();
+        } else {
+            // Default notfication layout
+            mNotificationTemplate = new RemoteViews(mService.getPackageName(),
+                    R.layout.notification_template_base);
+
+            // Set up the content view
+            initCollapsedLayout(trackName, artistName, albumArt);
+
+            // Notification Builder
+            mNotification = new NotificationCompat.Builder(mService)
+                    .setSmallIcon(R.drawable.stat_notify_music)
+                    .setContentIntent(getPendingIntent())
+                    .setPriority(Notification.PRIORITY_DEFAULT)
+                    .setContent(mNotificationTemplate)
+                    .build();
             // Control playback from the notification
-            initExpandedPlaybackActions(isPlaying);
-            // Set up the expanded content view
-            initExpandedLayout(trackName, albumName, artistName, albumArt);
+            initPlaybackActions(isPlaying);
+            if (ApolloUtils.hasJellyBean()) {
+                // Expanded notifiction style
+                mExpandedView = new RemoteViews(mService.getPackageName(),
+                        R.layout.notification_template_expanded_base);
+                mNotification.bigContentView = mExpandedView;
+                // Control playback from the notification
+                initExpandedPlaybackActions(isPlaying);
+                // Set up the expanded content view
+                initExpandedLayout(trackName, albumName, artistName, albumArt);
+            }
         }
+
         mService.startForeground(APOLLO_MUSIC_SERVICE, mNotification);
     }
 

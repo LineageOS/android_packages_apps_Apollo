@@ -82,6 +82,17 @@ public final class ApolloUtils {
     }
 
     /**
+     * Used to determine if the device is running
+     * Lollipop (Android 5.0) or greater
+     *
+     * @return True if the device is running Lollipop or greater,
+     *         false otherwise
+     */
+    public static final boolean hasLollipop() {
+        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP;
+    }
+
+    /**
      * Used to determine if the device is a tablet or not
      * 
      * @param context The {@link Context} to use.

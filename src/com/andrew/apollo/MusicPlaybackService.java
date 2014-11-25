@@ -30,8 +30,11 @@ import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
+import android.media.MediaMetadata;
 import android.media.RemoteControlClient;
 import android.media.audiofx.AudioEffect;
+import android.media.session.MediaSession;
+import android.media.session.PlaybackState;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -432,6 +435,7 @@ public class MusicPlaybackService extends Service {
      * Lock screen controls
      */
     private RemoteControlClient mRemoteControlClient;
+    private MediaSession mSession;
 
     private ComponentName mMediaButtonReceiverComponent;
 
@@ -542,9 +546,6 @@ public class MusicPlaybackService extends Service {
         mRecentsCache = RecentStore.getInstance(this);
         mFavoritesCache = FavoritesStore.getInstance(this);
 
-        // Initialize the notification helper
-        mNotificationHelper = new NotificationHelper(this);
-
         // Initialize the image fetcher
         mImageFetcher = ImageFetcher.getInstance(this);
         // Initialize the image cache
@@ -569,7 +570,15 @@ public class MusicPlaybackService extends Service {
         mAudioManager.registerMediaButtonEventReceiver(mMediaButtonReceiverComponent);
 
         // Use the remote control APIs to set the playback state
-        setUpRemoteControlClient();
+        if (ApolloUtils.hasLollipop()) {
+            setUpMediaSession();
+        } else {
+            setUpRemoteControlClient();
+        }
+
+        // Initialize the notification helper
+        mNotificationHelper = new NotificationHelper(this,
+                mSession != null ? mSession.getSessionToken() : null);
 
         // Initialize the preferences
         mPreferences = getSharedPreferences("Service", 0);
@@ -613,6 +622,47 @@ public class MusicPlaybackService extends Service {
         reloadQueue();
         notifyChange(QUEUE_CHANGED);
         notifyChange(META_CHANGED);
+    }
+
+    private void setUpMediaSession() {
+        mSession = new MediaSession(this, "Apollo");
+        mSession.setCallback(new MediaSession.Callback() {
+            @Override
+            public void onPause() {
+                pause();
+                mPausedByTransientLossOfFocus = false;
+            }
+            @Override
+            public void onPlay() {
+                play();
+            }
+            @Override
+            public void onSeekTo(long pos) {
+                seek(pos);
+            }
+            @Override
+            public void onSkipToNext() {
+                gotoNext(true);
+            }
+            @Override
+            public void onSkipToPrevious() {
+                if (position() < REWIND_INSTEAD_PREVIOUS_THRESHOLD) {
+                    prev();
+                } else {
+                    seek(0);
+                    play();
+                }
+            }
+            @Override
+            public void onStop() {
+                pause();
+                mPausedByTransientLossOfFocus = false;
+                seek(0);
+                releaseServiceUiAndStop();
+            }
+        });
+        mSession.setFlags(MediaSession.FLAG_HANDLES_TRANSPORT_CONTROLS);
+        mSession.setActive(true);
     }
 
     /**
@@ -682,7 +732,11 @@ public class MusicPlaybackService extends Service {
 
         // Remove the audio focus listener and lock screen controls
         mAudioManager.abandonAudioFocus(mAudioFocusListener);
-        mAudioManager.unregisterRemoteControlClient(mRemoteControlClient);
+        if (mSession != null) {
+            mSession.release();
+        } else if (mRemoteControlClient != null) {
+            mAudioManager.unregisterRemoteControlClient(mRemoteControlClient);
+        }
 
         // Remove any callbacks from the handler
         mPlayerHandler.removeCallbacksAndMessages(null);
@@ -1318,7 +1372,11 @@ public class MusicPlaybackService extends Service {
         if (D) Log.d(TAG, "notifyChange: what = " + what);
 
         // Update the lockscreen controls
-        updateRemoteControlClient(what);
+        if (mSession != null) {
+            updateMediaSession(what);
+        } else {
+            updateRemoteControlClient(what);
+        }
 
         if (what.equals(POSITION_CHANGED)) {
             return;
@@ -1357,7 +1415,14 @@ public class MusicPlaybackService extends Service {
         }
 
         if (what.equals(PLAYSTATE_CHANGED)) {
-            mNotificationHelper.updatePlayState(isPlaying());
+            if (mSession != null) {
+                // Lollipop notifications can't be updated as they don't use
+                // a custom layout, so it needs to be fully rebuilt
+                mNotificationHelper.buildNotification(getAlbumName(), getArtistName(),
+                        getTrackName(), getAlbumId(), getAlbumArt(), isPlaying());
+            } else {
+                mNotificationHelper.updatePlayState(isPlaying());
+            }
         }
 
         // Update the app-widgets
@@ -1365,6 +1430,40 @@ public class MusicPlaybackService extends Service {
         mAppWidgetLarge.notifyChange(this, what);
         mAppWidgetLargeAlternate.notifyChange(this, what);
         mRecentWidgetProvider.notifyChange(this, what);
+    }
+
+    private void updateMediaSession(final String what) {
+        int playState = mIsSupposedToBePlaying
+                ? PlaybackState.STATE_PLAYING
+                : PlaybackState.STATE_PAUSED;
+
+        if (what.equals(PLAYSTATE_CHANGED) || what.equals(POSITION_CHANGED)) {
+            mSession.setPlaybackState(new PlaybackState.Builder()
+                    .setState(playState, position(), 1.0f).build());
+        } else if (what.equals(META_CHANGED) || what.equals(QUEUE_CHANGED)) {
+            Bitmap albumArt = getAlbumArt();
+            if (albumArt != null) {
+                // RemoteControlClient wants to recycle the bitmaps thrown at it, so we need
+                // to make sure not to hand out our cache copy
+                Bitmap.Config config = albumArt.getConfig();
+                if (config == null) {
+                    config = Bitmap.Config.ARGB_8888;
+                }
+                albumArt = albumArt.copy(config, false);
+            }
+
+            mSession.setMetadata(new MediaMetadata.Builder()
+                    .putString(MediaMetadata.METADATA_KEY_ARTIST, getArtistName())
+                    .putString(MediaMetadata.METADATA_KEY_ALBUM_ARTIST, getAlbumArtistName())
+                    .putString(MediaMetadata.METADATA_KEY_ALBUM, getAlbumName())
+                    .putString(MediaMetadata.METADATA_KEY_TITLE, getTrackName())
+                    .putLong(MediaMetadata.METADATA_KEY_DURATION, duration())
+                    .putBitmap(MediaMetadata.METADATA_KEY_ALBUM_ART, albumArt)
+                    .build());
+
+            mSession.setPlaybackState(new PlaybackState.Builder()
+                    .setState(playState, position(), 1.0f).build());
+        }
     }
 
     /**
