@@ -26,7 +26,6 @@ import android.graphics.Rect;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.Gravity;
@@ -58,27 +57,6 @@ public final class ApolloUtils {
 
     /* This class is never initiated */
     public ApolloUtils() {
-    }
-
-    /**
-     * Used to determine if the device is running Jelly Bean or greater
-     * 
-     * @return True if the device is running Jelly Bean or greater, false
-     *         otherwise
-     */
-    public static final boolean hasJellyBean() {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN;
-    }
-
-    /**
-     * Used to determine if the device is running
-     * Jelly Bean MR2 (Android 4.3) or greater
-     *
-     * @return True if the device is running Jelly Bean MR2 or greater,
-     *         false otherwise
-     */
-    public static final boolean hasJellyBeanMR2() {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2;
     }
 
     /**
@@ -115,11 +93,7 @@ public final class ApolloUtils {
     @SuppressLint("NewApi")
     public static <T> void execute(final boolean forceSerial, final AsyncTask<T, ?, ?> task,
             final T... args) {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.DONUT) {
-            throw new UnsupportedOperationException(
-                    "This class can only be used on API 4 and newer.");
-        }
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB || forceSerial) {
+        if (forceSerial) {
             task.execute(args);
         } else {
             task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, args);
@@ -255,11 +229,7 @@ public final class ApolloUtils {
             @Override
             public void onGlobalLayout() {
                 /* Layout pass done, unregister for further events */
-                if (hasJellyBean()) {
-                    view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                } else {
-                    view.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                }
+                view.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 runnable.run();
             }
         };
