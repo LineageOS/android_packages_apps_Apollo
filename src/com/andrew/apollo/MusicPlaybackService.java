@@ -48,8 +48,10 @@ import android.os.SystemClock;
 import android.provider.MediaStore;
 import android.provider.MediaStore.Audio.AlbumColumns;
 import android.provider.MediaStore.Audio.AudioColumns;
+import android.support.v7.graphics.Palette;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.RemoteViews;
 
 import com.andrew.apollo.appwidgets.AppWidgetLarge;
 import com.andrew.apollo.appwidgets.AppWidgetLargeAlternate;
@@ -1437,6 +1439,22 @@ public class MusicPlaybackService extends Service {
                         getString(R.string.accessibility_next),
                         retrievePlaybackAction(NEXT_ACTION))
                 .build();
+
+        // Generate a new Palette from the current artwork
+        final Palette p = Palette.generate(getAlbumArt());
+        // Check for dark vibrant colors, then vibrant, then default
+        final int notiColor = p != null ? p.getDarkVibrantColor(p.getVibrantColor(0)) : 0;
+        // Notificatin.color will only be applied when the
+        // Notification is recreated by the system, but we don't
+        // want to call stopForeground(true) because this will
+        // remove the Notification entirely for a moment. We only
+        // want to apply the new color.
+        final RemoteViews bigContentViews = notification.bigContentView;
+        final RemoteViews contentViews = notification.contentView;
+        final int content = getResources()
+                .getIdentifier("status_bar_latest_event_content", "id", "android");
+        bigContentViews.setInt(content, "setBackgroundColor", notiColor);
+        contentViews.setInt(content, "setBackgroundColor", notiColor);
 
         startForeground(hashCode(), notification);
     }
