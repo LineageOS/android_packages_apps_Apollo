@@ -7,7 +7,8 @@ LOCAL_SRC_FILES := src/com/andrew/apollo/IApolloService.aidl
 LOCAL_SRC_FILES += $(call all-java-files-under, src)
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
-    android-support-v4
+    android-support-v4 \
+    android-support-v7-palette
 
 LOCAL_PACKAGE_NAME := Apollo
 LOCAL_OVERRIDES_PACKAGES := Music
