@@ -65,6 +65,7 @@
   <string name="create_playlist_prompt">Numm vun der Ofspilllëscht</string>
   <string name="delete_dialog_title"><xliff:g id="item" example="album">%s</xliff:g> läschen?</string>
   <string name="cannot_be_undone">Dat kann net réckgängeg gemaach ginn</string>
+  <string name="delete_warning">Heiduerch ginn all d\'tëschegespäichert Biller definitiv geläscht</string>
   <string name="new_photo">Foto aus der Galerie auswielen</string>
   <string name="google_search">Google-Sich</string>
   <string name="use_default">Standard-Foto benotzen</string>
@@ -89,6 +90,8 @@
   <string name="accessibility_repeat">Widderhuelen</string>
   <string name="accessibility_repeat_all">All widderhuelen</string>
   <string name="accessibility_repeat_one">Eent widderhuelen</string>
+  <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> gouf op de Startschierm gesat</string>
+  <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> konnt net op de Startschierm gesat ginn</string>
   <string name="set_as_ringtone">\'<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\' als Schelltoun gesat</string>
   <string name="theme_set"><xliff:g id="name">%s</xliff:g> gouf als Design definéiert</string>
   <string name="settings_ui_category">Interface</string>
@@ -98,18 +101,29 @@
   <string name="settings_author_title">Auteur</string>
   <string name="settings_about_apollo">Iwwer Apollo</string>
   <string name="settings_special_thanks">Speziell Mercien</string>
+  <string name="settings_lopez_summary">Design vum Symbol a vum Banner vum Play Store</string>
+  <string name="settings_color_scheme_title">Standard-Faarfschema vun Apollo auswielen</string>
+  <string name="settings_color_scheme_summary">Ännert de D\'Akzentfaarf vun Apollo</string>
   <string name="settings_theme_chooser_title">Design-Auswiel</string>
   <string name="settings_delete_cache_title">Tëschespäicher läschen</string>
+  <string name="settings_delete_cache_summary">All d\'tëschegespäichert Biller läschen</string>
   <string name="settings_download_only_on_wifi_title">Just iwwer WLAN eroflueden</string>
+  <string name="settings_download_only_on_wifi_summary">Fir Providerkäschten ze reduzéieren, net iwwer mobil Netzwierker eroflueden</string>
+  <string name="settings_download_missing_artwork_title">Feelend Albumcoveren eroflueden</string>
   <string name="settings_download_artist_images_title">Feelend Interpretebiller lueden</string>
   <string name="settings_open_source_licenses">Open-Source-Lizenzen</string>
   <string name="settings_version_title">Versiounsnummer</string>
   <string name="now_listening_to">#NowPlaying <xliff:g id="title">%1$s</xliff:g> vum <xliff:g id="artist">%2$s</xliff:g> #Apollo</string>
+  <string name="share_track_using">Titel deelen iwwer:</string>
   <string name="color_picker_title">Faarfschema</string>
   <string name="current_color">Aktuell</string>
   <string name="new_color">Nei</string>
   <string name="app_widget_large_alt">Apollo: 4×2 (Alternativ)</string>
   <string name="app_widget_recent">Apollo: Viru kuerzem gelauschtert</string>
   <string name="no_effects_for_you">Den Equalizer konnt net opgemaach ginn.</string>
+  <string name="empty_music">Benotz en USB-Kabel fir Musek vun dengem Computer op den Apparat z\'iwwerdroen.</string>
+  <string name="empty_last_added">Lidder, déi s du an e leschte Méint gelauschtert hues, ginn hei ugewisen.</string>
   <string name="empty_search">Keng Sichresultater fonnt</string>
+  <string name="empty_favorite">Lidder, déi s du als Favoritt markéiert hues, ginn hei ugewisen.</string>
+  <string name="empty_recent">Alben, déi s du gelauschtert hues, ginn hei ugewisen.</string>
 </resources>
