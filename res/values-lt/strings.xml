@@ -121,7 +121,7 @@
   <string name="app_widget_large_alt">Apollo: 4×2 (alternatyva)</string>
   <string name="app_widget_recent">Apollo: Neseniai klausyta</string>
   <string name="no_effects_for_you">Nepavyko atidaryti ekvalaizerio.</string>
-  <string name="empty_music">Norėdami kopijuoti muziką iš kompiuterio į savo prietaisą, naudokite USB kabelį.</string>
+  <string name="empty_music">Norėdami kopijuoti muziką iš kompiuterio į savo įrenginį, naudokite USB kabelį.</string>
   <string name="empty_last_added">Dainas, kurias pridėjote per pastarąjį mėnesį bus rodomos čia.</string>
   <string name="empty_search">Nerasta jokių paieškos rezultatų</string>
   <string name="empty_favorite">Dainas, kurias pažymite kaip mėgstamas bus rodomos čia.</string>
