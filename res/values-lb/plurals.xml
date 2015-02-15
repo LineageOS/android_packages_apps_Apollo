@@ -34,8 +34,8 @@
     <item quantity="other"><xliff:g id="number" example="1">%d</xliff:g> Lidder aus der Ofspilllëscht erausgeholl.</item>
   </plurals>
   <plurals name="NNNtrackstoqueue">
-    <item quantity="one"><xliff:g id="number" example="1">%d</xliff:g> Lidd gouf an d\'Waardeschläif gesat.</item>
-    <item quantity="other"><xliff:g id="number" example="1">%d</xliff:g> Lidder goufen an d\'Waardeschläif gesat.</item>
+    <item quantity="one"><xliff:g id="number" example="1">%d</xliff:g> Lidd gouf an d\'Waardeschlaang gesat.</item>
+    <item quantity="other"><xliff:g id="number" example="1">%d</xliff:g> Lidder goufen an d\'Waardeschlaang gesat.</item>
   </plurals>
   <plurals name="NNNtracksdeleted">
     <item quantity="one"><xliff:g id="songs_to_delete" example="1">%d</xliff:g> Lidd gouf geläscht.</item>
