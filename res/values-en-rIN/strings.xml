@@ -102,8 +102,8 @@
   <string name="settings_about_apollo">About Apollo</string>
   <string name="settings_special_thanks">Special thanks</string>
   <string name="settings_lopez_summary">Icon and Play Store banner design</string>
-  <string name="settings_color_scheme_title">Choose Apollo\'s default color scheme</string>
-  <string name="settings_color_scheme_summary">Changes the accent color in Apollo</string>
+  <string name="settings_color_scheme_title">Choose Apollo\'s default colour scheme</string>
+  <string name="settings_color_scheme_summary">Changes the accent colour in Apollo</string>
   <string name="settings_theme_chooser_title">Theme chooser</string>
   <string name="settings_delete_cache_title">Delete cache</string>
   <string name="settings_delete_cache_summary">Remove all cached images</string>
@@ -115,7 +115,7 @@
   <string name="settings_version_title">Version number</string>
   <string name="now_listening_to">#NowPlaying <xliff:g id="title">%1$s</xliff:g> by <xliff:g id="artist">%2$s</xliff:g> #Apollo</string>
   <string name="share_track_using">Share track using:</string>
-  <string name="color_picker_title">Color scheme</string>
+  <string name="color_picker_title">Colour scheme</string>
   <string name="current_color">Current</string>
   <string name="new_color">New</string>
   <string name="app_widget_large_alt">Apollo: 4×2 (alternate)</string>
