@@ -17,7 +17,6 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="page_recent">Berrikia</string>
   <string name="page_artists">Artistak</string>
   <string name="page_albums">Albumak</string>
   <string name="page_songs">Abestiak</string>
@@ -31,7 +30,7 @@
   <string name="menu_shop">Gaiak deskargatu</string>
   <string name="menu_clear_queue">Ilara garbitu</string>
   <string name="menu_save_queue">Ilara gorde</string>
-  <string name="menu_share">Elkarbanatu</string>
+  <string name="menu_share">Partekatu</string>
   <string name="menu_add_to_homescreen">Mahaigainera gehitu</string>
   <string name="menu_equalizer">Ekualizadorea</string>
   <string name="menu_simple">Sinplea</string>
@@ -64,11 +63,9 @@
   <string name="new_playlist_name_template"><xliff:g id="number">%d</xliff:g> zerrenda</string>
   <string name="create_playlist_prompt">Zerrendaren izena</string>
   <string name="delete_dialog_title"><xliff:g id="item" example="album">%s</xliff:g> ezabatu?</string>
-  <string name="cannot_be_undone">Operazio hau ezin da desegin</string>
   <string name="delete_warning">Honek katxean gordetako irudi guztiak ezabatuko ditu</string>
   <string name="new_photo">Irudia galeriatik hautatu</string>
   <string name="google_search">Google bilaketa</string>
-  <string name="use_default">Lehenetsitako irudia erabili</string>
   <string name="old_photo">Aurreko irudia erabili</string>
   <string name="context_menu_play_selection">Erreproduzitu</string>
   <string name="context_menu_play_next">Hurrengoa</string>
@@ -114,12 +111,11 @@
   <string name="settings_open_source_licenses">Software askearen lizentziak</string>
   <string name="settings_version_title">Bertsioa</string>
   <string name="now_listening_to"><xliff:g id="title">%1$s</xliff:g> de <xliff:g id="artist">%2$s</xliff:g> #Entzuten #Apollo</string>
-  <string name="share_track_using">Abestia honela elkarbanatu:</string>
+  <string name="share_track_using">Partekatu abestia honen bitartez:</string>
   <string name="color_picker_title">Kolore eskema</string>
   <string name="current_color">Oraingoa</string>
   <string name="new_color">Berria</string>
   <string name="app_widget_large_alt">Apollo: 4×2 (alt.)</string>
-  <string name="app_widget_recent">Apollo: Berrikiak</string>
   <string name="no_effects_for_you">Ezin izan da ekualizadorea ireki.</string>
   <string name="empty_music">Musika ordenagailutik galiura kopiatzeko USB kablea erabili.</string>
   <string name="empty_last_added">Azken hilabetean gehituriko abestiak hemen agertuko dira.</string>

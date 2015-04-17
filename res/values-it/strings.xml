@@ -29,7 +29,7 @@
   <string name="menu_play_all">Riproduci tutti</string>
   <string name="menu_sort_by">Ordina per</string>
   <string name="menu_shop">Negozio temi</string>
-  <string name="menu_clear_queue">Cancella coda</string>
+  <string name="menu_clear_queue">Elimina coda</string>
   <string name="menu_save_queue">Salva coda</string>
   <string name="menu_share">Condividi</string>
   <string name="menu_add_to_homescreen">Aggiungi alla home</string>
