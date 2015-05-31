@@ -32,7 +32,7 @@
   <string name="menu_clear_queue">پاککردنه‌وه‌ی ڕیزه‌کان</string>
   <string name="menu_save_queue">پاشه‌که‌وتکردنی ڕیزه‌کان</string>
   <string name="menu_share">به‌شداریپێکردن</string>
-  <string name="menu_add_to_homescreen">ده‌مبوس لێدان بۆ سه‌ر ڕوونما</string>
+  <string name="menu_add_to_homescreen">ده‌مبوس لێدان بۆ سه‌ر ڕونما</string>
   <string name="menu_equalizer">یه‌کسانکه‌ری ده‌نگ</string>
   <string name="menu_simple">ساده‌</string>
   <string name="menu_detailed">لێکدراو</string>
@@ -90,12 +90,12 @@
   <string name="accessibility_repeat">دوبارەکردنەوە</string>
   <string name="accessibility_repeat_all">دووباره‌کردنه‌وه‌ی هه‌مووی</string>
   <string name="accessibility_repeat_one">دووباره‌کردنه‌وه‌ی یه‌کدانه‌</string>
-  <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> کرایه‌ سه‌ر ڕوونماکه‌ت</string>
-  <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> ناتوانرێ بخرێته‌ سه‌ر ڕوونماکه‌ت</string>
+  <string name="pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> کرایه‌ سه‌ر ڕونماکه‌ت</string>
+  <string name="could_not_be_pinned_to_home_screen"><xliff:g id="name">%s</xliff:g> ناتوانرێ بخرێته‌ سه‌ر ڕونماکه‌ت</string>
   <string name="set_as_ringtone">\'<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\' خستنه‌ سه‌ر زه‌نگ</string>
   <string name="theme_set"><xliff:g id="name">%s</xliff:g> خستنه‌ سه‌ر باکگراوه‌ند</string>
   <string name="settings_ui_category">ڕووکار</string>
-  <string name="settings_storage_category">بیرگەی</string>
+  <string name="settings_storage_category">یادگەی</string>
   <string name="settings_data_category">داتا</string>
   <string name="settings_about_category">دەربارەی</string>
   <string name="settings_author_title">دانه‌ر</string>
@@ -113,12 +113,12 @@
   <string name="settings_download_artist_images_title">دابه‌زاندنی وێنه‌ هونه‌رمه‌نده‌ ونبوه‌کان</string>
   <string name="settings_open_source_licenses">Open source licenses</string>
   <string name="settings_version_title">ژماره‌ی وه‌شان</string>
-  <string name="now_listening_to">ئێشتا <xliff:g id="title">%1$s</xliff:g> by <xliff:g id="artist">%2$s</xliff:g> لێده‌درێت</string>
+  <string name="now_listening_to">ئێشتا <xliff:g id="title">%١$s</xliff:g> by <xliff:g id="artist">%٢$s</xliff:g> لێده‌درێت</string>
   <string name="share_track_using">به‌شاریکردنی تراک به‌ به‌کارهێنانی:</string>
   <string name="color_picker_title">نه‌خشه‌ی ڕه‌نگ</string>
   <string name="current_color">هه‌نووکه‌</string>
   <string name="new_color">نوێ</string>
-  <string name="app_widget_large_alt">Apollo: 4×2 (alternate)</string>
+  <string name="app_widget_large_alt">Apollo: ٤×٢ (alternate)</string>
   <string name="app_widget_recent">ئه‌پۆڵۆ:تازه‌ترین که‌ گوێلێگیراون</string>
   <string name="no_effects_for_you">یه‌کسانکه‌ری ده‌نگ ناکرێته‌وه‌.</string>
   <string name="empty_music">بۆ له‌به‌رگرتنه‌وه‌ی گۆرانی له‌ کۆمپیوته‌ر بۆ ئامێره‌که‌ت ، کێبڵی USB به‌کاربهێنه‌.</string>

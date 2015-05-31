@@ -26,15 +26,15 @@
     <item quantity="other"><xliff:g id="count">%d</xliff:g> abesti</item>
   </plurals>
   <plurals name="NNNtrackstoplaylist">
-    <item quantity="one">Zerrendara abesti bat gehitu da.</item>
-    <item quantity="other">Zerrendara <xliff:g id="number" example="27">%d</xliff:g> abesti gehitu dira.</item>
+    <item quantity="one">Abesti <xliff:g id="number" example="1">%d</xliff:g> gehitu da zerrendara.</item>
+    <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> abesti gehitu dira zerrendara.</item>
   </plurals>
   <plurals name="NNNtracksfromplaylist">
     <item quantity="one">Abesti bat zerrendatik kendu da.</item>
     <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> abesti kendu dira zerrendatik.</item>
   </plurals>
   <plurals name="NNNtrackstoqueue">
-    <item quantity="one">Abesti bat gehitu da ilarara.</item>
+    <item quantity="one">Abesti <xliff:g id="number" example="1">%d</xliff:g> gehitu da ilarara.</item>
     <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> abesti gehitu dira ilarara.</item>
   </plurals>
   <plurals name="NNNtracksdeleted">
