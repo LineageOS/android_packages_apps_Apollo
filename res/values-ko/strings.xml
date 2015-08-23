@@ -121,7 +121,7 @@
   <string name="app_widget_large_alt">Apollo: 4×2 (다른 배치)</string>
   <string name="app_widget_recent">Apollo: 최근 목록</string>
   <string name="no_effects_for_you">이퀄라이저를 열 수 없습니다.</string>
-  <string name="empty_music">컴퓨터에서 기기로 음악을 복사하려면 USB 케이블을 연결해주세요.</string>
+  <string name="empty_music">컴퓨터에서 기기로 음악을 복사하려면 USB 케이블을 연결해 주십시오.</string>
   <string name="empty_last_added">지난 한 달 동안 추가한 노래들이 여기에 표시됩니다.</string>
   <string name="empty_search">검색 결과 없음</string>
   <string name="empty_favorite">즐겨찾기에 추가한 노래들이 여기에 표시됩니다.</string>
