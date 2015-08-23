@@ -17,13 +17,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <plurals name="Nalbums">
-    <item quantity="other"><xliff:g id="count">%d</xliff:g> آلبوم</item>
-  </plurals>
-  <plurals name="Nsongs">
-    <item quantity="other"><xliff:g id="count">%d</xliff:g> آهنگ</item>
-  </plurals>
-  <plurals name="NNNtrackstoplaylist">
-    <item quantity="other"><xliff:g id="number" example="27">%d</xliff:g> آهنگ به لیست پخش اضافه شد.</item>
-  </plurals>
+  <string name="save">Konservi</string>
 </resources>
