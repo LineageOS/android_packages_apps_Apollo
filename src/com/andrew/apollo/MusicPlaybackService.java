@@ -538,6 +538,10 @@ public class MusicPlaybackService extends Service {
 
         // Initialize the preferences
         mPreferences = getSharedPreferences("Service", 0);
+        //Reading last-known repeat/shuffle modes
+        mRepeatMode = mPreferences.getInt("repeatmode", REPEAT_NONE);
+        mShuffleMode = mPreferences.getInt("shufflemode", SHUFFLE_NONE);
+        
         mCardId = getCardId();
 
         registerExternalStorageListener();
@@ -610,6 +614,9 @@ public class MusicPlaybackService extends Service {
         audioEffectsIntent.putExtra(AudioEffect.EXTRA_AUDIO_SESSION, getAudioSessionId());
         audioEffectsIntent.putExtra(AudioEffect.EXTRA_PACKAGE_NAME, getPackageName());
         sendBroadcast(audioEffectsIntent);
+
+        //Needed to save repeat and shuffle settings, as well as the current queue
+        saveQueue(false);
 
         // Release the player
         mPlayer.release();
